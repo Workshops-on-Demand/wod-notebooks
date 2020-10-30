@@ -1,0 +1,36 @@
+#
+# This playbook is launched from the FpLr4 infra as user jupyter. It starts an OpenBMC 
+# simulator using SSH on remote host for a dedicated student. The console output
+# of the OpenBMC simulator goes into /dev/null.
+#
+# Invocation:
+# ansible-playbook -i WKSHP-RedfishOverview /home/jupyter/WKSHP-RedifshOverview/StartStudentObmc.yml " 
+#
+# ToDo: 
+#     * Remove all references to MinTTY as it is not used any more !
+#
+# Version 0.1
+#
+
+- hosts: OpenbmcsInFpLR4
+  gather_facts: false
+  #connection: local
+  vars:
+          RemoteScript: "{{ObmcDir}}/{{Student}}{{item}}-LaunchObmc.sh"
+          #RemoteCmd: "{{RemoteScript}}"
+
+
+  tasks:
+    - name: include vars
+      include_vars: "InfraConfig.yml"
+
+    - name: Launch OpenBMC simulators in background 
+      become: true
+      become_method: sudo
+      become_user: root
+
+      command: "{{RemoteScript}} > /dev/null 2>&1 & "  
+      with_sequence: "{{myrange}}"
+
+
+

@@ -1,0 +1,30 @@
+#
+# Ansible/Hosts/Inventroy file for the Jupyter environments in Fred Passeron Jupyter infra
+# used to reset the RedfishOverview OnDemand workshop
+#
+# Version 0.1
+
+#
+#
+
+# ##############################################################
+# FP LR4
+# ##############################################################
+[JupyterInFpLR4]
+jupyterhub2
+
+[JupyterInFpLR4:vars]
+ObmcHostIP="192.168.10.70"
+
+[OpenbmcsInFpLR4]
+openbmcs2 ansible_user=root
+
+[OpenbmcsInFpLR4:vars]
+ObmcDir="/usr/kits/VMs/OpenBMC"
+ObmcOriginalQemuImage="flash-palmetto-ssh-student"
+ObmcQemuImage="Obmc.mtd"
+ObmcHostIP="192.168.10.70"
+ObmcUser=root
+
+
+

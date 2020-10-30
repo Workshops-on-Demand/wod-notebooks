@@ -1,0 +1,31 @@
+---
+apiVersion: "kubedirector.hpe.com/v1beta1"
+kind: "KubeDirectorCluster"
+metadata: 
+  name: "tensorflow-gpu-jupyter-example"
+spec: 
+  app: "tensorflow-gpu-jupyter"
+  appCatalog: "local"
+  #connections: 
+    #secrets: 
+      #- 
+        #"some secrets"
+    #configmaps: 
+      #- 
+        #"some configmaps"
+    #clusters: 
+      #- 
+        #"some clusters"
+  roles: 
+    - 
+      id: "controller"
+      members: 1
+      resources: 
+        requests: 
+          memory: "2Gi"
+          cpu: "1"
+          nvidia.com/gpu: "0"
+        limits: 
+          memory: "2Gi"
+          cpu: "1"
+          nvidia.com/gpu: "0"
