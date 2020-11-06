@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-first-deploy
+  labels:
+    app: my-first-deploy
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: my-ioping
+  template:
+    metadata:
+      labels:
+        app: my-ioping
+    spec:
+      containers:
+      - image: hpestorage/ioping 
+        name: ioping
+        command: [ "ioping" ] 
+        args: [ "/data" ] 
+        volumeMounts:
+          - name: my-data
+            mountPath: /data
+      volumes:
+      - name: my-data
+        persistentVolumeClaim:
+          claimName: my-first-pvc

@@ -1,0 +1,42 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: my-redis-pvc
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 320Mi
+  storageClassName: hpe-standard
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-redis-deploy
+  labels:
+    app: my-redis-deploy
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: my-redis
+  template:
+    metadata:
+      labels:
+        app: my-redis
+    spec:
+      containers:
+      - image: redis
+        name: redis
+        args: ["--appendonly", "yes"]
+        volumeMounts:
+          - name: my-data
+            mountPath: /data
+      volumes:
+      - name: my-data
+        persistentVolumeClaim:
+          claimName: my-redis-pvc

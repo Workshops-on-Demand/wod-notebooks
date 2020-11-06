@@ -1,0 +1,38 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-inline-deploy
+  labels:
+    app: my-inline-deploy
+spec:
+  replicas: 3
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: my-logger
+  template:
+    metadata:
+      labels:
+        app: my-logger
+    spec:
+      containers:
+      - name: my-logger
+        image: busybox
+        command: ["bin/sh"]
+        args: ["-c", "while true; do date >> /data/mydata.txt; sleep 1; done"]
+        volumeMounts:
+        - name: inline
+          mountPath: /data
+      volumes:
+      - name: inline
+        csi:
+          driver: csi.hpe.com
+          nodePublishSecretRef:
+            name: csi-secret
+          fsType: xfs
+          volumeAttributes:
+            csi.storage.k8s.io/ephemeral: "true"
+            accessProtocol: "iscsi"
+            size: "32Mi"
