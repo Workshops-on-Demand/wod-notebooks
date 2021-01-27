@@ -1,0 +1,38 @@
+apiVersion: "kubedirector.hpe.com/v1beta1"
+kind: "KubeDirectorCluster"
+metadata: 
+  name: "inference-server-student{{ STDID }}"
+
+spec:
+  app: deployment-engine
+  appCatalog: "local"
+  connections: 
+    #secrets: 
+      #- 
+        #"some secrets"
+    configmaps: 
+      - "model-student{{ STDID }}" 
+        #"some configmaps"
+    #clusters: 
+      #-
+        #"some clusters"
+  roles:
+  - id: RESTServer
+    members: 1
+    resources:
+      requests:
+        memory: "2Gi"
+        cpu: "1"
+      limits:
+        memory: "2Gi"
+        cpu: "1"
+  - id: LoadBalancer
+    members: 1
+    resources:
+      requests:
+        memory: "2Gi"
+        cpu: "1"
+      limits:
+        memory: "2Gi"
+        cpu: "1"    
+        

@@ -1,0 +1,26 @@
+apiVersion: "kubedirector.hpe.com/v1beta1"
+kind: "KubeDirectorCluster"
+metadata:
+  name: "jupyter-notebook-student{{ STDID }}"
+spec:
+  app: "jupyter-notebook-v1"
+  appCatalog: "local"
+  connections: 
+    #secrets: 
+      #- 
+        #"some secrets"
+    #configmaps: 
+      #- 
+        #"some configmaps"
+    clusters: 
+      - "training-engine-shared"
+        #"some clusters"
+  roles:
+  - id: controller
+    resources:
+      requests:
+        memory: "2Gi"
+        cpu: "1"
+      limits:
+        memory: "2Gi"
+        cpu: "1"
