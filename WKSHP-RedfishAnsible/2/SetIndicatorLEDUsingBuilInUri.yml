@@ -1,0 +1,66 @@
+## Version 0.11
+##
+- hosts: OneViewManagedBmcs
+  connection: local
+  gather_facts: False
+  vars:
+          Token: "GMemePasLesJetons"
+          ChassisURI: "https://{{ inventory_hostname }}:{{ ansible_port }}/redfish/v1/Chassis/1"
+          NewIndicatorLEDValue: 'Lit'
+          
+  tasks:
+          - name: GET IndicatorLED status using Ansible built-in uri module
+            uri:
+                    url: "{{ ChassisURI }}"
+                    return_content: yes
+                    validate_certs: no
+                    method: GET
+                    headers:
+                            X-Auth-Token: "{{ Token }}"
+                            accept: 'application/json'
+                            content-type: 'application/json'
+            register: ChassisInventory
+
+          - debug: var=ChassisInventory.content
+            run_once: true
+
+# ToDo: If IndicatorLED='Lit', set indicatorLED to off et lycée de Versailles
+
+          - name: Modify IndicatorLED
+            uri:
+                    url: "{{ ChassisURI }}"
+                    return_content: yes
+                    validate_certs: no
+                    status_code:
+                            - 200
+                            - 201
+                            - 204
+                    method: PATCH
+                    body_format: json
+                    headers:
+                            X-Auth-Token: "{{ Token }}"
+                            accept: 'application/json'
+                            content-type: 'application/json'
+                    body:
+                            IndicatorLED: "{{ NewIndicatorLEDValue }}"
+
+            register: IndicatorLEDPatchResponse
+
+          - debug: var=IndicatorLEDPatchResponse
+            run_once: true
+
+          - name: GET of IndicatorLED status using Ansible built-in uri module
+            uri:
+                    url: "{{ ChassisURI }}"
+                    return_content: yes
+                    validate_certs: no
+                    method: GET
+                    headers:
+                            X-Auth-Token: "{{ Token }}"
+                            accept: 'application/json'
+                            content-type: 'application/json'
+            register: ChassisInventory
+
+          - debug: var=ChassisInventory.content
+            run_once: true
+

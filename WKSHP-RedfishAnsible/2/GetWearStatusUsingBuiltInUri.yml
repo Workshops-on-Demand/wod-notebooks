@@ -1,0 +1,26 @@
+## Version 0.1
+## 
+## GET WearStatus using Ansible built-in Uri module
+
+
+- hosts: OneViewManagedBmcs
+  connection: local
+  gather_facts: False
+  vars:
+          DriveUri: "https://{{ inventory_hostname }}:{{ ansible_port }}/redfish/v1/Chassis/1/Drives/3d9db7a1"
+          
+  tasks:
+          - name: GET WearStatus
+            uri:
+                    url: "{{ DriveUri }}"
+                    return_content: yes
+                    validate_certs: no
+                    method: GET
+                    headers:
+                            X-Auth-Token: "Token"
+                            accept: 'application/json'
+                            content-type: 'application/json'
+            register: SSDDrive
+
+          - debug: var=SSDDrive.content
+            run_once: true
