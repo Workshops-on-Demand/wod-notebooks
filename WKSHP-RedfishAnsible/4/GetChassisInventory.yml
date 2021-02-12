@@ -1,0 +1,18 @@
+# Version 0.10
+#
+- hosts: OneViewManagedBmcs
+  connection: local
+  gather_facts: False
+
+  tasks:
+      - name: Get chassis inventory
+        community.general.redfish_info:
+           category: Chassis
+           command: GetChassisInventory
+           baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
+           username: "{{ username }}"
+           password: "{{ password }}"
+        register: ChassisInventory
+        
+      - debug: 
+           msg: "{{ ChassisInventory.redfish_facts.chassis.entries }}"

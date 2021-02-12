@@ -1,0 +1,18 @@
+# Version 0.10
+#
+- hosts: OneViewManagedBmcs
+  connection: local
+  gather_facts: False
+
+  tasks:
+      - name: Get Virtual Media information
+        community.general.redfish_info:
+            category: Manager
+            command: GetVirtualMedia
+            baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
+            username: "{{ username }}"
+            password: "{{ password }}"
+        register: result
+        
+      - ansible.builtin.debug:
+            msg: "{{ result.redfish_facts.virtual_media.entries }}"
