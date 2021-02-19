@@ -1,0 +1,13 @@
+# Version 0.12
+#
+- hosts: OneViewManagedBmcs
+  connection: local
+  gather_facts: False
+
+  tasks:
+     - name: "Toggle Indicator LED"
+       set_uid_light:
+          name: "set_uid_light"
+          enabled: True
+          url: "https://{{ inventory_hostname }}:{{ ansible_port}}"
+          session_key: "{{ token }}"

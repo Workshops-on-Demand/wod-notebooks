@@ -1,0 +1,31 @@
+---
+apiVersion: "kubedirector.hpe.com/v1beta1"
+kind: "KubeDirectorCluster"
+metadata: 
+  name: "jupyter-notebook-student{{ STDID }}"
+  namespace: "k8smltenant"
+spec: 
+  app: "jupyter-notebook"
+  appCatalog: "local"
+  connections: 
+    secrets: 
+      - "hpecp-ext-auth-secret"
+      - "sc-secret-ai101-student{{ STDID }}"
+        #"some secrets"
+    #configmaps: 
+      #- 
+        #"some configmaps"
+    #clusters: 
+      #- "training-engine-shared"
+        #"some clusters"
+  roles: 
+    - 
+      id: "controller"
+      members: 1
+      resources: 
+        requests: 
+          memory: "4Gi"
+          cpu: "2"
+        limits: 
+          memory: "4Gi"
+          cpu: "2"
