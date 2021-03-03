@@ -16,7 +16,7 @@
 
 
 # Ansible Module derived from https://github.com/HewlettPackard/python-ilorest-library/blob/master/examples/Redfish/set_uid_light.py
-# Version 0.113
+# Version 0.114
 
 """
 Didactic example of an Ansible Redfish module for setting the UID light of a computer chassis
@@ -60,10 +60,10 @@ def set_uid_light(_redfishobj):
         #if we do not have a resource directory or want to force it's non use to find the
         #relevant URI
         # ********* TBD/Work in progress **************
-        systems_uri = _redfishobj.root.obj['Systems']['@odata.id']
-        systems_response = _redfishobj.get(systems_uri)
-        systems_members_uri = next(iter(systems_response.obj['Members']))['@odata.id']
-        systems_members_response = _redfishobj.get(systems_members_uri)
+        chassis_uri = _redfishobj.root.obj['Chassis']['@odata.id']
+        chassis_response = _redfishobj.get(chassis_uri)
+        chassis_members_uri = next(iter(chassis_response.obj['Members']))['@odata.id']
+        chassis_members_response = _redfishobj.get(chassis_members_uri)
     else:
         #Use Resource directory to find the relevant URI
         for instance in resource_instances:
