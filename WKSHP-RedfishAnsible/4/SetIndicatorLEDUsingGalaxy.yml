@@ -1,4 +1,4 @@
-# Version 0.111
+# Version 0.112
 #
 - hosts: OneViewManagedBmcs
   vars:
@@ -8,25 +8,36 @@
   gather_facts: False
 
   tasks:
-      - name: 1.0- Get chassis inventory
+      - name: 1.0- Get and print chassis inventory with Indicator LEDs status
         community.general.redfish_info:
              category: Chassis
              command: GetChassisInventory
              baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
              username: "{{ username }}"
              password: "{{ password }}"
-        register: result
+        register: ChassisInventory
              
       - debug:
-           msg: "{{ result }}"
+           msg: "{{ ChassisInventory.redfish_facts.chassis.entries | json_query('[].{ChassisType: ChassisType, IndicatorLED: IndicatorLED}') }}"
       
       
+      - name: 1.1 Save indicator LEDs values (TBD)
+        set_fact:
+            ChassisLEDsValues: "{{ ChassisInventory.redfish_facts.chassis.entries | json_query('[].{IndicatorLED: IndicatorLED}') }}"
       
-      - name: 2.0- Set chassis indicator LED to blink
+      - debug:
+           msg: "{{ ChassisLEDsValues}}"
+      
+      - name: 2.0 Toggle indicator LED values (TBD)
+        set_fact:
+            NewIndicatorLEDValue: "TBD"
+      
+      
+      - name: 2.1- Set chassis new indicator LED values
         community.general.redfish_command:
             category: Chassis
-            command: IndicatorLedBlink
-            resource_id: "1"
+            command: "{{ NewIndicatorLEDValue }}"
+            resource_id: "1"              # Need to find a way to discover the "enclosurechassis" resource_id (uri ?)
             baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
             username: "{{ username }}"
             password: "{{ password }}"
@@ -44,7 +55,7 @@
              baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
              username: "{{ username }}"
              password: "{{ password }}"
-        register: result
+        register: ChassisInventory
              
       - debug:
-           msg: "{{ result }}"
+           msg: "{{ ChassisInventory.redfish_facts.chassis.entries }}"
