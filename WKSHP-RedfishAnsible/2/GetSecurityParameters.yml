@@ -1,6 +1,6 @@
-## Version 0.1
+## Version 0.11
 ## 
-## GET WearStatus using Ansible built-in Uri module
+## GET Security params using Ansible built-in Uri module
 
 
 - hosts: OneViewManagedBmcs
