@@ -7,12 +7,12 @@
   connection: local
   gather_facts: False
   vars:
-          DriveUri: "https://{{ inventory_hostname }}:{{ ansible_port }}/redfish/v1/Chassis/1/Drives/3d9db7a1"
+          SecurityParamsUri: "https://{{ inventory_hostname }}:{{ ansible_port }}/redfish/v1/Managers/1/SecurityService/SecurityDashboard/SecurityParams?$expand=."
           
   tasks:
-          - name: GET WearStatus
+          - name: GET Security Parameters
             uri:
-                    url: "{{ DriveUri }}"
+                    url: "{{ SecurityParamsUri }}"
                     return_content: yes
                     validate_certs: no
                     method: GET
@@ -20,7 +20,7 @@
                             X-Auth-Token: "FakeToken"
                             accept: 'application/json'
                             content-type: 'application/json'
-            register: SSDDrive
+            register: SecurityParams
 
-          - debug: var=SSDDrive.content
+          - debug: var=SecurityParams.content
             run_once: true

@@ -16,45 +16,50 @@
 
 
 # Ansible Module derived from https://github.com/HewlettPackard/python-ilorest-library/blob/master/examples/Redfish/set_uid_light.py
-# Version 0.11
+# Version 0.113
 
 """
-An example of setting the UID light ussing a session key token
+Didactic example of an Ansible Redfish module for setting the UID light of a computer chassis
+and its enclosure (if any) using the HPE python-ilorest-library and
+a session key (i.e. OneView token)
 """
 DOCUMENTATION = '''
 ---
 module: set_uid_light
-short_description: This module sets the UID light on or off
+short_description: Ansible Redfish module to modify the UID light status of a chassis and its enclosure (if any) using a session authentication method.
 '''
 
 EXAMPLES = '''
 - name: set UID light
   become: yes
   set_uid_light:
-    name: "Set UID light"
-    enabled: True
-    uid: True
+    url: "https://<ip>:<port>"
+    session_key: "<Token/Session key>"
 '''
 
 import sys
 import json
 import time
-from redfish import RedfishClient
+from redfish import RedfishClient   # RedfishClient is in the HPE's redfish class of the python-ilorest-library
 from redfish.rest.v1 import ServerDownOrUnreachableError
 from ansible.module_utils.basic import *
 
-from get_resource_directory import get_resource_directory
+# The following get_resource_directory module comes from https://github.com/HewlettPackard/python-ilorest-library/blob/master/examples/Redfish/get_resource_directory.py
+# It has been included in this infrastructure to show how to speed up the crawling of 
+# HPE iLO Redfish implementation
+from get_resource_directory import get_resource_directory # HPE proprietarty 
 
 def set_uid_light(_redfishobj):
 
     body = dict()
-    systems_members_uri = None
-    systems_members_response = None
+    chassis_members_uri = None
+    chassis_members_response = None
 
     resource_instances = get_resource_directory(_redfishobj)
     if DISABLE_RESOURCE_DIR or not resource_instances:
         #if we do not have a resource directory or want to force it's non use to find the
         #relevant URI
+        # ********* TBD/Work in progress **************
         systems_uri = _redfishobj.root.obj['Systems']['@odata.id']
         systems_response = _redfishobj.get(systems_uri)
         systems_members_uri = next(iter(systems_response.obj['Members']))['@odata.id']
@@ -62,45 +67,37 @@ def set_uid_light(_redfishobj):
     else:
         #Use Resource directory to find the relevant URI
         for instance in resource_instances:
-            if '#ComputerSystem.' in instance['@odata.type']:
-                systems_members_uri = instance['@odata.id']
-                systems_members_response = _redfishobj.get(systems_members_uri)
+            if '#Chassis.' in instance['@odata.type']:
+                chassis_members_uri = instance['@odata.id']
+                chassis_members_response = _redfishobj.get(chassis_members_uri)
+                if chassis_members_response and chassis_members_uri:
+                    if "Off" in chassis_members_response.dict.get("IndicatorLED"):
+                        body["IndicatorLED"] = "Lit"
+                    else:
+                        body["IndicatorLED"] = "Off"
 
-    if systems_members_response and systems_members_uri:
-        print("Current Indicator LED Status: \'%s\'\n" % systems_members_response.dict.\
-                                                                            get("IndicatorLED"))
-        if "Off" in systems_members_response.dict.get("IndicatorLED"):
-            print("Will illuminate indicator LED.\n")
-            body["IndicatorLED"] = "Lit"
-        else:
-            print("Will extinguish indicator LED.\n")
-            body["IndicatorLED"] = "Off"
-
-        resp = _redfishobj.patch(systems_members_uri, body)
-        #If iLO responds with soemthing outside of 200 or 201 then lets check the iLO extended info
-        #error message to see what went wrong
-        if resp.status == 400:
-            try:
-                print(json.dumps(resp.obj['error']['@Message.ExtendedInfo'], indent=4, \
+                resp = _redfishobj.patch(chassis_members_uri, body)
+                #If iLO responds with soemthing outside of 200 or 201 then lets check the iLO extended info
+                #error message to see what went wrong
+                if resp.status == 400:
+                    try:
+                        sys.stderr.write(json.dumps(resp.obj['error']['@Message.ExtendedInfo'], indent=4, \
                                                                                 sort_keys=True))
-            except Exception as excp:
-                sys.stderr.write("A response error occurred, unable to access iLO Extended "\
+                    except Exception as excp:
+                        sys.stderr.write("A response error occurred, unable to access iLO Extended "\
                                  "Message Info...")
-        elif resp.status != 200:
-            sys.stderr.write("An http response of \'%s\' was returned.\n" % resp.status)
-        else:
-            print("Success!\n")
-            print(json.dumps(resp.dict, indent=4, sort_keys=True))
-            time.sleep(10) #going to wait 10 seconds before obtaining the LED indicator state
-            sys.stdout.write("\nUpdated Indicator LED Status: \'%s\'\n" % _redfishobj.\
-                                                    get(systems_members_uri).dict['IndicatorLED'])
+                elif resp.status != 200:
+                        sys.stderr.write("An http response of \'%s\' was returned.\n" % resp.status)
+                else:
+                    sys.stdout.write("Success!\n")
+                    sys.stdout.write(json.dumps(resp.dict, indent=4, sort_keys=True))
+                    time.sleep(10) #going to wait 10 seconds before obtaining the LED indicator state
+                    sys.stdout.write("\nUpdated Indicator LED Status: \'%s\'\n" % _redfishobj.\
+                                                    get(chassis_members_uri).dict['IndicatorLED'])
 
 if __name__ == "__main__":
     module = AnsibleModule(
         argument_spec = dict(
-            name      = dict(required=True, type='str'),
-            enabled   = dict(required=True, type='bool'),
-            state     = dict(default='present', choices=['present', 'absent']),
             url      = dict(required=True, type='str'),
             session_key   = dict(required=True, stype='str')
         )
@@ -114,7 +111,7 @@ if __name__ == "__main__":
     DISABLE_RESOURCE_DIR = False
 
     try:
-        # Create a Redfish client object
+        # Create a Redfish client object using a Session Authentication Token
         REDFISHOBJ = RedfishClient(base_url=SYSTEM_URL, session_key=SESSION_KEY)
                                                                             
         # Login with the Redfish client

@@ -1,6 +1,9 @@
-# Version 0.10
+# Version 0.11
 #
 - hosts: OneViewManagedBmcs
+  vars:
+      username: "foo"
+      password: "bar"
   connection: local
   gather_facts: False
 

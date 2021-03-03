@@ -1,32 +1,71 @@
-## Version 0.11
+## Version 0.117
 ##
 - hosts: OneViewManagedBmcs
   connection: local
   gather_facts: False
   vars:
-          Token: "GMemePasLesJetons"
-          ChassisURI: "https://{{ inventory_hostname }}:{{ ansible_port }}/redfish/v1/Chassis/1"
-          NewIndicatorLEDValue: 'Lit'
+          URL: "https://{{ inventory_hostname }}:{{ ansible_port }}"
+          ChassisURI: "{{ URL }}/redfish/v1/Chassis"
+          NewIndicatorLEDValue: 'ToBeDefined'
           
   tasks:
-          - name: GET IndicatorLED status using Ansible built-in uri module
+
+          - name: 1.0- Discover chassis collection in standard root service /redfish/v1/Chassis
             uri:
                     url: "{{ ChassisURI }}"
                     return_content: yes
                     validate_certs: no
                     method: GET
                     headers:
-                            X-Auth-Token: "{{ Token }}"
+                            X-Auth-Token: "{{ token }}"
                             accept: 'application/json'
                             content-type: 'application/json'
-            register: ChassisInventory
+            register: ChassisInventory 
+            
+          - name: 1.1- Save location of each item of the collection
+            set_fact:
+               ChassisLocationCollection: "{{ ChassisInventory.content | from_json 
+                       | json_query('Members[].\"@odata.id\"') }}"
 
-          - debug: var=ChassisInventory.content
-            run_once: true
+                
 
-# ToDo: If IndicatorLED='Lit', set indicatorLED to off et lycée de Versailles
+          - name: 2.0- Retrieve and print selected properties of each item of the collection
+            uri:
+                    url: "{{ URL }}/{{ item }}"
+                    return_content: yes
+                    validate_certs: no
+                    method: GET
+                    headers:
+                            X-Auth-Token: "{{ token }}"
+                            accept: 'application/json'
+                            content-type: 'application/json'
+            with_items: "{{ ChassisLocationCollection }}"
+            register: ChassisCollectionProperties 
+          
+          - debug:
+                msg: "{{ ChassisCollectionProperties.results | json_query('[].json.{Id: \"@odata.id\", ChassisType: ChassisType, IndicatorLED: IndicatorLED}') }}"
+        
+          
+          - name: 2.1- Save IndicatorLED value for each item in the collection
+            set_fact:
+               IndicatorLEDValue: "{{ ChassisCollectionProperties.results | json_query('[].json.{IndicatorLED: IndicatorLED}') }}"
+              
+          #- debug:
+          #      msg: "{{ IndicatorLEDValue }}"
 
-          - name: Modify IndicatorLED
+
+          - name: 2.2- Toggle each item IndicatorLED Value (TBD)
+            set_fact:
+               NewIndicatorLEDValue: "{% if lookup('vars', item|dict2items) == 'Off' %} 'Lit' {% else %} 'Off' {% endif %}"
+               #NewIndicatorLEDValue: "{{ 'Off' if  lookup('vars', item) == 'Lit' else 'Off' }}"
+            with_items: '{{ IndicatorLEDValue }}'
+
+          
+          - debug:
+               msg: "{{ NewIndicatorLEDValue }}" 
+          
+          
+          - name: 2.3- PATCH IndicatorLED with new value using Ansible build-in uri module
             uri:
                     url: "{{ ChassisURI }}"
                     return_content: yes
@@ -38,7 +77,7 @@
                     method: PATCH
                     body_format: json
                     headers:
-                            X-Auth-Token: "{{ Token }}"
+                            X-Auth-Token: "{{ token }}"
                             accept: 'application/json'
                             content-type: 'application/json'
                     body:
@@ -46,21 +85,23 @@
 
             register: IndicatorLEDPatchResponse
 
-          - debug: var=IndicatorLEDPatchResponse
-            run_once: true
+          - debug:
+                msg="Response Status => {{ IndicatorLEDPatchResponse | json_query('status') }}"
+            
 
-          - name: GET of IndicatorLED status using Ansible built-in uri module
+          - name: 3.0- Retrieve (again) IndicatorLED New status to verify previous PATCH
             uri:
-                    url: "{{ ChassisURI }}"
+                    url: "{{ URL }}/{{ item }}"
                     return_content: yes
                     validate_certs: no
                     method: GET
                     headers:
-                            X-Auth-Token: "{{ Token }}"
+                            X-Auth-Token: "{{ token }}"
                             accept: 'application/json'
                             content-type: 'application/json'
-            register: ChassisInventory
-
-          - debug: var=ChassisInventory.content
-            run_once: true
+            with_items: "{{ ChassisLocationCollection }}"
+            register: ChassisCollectionProperties 
+          
+          - debug:
+                msg: "{{ ChassisCollectionProperties.results | json_query('[].json.{Id: \"@odata.id\", ChassisType: ChassisType, IndicatorLED: IndicatorLED}') }}"
 

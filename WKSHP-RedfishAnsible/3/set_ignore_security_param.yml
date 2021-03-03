@@ -1,0 +1,17 @@
+# Version 0.11
+#
+- hosts: OneViewManagedBmcs
+  vars:
+    security_param: "Override Switch"
+    ignore_security_param: False
+  connection: local
+  gather_facts: False
+
+  tasks:
+     - name: Modify the Ignore property of {{ security_param }} parameter
+       set_ignore_security_param:
+         ilo_ip: "{{ inventory_hostname }}:{{ ansible_port }}"
+         session_key: "{{ token }}"
+         security_param_name: "{{ security_param }}"
+         ignore_security_param: "{{ ignore_security_param }}"
+

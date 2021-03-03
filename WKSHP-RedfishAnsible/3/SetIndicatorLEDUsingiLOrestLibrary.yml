@@ -1,0 +1,30 @@
+# Version 0.132
+#
+- hosts: OneViewManagedBmcs
+  connection: local
+  gather_facts: False
+
+  tasks:
+     - name: 1.0- Get and print IndicatorLED values
+       get_uid_light:
+          url: "https://{{ inventory_hostname }}:{{ ansible_port }}"
+          session_key: "{{ token }}"
+       register: ChassisLEDValues
+       
+     - debug:
+          msg: "{{ ChassisLEDValues }}"
+          
+     - name: "2.0- Toggle Indicator LED"
+       set_uid_light:
+          url: "https://{{ inventory_hostname }}:{{ ansible_port }}"
+          session_key: "{{ token }}"
+          
+     - name: "3.0-Get IndicatorLED values" 
+       get_uid_light:
+          url: "https://{{ inventory_hostname }}:{{ ansible_port }}"
+          session_key: "{{ token }}"
+       register: ChassisLEDValues
+          
+     - debug:
+          msg: "{{ ChassisLEDValues }}"
+          

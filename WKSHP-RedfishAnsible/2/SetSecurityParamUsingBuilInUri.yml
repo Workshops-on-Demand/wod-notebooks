@@ -1,0 +1,33 @@
+## Version 0.10
+##
+- hosts: OneViewManagedBmcs
+  connection: local
+  gather_facts: False
+  vars:
+          Token: "FakeToken"
+          SecurityParamsUri: "https://{{ inventory_hostname }}:{{ ansible_port }}/redfish/v1/Managers/1/SecurityService/SecurityDashboard/SecurityParams/6"
+          ignore_security_param: False
+          
+  tasks:
+          - name: Modify Security Param
+            uri:
+                    url: "{{ SecurityParamsUri }}"
+                    return_content: yes
+                    validate_certs: no
+                    status_code:
+                            - 200
+                            - 201
+                            - 204
+                    method: PATCH
+                    body_format: json
+                    headers:
+                            X-Auth-Token: "{{ Token }}"
+                            accept: 'application/json'
+                            content-type: 'application/json'
+                    body:
+                            Ignore: "{{ ignore_security_param }}"
+
+            register: PatchResponse
+
+          - debug: var=PatchResponse
+            run_once: true

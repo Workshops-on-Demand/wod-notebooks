@@ -1,0 +1,50 @@
+# Version 0.111
+#
+- hosts: OneViewManagedBmcs
+  vars:
+      username: "foo"
+      password: "bar"
+  connection: local
+  gather_facts: False
+
+  tasks:
+      - name: 1.0- Get chassis inventory
+        community.general.redfish_info:
+             category: Chassis
+             command: GetChassisInventory
+             baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
+             username: "{{ username }}"
+             password: "{{ password }}"
+        register: result
+             
+      - debug:
+           msg: "{{ result }}"
+      
+      
+      
+      - name: 2.0- Set chassis indicator LED to blink
+        community.general.redfish_command:
+            category: Chassis
+            command: IndicatorLedBlink
+            resource_id: "1"
+            baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
+            username: "{{ username }}"
+            password: "{{ password }}"
+        register: result
+        
+      - debug: 
+           msg: "{{ result }}"
+           
+           
+           
+      - name: 3.0- Get chassis inventory
+        community.general.redfish_info:
+             category: Chassis
+             command: GetChassisInventory
+             baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
+             username: "{{ username }}"
+             password: "{{ password }}"
+        register: result
+             
+      - debug:
+           msg: "{{ result }}"
