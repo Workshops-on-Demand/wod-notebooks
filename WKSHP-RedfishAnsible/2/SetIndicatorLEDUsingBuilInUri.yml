@@ -1,4 +1,4 @@
-## Version 0.117
+## Version 0.118
 ##
 - hosts: OneViewManagedBmcs
   connection: local
@@ -29,7 +29,7 @@
 
                 
 
-          - name: 2.0- Retrieve and print selected properties of each item of the collection
+          - name: 1.2- Retrieve and print selected properties of each item of the collection
             uri:
                     url: "{{ URL }}/{{ item }}"
                     return_content: yes
@@ -46,7 +46,7 @@
                 msg: "{{ ChassisCollectionProperties.results | json_query('[].json.{Id: \"@odata.id\", ChassisType: ChassisType, IndicatorLED: IndicatorLED}') }}"
         
           
-          - name: 2.1- Save IndicatorLED value for each item in the collection
+          - name: 1.3- Save IndicatorLED value for each item in the collection
             set_fact:
                IndicatorLEDValue: "{{ ChassisCollectionProperties.results | json_query('[].json.{IndicatorLED: IndicatorLED}') }}"
               
@@ -54,7 +54,7 @@
           #      msg: "{{ IndicatorLEDValue }}"
 
 
-          - name: 2.2- Toggle each item IndicatorLED Value (TBD)
+          - name: 2.0- Toggle each item IndicatorLED Value (TBD)
             set_fact:
                NewIndicatorLEDValue: "{% if lookup('vars', item|dict2items) == 'Off' %} 'Lit' {% else %} 'Off' {% endif %}"
                #NewIndicatorLEDValue: "{{ 'Off' if  lookup('vars', item) == 'Lit' else 'Off' }}"
@@ -65,7 +65,7 @@
                msg: "{{ NewIndicatorLEDValue }}" 
           
           
-          - name: 2.3- PATCH IndicatorLED with new value using Ansible build-in uri module
+          - name: 2.1- PATCH IndicatorLED with new value using Ansible build-in uri module
             uri:
                     url: "{{ ChassisURI }}"
                     return_content: yes
