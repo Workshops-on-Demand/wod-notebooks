@@ -12,7 +12,7 @@
  # License for the specific language governing permissions and limitations
  # under the License.
  
- # Version 0.1
+ # Version 0.11
 
 # -*- coding: utf-8 -*-
 """
@@ -43,16 +43,16 @@ EXAMPLES = '''
 # Supply exact Security Parameter Name
 - name: Ignore 'Password Complexity'
   set_ignore_security_param:
-      ilo_ip: "{{ inventory_hostname }}:{{ ansible_port }}"
-      session_key: "{{ token }}"
+      ilo_ip: ip:port
+      session_key: token
       security_param_name: "Password Complexity"
       ignore_security_param: True
 
 # Supply only a part of the Security Parameter Name. Respect case!
 - name: Ignore 'Secure Boot'
   set_ignore_security_param:
-      ilo_ip: "{{ inventory_hostname }}:{{ ansible_port }}"
-      session_key: "{{ token }}"
+      ilo_ip: ip:port
+      session_key: token
       security_param_name: "Secure"
       ignore_security_param: True
 

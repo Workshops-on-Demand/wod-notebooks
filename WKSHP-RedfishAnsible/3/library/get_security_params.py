@@ -12,7 +12,7 @@
  # License for the specific language governing permissions and limitations
  # under the License.
  
- # Version 0.11
+ # Version 0.12
 
 # -*- coding: utf-8 -*-
 """
@@ -42,8 +42,8 @@ EXAMPLES = '''
 # 
 - name: Get security parameters
   get_security_params:
-         ilo_ip: "{{ inventory_hostname }}:{{ ansible_port }}"
-         session_key: "{{ token }}"
+         ilo_ip: ip:port
+         session_key: token
 
 '''
 

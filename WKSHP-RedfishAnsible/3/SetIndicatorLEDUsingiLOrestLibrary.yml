@@ -1,4 +1,4 @@
-# Version 0.132
+# Version 0.133
 #
 - hosts: OneViewManagedBmcs
   connection: local
@@ -14,12 +14,12 @@
      - debug:
           msg: "{{ ChassisLEDValues }}"
           
-     - name: "2.0- Toggle Indicator LED"
+     - name: 2.0- Toggle Indicator LED
        set_uid_light:
           url: "https://{{ inventory_hostname }}:{{ ansible_port }}"
           session_key: "{{ token }}"
           
-     - name: "3.0-Get IndicatorLED values" 
+     - name: 3.0-Get and pring IndicatorLED values again
        get_uid_light:
           url: "https://{{ inventory_hostname }}:{{ ansible_port }}"
           session_key: "{{ token }}"
