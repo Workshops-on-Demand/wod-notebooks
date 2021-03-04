@@ -30,7 +30,7 @@
       
       - name: 2.0 Toggle indicator LED values (TBD)
         set_fact:
-            NewIndicatorLEDValue: "TBD"
+            NewIndicatorLEDValue: "IndicatorLedBlink"
       
       
       - name: 2.1- Set chassis new indicator LED values
