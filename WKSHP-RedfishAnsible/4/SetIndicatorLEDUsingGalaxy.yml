@@ -1,4 +1,4 @@
-# Version 0.112
+# Version 0.113
 #
 - hosts: OneViewManagedBmcs
   vars:
@@ -18,33 +18,36 @@
         register: ChassisInventory
              
       - debug:
-           msg: "{{ ChassisInventory.redfish_facts.chassis.entries | json_query('[].{ChassisType: ChassisType, IndicatorLED: IndicatorLED}') }}"
+           msg: "{{ ChassisInventory.redfish_facts.chassis.entries | json_query('[].{Id: Id, ChassisType: ChassisType, IndicatorLED: IndicatorLED}') }}"
       
       
-      - name: 1.1 Save indicator LEDs values (TBD)
+      - name: 1.1 Save indicator LEDs values
         set_fact:
-            ChassisLEDsValues: "{{ ChassisInventory.redfish_facts.chassis.entries | json_query('[].{IndicatorLED: IndicatorLED}') }}"
+            ChassisLEDsValues: "{{ ChassisInventory.redfish_facts.chassis.entries | json_query('[].{Id: Id, IndicatorLED: IndicatorLED}') }}"
       
-      - debug:
-           msg: "{{ ChassisLEDsValues}}"
+      #- debug:
+           #msg: "{{ ChassisLEDsValues}}"
       
       - name: 2.0 Toggle indicator LED values (TBD)
         set_fact:
-            NewIndicatorLEDValue: "IndicatorLedBlink"
+            NewIndicatorLEDValue: 'IndicatorLedBlink'
       
       
       - name: 2.1- Set chassis new indicator LED values
         community.general.redfish_command:
             category: Chassis
-            command: "{{ NewIndicatorLEDValue }}"
-            resource_id: "1"              # Need to find a way to discover the "enclosurechassis" resource_id (uri ?)
+            #command: "{{ NewIndicatorLEDValue }}"
+            command: "{%if item.IndicatorLED == 'Off' %} 'IndicatorLedOn'  {% else %} 'IndicatorLedOff' {% endif %}"
+            resource_id: "{{ item.Id }}"              # Need to find a way to discover the "enclosurechassis" resource_id (uri ?)
             baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
             username: "{{ username }}"
             password: "{{ password }}"
         register: result
+        with_items: "{{ ChassisLEDsValues }}"
+
         
       - debug: 
-           msg: "{{ result }}"
+           msg: "{{ result.results | json_query('[].{item: item, msg: msg}') }}"
            
            
            
@@ -58,4 +61,4 @@
         register: ChassisInventory
              
       - debug:
-           msg: "{{ ChassisInventory.redfish_facts.chassis.entries }}"
+           msg: "{{ ChassisInventory.redfish_facts.chassis.entries | json_query('[].{ChassisType: ChassisType, Id: Id, IndicatorLED: IndicatorLED}') }}"
