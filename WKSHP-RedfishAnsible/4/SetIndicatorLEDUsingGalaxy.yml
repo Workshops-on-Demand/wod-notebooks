@@ -1,4 +1,4 @@
-# Version 0.113
+# Version 0.114
 #
 - hosts: OneViewManagedBmcs
   vars:
@@ -8,7 +8,7 @@
   gather_facts: False
 
   tasks:
-      - name: 1.0- Get and print chassis inventory with Indicator LEDs status
+      - name: 1.0- redfish_info: Retrieve Indicator LEDs status
         community.general.redfish_info:
              category: Chassis
              command: GetChassisInventory
@@ -23,34 +23,20 @@
       
       - name: 1.1 Save indicator LEDs values
         set_fact:
-            ChassisLEDsValues: "{{ ChassisInventory.redfish_facts.chassis.entries | json_query('[].{Id: Id, IndicatorLED: IndicatorLED}') }}"
+            ChassisLEDValues: "{{ ChassisInventory.redfish_facts.chassis.entries | json_query('[].{Id: Id, IndicatorLED: IndicatorLED}') }}"
       
-      #- debug:
-           #msg: "{{ ChassisLEDsValues}}"
-      
-      - name: 2.0 Toggle indicator LED values (TBD)
-        set_fact:
-            NewIndicatorLEDValue: 'IndicatorLedBlink'
-      
-      
-      - name: 2.1- Set chassis new indicator LED values
+      - name: 2.0- redfish_command: SET chassis new indicator LED values
         community.general.redfish_command:
             category: Chassis
-            #command: "{{ NewIndicatorLEDValue }}"
-            command: "{%if item.IndicatorLED == 'Off' %} 'IndicatorLedOn'  {% else %} 'IndicatorLedOff' {% endif %}"
-            resource_id: "{{ item.Id }}"              # Need to find a way to discover the "enclosurechassis" resource_id (uri ?)
-            baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
+            baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"         
+            command: "{{ 'IndicatorLedOn' if item.IndicatorLED == 'Off' else 'IndicatorLedOff' }}"
+            resource_id: "{{ item.Id }}"
             username: "{{ username }}"
             password: "{{ password }}"
         register: result
-        with_items: "{{ ChassisLEDsValues }}"
-
-        
-      - debug: 
-           msg: "{{ result.results | json_query('[].{item: item, msg: msg}') }}"
+        with_items: "{{ ChassisLEDValues }}"
            
-           
-           
+       
       - name: 3.0- Get chassis inventory
         community.general.redfish_info:
              category: Chassis
