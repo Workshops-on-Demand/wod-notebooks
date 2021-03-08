@@ -7,9 +7,9 @@
 ## Then, it discovers all the items present in this standard location and modifies a specific standard 
 ## Redfish property (IndicatorLED). 
 ##
-## This 
+## 
 
-## Version 0.121
+## Version 0.122
 ##
 ##
 - hosts: OneViewManagedBmcs
