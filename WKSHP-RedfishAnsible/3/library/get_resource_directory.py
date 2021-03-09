@@ -12,9 +12,12 @@
  # License for the specific language governing permissions and limitations
  # under the License.
 
+    
+ # Version 0.10
 # -*- coding: utf-8 -*-
 """
-An example of getting the ilo information like ilo generation, version and resource directory for HPE iLO systems
+An example for getting the ilo information like ilo generation, version and resource directory for HPE iLO systems.
+The get_resource_directory retrieves all the Redfish data types (standard and HPE specific). This is an OEM/HPE specificity present only in HPE iLO based servers.
 """
 
 import sys
