@@ -10,8 +10,9 @@
 ## in its Chassis category (aka data type). The list of all the commands for all Redfish data types
 ## is present in the CATEGORY_COMMANDS_ALL dictionnary of GitHub sources at: https://github.com/ansible-collections/community.general/blob/main/plugins/modules/remote_management/redfish/redfish_command.py
 
-# Version 0.115
+# Version 0.116
 #
+
 - hosts: OneViewManagedBmcs
   vars:
       username: "foo"
@@ -20,7 +21,7 @@
   gather_facts: False
 
   tasks:
-      - name: 1.0- redfish_info: Retrieve Indicator LEDs status
+      - name: "1.0- redfish_info: Retrieve Indicator LEDs status"
         community.general.redfish_info:
              category: Chassis
              command: GetChassisInventory
@@ -37,7 +38,7 @@
         set_fact:
             ChassisLEDValues: "{{ ChassisInventory.redfish_facts.chassis.entries | json_query('[].{Id: Id, IndicatorLED: IndicatorLED}') }}"
       
-      - name: 2.0- redfish_command: SET chassis new indicator LED values
+      - name: "2.0- redfish_command: SET chassis new indicator LED values"
         community.general.redfish_command:
             category: Chassis
             baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"         
