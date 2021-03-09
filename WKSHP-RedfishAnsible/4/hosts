@@ -1,0 +1,11 @@
+[OneViewManagedBmcs]
+ilo5simulators ansible_port=46000
+
+[OneViewManagedBmcs:vars]
+ansible_python_interpreter=/home/francois/Jupyter/notebooks/WKSHP-RedfishAnsible/4/HpePythonRedfishVenv/bin/python3
+ansible_search_path=4/HpePythonRedfishVenv
+
+# Below is a fake session token as we are testing against an iLO 5 simulator.
+# In real life, you should populate this variable with the token obtained
+# lab 1 of this workshop.
+token="FakeOvSsoToken"
