@@ -1,7 +1,7 @@
 ## This Ansible Playbook retrieves, and then modifies the IndicatorLED 
 ## of a compute node and its enclosure,if any. It calls the 
-## get_uid_light and set_uid_light Ansible modules. Sources are in your
-## 3/library sub-directory.
+## get_uid_light and set_uid_light Ansible modules.
+## Sources of those Ansible modules are in your 3/library sub-directory.
 ##
 ## These Ansible modules are derived from the python Redfish examples of the
 ## HPE python-ilorest-library GitHub site.
@@ -11,7 +11,7 @@
 ## generic and support rack-mount and non iLO based Redfish implementations.
 
 
-# Version 0.137
+# Version 0.138
 #
 - hosts: OneViewManagedBmcs
   connection: local

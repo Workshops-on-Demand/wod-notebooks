@@ -13,21 +13,22 @@
  # under the License.
 
     
- # Version 0.10
+ # Version 0.11
 # -*- coding: utf-8 -*-
 """
 An example for getting the ilo information like ilo generation, version and resource directory for HPE iLO systems.
-The get_resource_directory retrieves all the Redfish data types (standard and HPE specific). This is an OEM/HPE specificity present only in HPE iLO based servers.
+The get_resource_directory function retrieves all the Redfish data types/instances (standard and HPE specific).
+The presence of a resource directory is an HPE specificity present only in HPE iLO based servers.
 """
 
 import sys
-from redfish import RedfishClient
+from redfish import RedfishClient  # RedfishClient comes from the HPE redfish class of the `python-ilorst-library`
 from redfish.rest.v1 import ServerDownOrUnreachableError
 
 def get_resource_directory(redfishobj):
 
     try:
-        resource_uri = redfishobj.root.obj.Oem.Hpe.Links.ResourceDirectory['@odata.id']
+        resource_uri = redfishobj.root.obj.Oem.Hpe.Links.ResourceDirectory['@odata.id'] 
     except KeyError:
         sys.stderr.write("Resource directory is only available on HPE servers.\n")
         return None

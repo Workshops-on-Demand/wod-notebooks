@@ -16,12 +16,11 @@
 
 
 # Ansible Module derived from https://github.com/HewlettPackard/python-ilorest-library/blob/master/examples/Redfish/set_uid_light.py
-# Version 0.114
+# Version 0.115
 
 """
 Didactic example of an Ansible Redfish module for setting the UID light of a computer chassis
-and its enclosure (if any) using the HPE python-ilorest-library and
-a session key (i.e. OneView token)
+and its enclosure (if any) using the HPE python-ilorest-library and a session key (i.e. OneView token)
 """
 DOCUMENTATION = '''
 ---
@@ -52,48 +51,65 @@ from get_resource_directory import get_resource_directory # HPE proprietarty
 def set_uid_light(_redfishobj):
 
     body = dict()
-    chassis_members_uri = None
-    chassis_members_response = None
+    chassis_members_uri = []
+    chassis_members_response = []
 
+    # Retrieve all data types/instances and associated data (i.e. location) 
+    # from the resource directory (if any)
     resource_instances = get_resource_directory(_redfishobj)
+
     if DISABLE_RESOURCE_DIR or not resource_instances:
         #if we do not have a resource directory or want to force it's non use to find the
         #relevant URI
-        # ********* TBD/Work in progress **************
-        chassis_uri = _redfishobj.root.obj['Chassis']['@odata.id']
-        chassis_response = _redfishobj.get(chassis_uri)
-        chassis_members_uri = next(iter(chassis_response.obj['Members']))['@odata.id']
-        chassis_members_response = _redfishobj.get(chassis_members_uri)
-    else:
-        #Use Resource directory to find the relevant URI
-        for instance in resource_instances:
-            if '#Chassis.' in instance['@odata.type']:
-                chassis_members_uri = instance['@odata.id']
-                chassis_members_response = _redfishobj.get(chassis_members_uri)
-                if chassis_members_response and chassis_members_uri:
-                    if "Off" in chassis_members_response.dict.get("IndicatorLED"):
-                        body["IndicatorLED"] = "Lit"
-                    else:
-                        body["IndicatorLED"] = "Off"
+        chassis_uri = _redfishobj.root.obj['Chassis']['@odata.id']  # Retrieve location of Chassis data type
+        chassis_response = _redfishobj.get(chassis_uri)             # Retrieve content of Chassis data type
+        for chassis in chassis_response.obj['Members']:             # For each Member of the Chassis collection...
+            chassis_members_uri.append( chassis['@odata.id'] )      # Append chassis location to list
+            #print("Chassis list: " + str(chassis_members_uri))
+            chassis_members_response.append(  \
+                    _redfishobj.get(chassis['@odata.id']) )         # Retrieve/append chassis properties to list
 
-                resp = _redfishobj.patch(chassis_members_uri, body)
-                #If iLO responds with soemthing outside of 200 or 201 then lets check the iLO extended info
-                #error message to see what went wrong
-                if resp.status == 400:
-                    try:
-                        sys.stderr.write(json.dumps(resp.obj['error']['@Message.ExtendedInfo'], indent=4, \
+    else:
+        # Use resource directory to fast find the relevant URIs
+        for instance in resource_instances:     # instance = Redfish data type
+            if '#Chassis.' in instance['@odata.type']:              # if data type/instance is a Chassis
+                chassis_members_uri.append( instance['@odata.id'] ) # Append chassis location to list
+                chassis_members_response.append( \
+                        _redfishobj.get(chassis_members_uri[-1]) )  # Retrieve/append chassis properties to list
+
+    if chassis_members_response and chassis_members_uri:
+        for chassis in chassis_members_response:
+            #print("Current Indicator LED Status for chassis \'%s\': \'%s\'" % \
+            #        (chassis.obj['Id'], chassis.obj['IndicatorLED']))
+            if "Off" in chassis.obj['IndicatorLED']:
+                #print("Will illuminate indicator LED for chassis \'%s\' \n" % chassis.obj['Id'])
+                body["IndicatorLED"] = "Lit"
+            else:
+                #print("Will extinguish indicator LED for chassis \'%s\' \n" % chassis.obj['Id'])
+                body["IndicatorLED"] = "Off"
+
+            # Send PATCH request with new IndicatorLED value
+            resp = _redfishobj.patch(chassis.obj['@odata.id'], body)   
+            #If iLO responds with soemthing outside of 200, 201 and 204 (to work with DMTF Redfish simulaor),
+            #check the iLO extended info error message to see what went wrong
+            if resp.status == 400:
+                try:
+                    print(json.dumps(resp.obj['error']['@Message.ExtendedInfo'], indent=4, \
                                                                                 sort_keys=True))
-                    except Exception as excp:
-                        sys.stderr.write("A response error occurred, unable to access iLO Extended "\
+                except Exception as excp:
+                    sys.stderr.write("A response error occurred, unable to access iLO Extended "\
                                  "Message Info...")
-                elif resp.status != 200:
-                        sys.stderr.write("An http response of \'%s\' was returned.\n" % resp.status)
-                else:
-                    sys.stdout.write("Success!\n")
-                    sys.stdout.write(json.dumps(resp.dict, indent=4, sort_keys=True))
-                    time.sleep(10) #going to wait 10 seconds before obtaining the LED indicator state
-                    sys.stdout.write("\nUpdated Indicator LED Status: \'%s\'\n" % _redfishobj.\
-                                                    get(chassis_members_uri).dict['IndicatorLED'])
+            elif resp.status != 200 and resp.status != 204:  # 204 is returned by DMTF Redfish simulator
+                sys.stderr.write("An http response of \'%s\' was returned.\n" % resp.status)
+            else:
+                print("Success!")
+                #print(json.dumps(resp.dict, indent=4, sort_keys=True))
+                time.sleep(10) #going to wait 10 seconds before obtaining the LED indicator state
+
+                # ToDo: Better error handling
+                sys.stdout.write("Updated Indicator LED Status for chassis \'%s\': \'%s\'\n\n\n" % \
+                        ( _redfishobj.get(chassis.obj['@odata.id']).dict['Id'], \
+                        _redfishobj.get(chassis.obj['@odata.id']).dict['IndicatorLED']))
 
 if __name__ == "__main__":
     module = AnsibleModule(
@@ -120,6 +136,6 @@ if __name__ == "__main__":
         sys.stderr.write("ERROR: server not reachable or does not support RedFish.\n")
         sys.exit()
 
-    set_uid_light(REDFISHOBJ)
+    set_uid_light(REDFISHOBJ)   # ToDo: better error handling 
     REDFISHOBJ.logout()
     module.exit_json(changed=True)

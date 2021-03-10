@@ -12,69 +12,63 @@
  # License for the specific language governing permissions and limitations
  # under the License.
 
- # Original python file used to create the companion Ansible Module am_set_uid_light.py
- # Source: https://github.com/HewlettPackard/python-ilorest-library/blob/master/examples/Redfish/set_uid_light.py   
-    
- # Version 0.11
-    
+# Ansible Module derived from https://github.com/HewlettPackard/python-ilorest-library/blob/master/examples/Redfish/set_uid_light.py
+# Version 0.117
+
 # -*- coding: utf-8 -*-
 """
-Example of an Ansible Redfish module for retrieving the UID light status for iLO 5 fw >= 2.10
-(prior to iLO 5 fw 2.10, the IndicatorLED is only in the Systems data type.)
+Didactic example of an Ansible Redfish module for getting the UID light of a computer chassis
+and its enclosure (if any) using the HPE python-ilorest-library and a session key (i.e. OneView token)
 """
 
 import sys
 import json
 import time
-from redfish import RedfishClient # RedfishClient is in the HPE's redfish class of the python-ilorest-library
+from redfish import RedfishClient   # RedfishClient is in the HPE's redfish class of the python-ilorest-library
 from redfish.rest.v1 import ServerDownOrUnreachableError
 from ansible.module_utils.basic import *
 
-# The following get_resource_directory module comes from https://github.com/HewlettPackard/python-ilorest-library/blob/master/examples/Redfish/get_resource_directory.py
-# It has been included in this infrastructure to show how you can speed up the crawling of 
+# The following get_resource_directory module comes from 
+# https://github.com/HewlettPackard/python-ilorest-library/blob/master/examples/Redfish/get_resource_directory.py
+# It has been included in your `library` directory to show how to speed up the crawling of 
 # HPE iLO Redfish implementation
-from get_resource_directory import get_resource_directory
+from get_resource_directory import get_resource_directory 
 
 def get_uid_light(_redfishobj):
 
     ChassisLEDValues = dict()
-    chassis_members_uri = None
-    chassis_members_response = None
+    chassis_members_uri = []
+    chassis_members_response = []
 
+    # Retrieve all data types/instances and associated data (i.e. location) 
+    # from the resource directory (if any)
     resource_instances = get_resource_directory(_redfishobj)
+
     if DISABLE_RESOURCE_DIR or not resource_instances:
         #if we do not have a resource directory or want to force it's non use to find the
         #relevant URI
-        
-        # Starting at iLO 5 fw 2.10, IndicatorLEDs are in the Chassis data type (as well as in the Systems data type)
-        chassis_uri = _redfishobj.root.obj['Chassis']['@odata.id']
-        chassis_response = _redfishobj.get(chassis_uri)
-        iterator = iter(chassis_response.obj['Members'])
-        
-        # TBD: the following is Work in Progress
-        chassis_toto_uri = next(iterator)['@odata.id']
-        print("Chassis toto URIs: \'%s\'\n" % str(chassis_toto_uri))
-        
-        chassis_members_uri = next(iter(chassis_response.obj['Members']))['@odata.id']
-        #print ("Chassis members URIs: \'%s\'\n" % str(chassis_members_uri))
-        chassis_members_response = _redfishobj.get(chassis_members_uri)
-        
+        chassis_uri = _redfishobj.root.obj['Chassis']['@odata.id']  # Retrieve location of Chassis data type
+        chassis_response = _redfishobj.get(chassis_uri)             # Retrieve content of Chassis data type
+        for chassis in chassis_response.obj['Members']:             # For each Member of the Chassis collection...
+            chassis_members_uri.append( chassis['@odata.id'] )      # Append chassis location to list
+            #print("Chassis list: " + str(chassis_members_uri))
+            chassis_members_response.append(  \
+                    _redfishobj.get(chassis['@odata.id']) )         # Retrieve/append chassis properties to list
+
     else:
-        #Use Resource directory to find the relevant URI
-        for instance in resource_instances:
-            if '#Chassis.' in instance['@odata.type']:
-                chassis_members_uri = instance['@odata.id']
-                #print("Chassis Member URI: \'%s\'" % str(chassis_members_uri))
-                chassis_members_response = _redfishobj.get(chassis_members_uri)
-                if chassis_members_response and chassis_members_uri:
-                    ChassisLEDValues[str(chassis_members_uri)] = chassis_members_response.dict.get("IndicatorLED")
-                    #print("\tCurrent Indicator LED Status: \'%s\'\n" % ChassisLEDValues[str(chassis_members_uri)])
-                                            
+        # Use resource directory to fast find the relevant URIs
+        for instance in resource_instances:                         # instance = Redfish data type
+            if '#Chassis.' in instance['@odata.type']:              # if data type/instance is a Chassis
+                chassis_members_uri.append( instance['@odata.id'] ) # Append chassis location to list
+                chassis_members_response.append( \
+                        _redfishobj.get(chassis_members_uri[-1]) )  # Retrieve/append chassis properties to list
+
+    if chassis_members_response and chassis_members_uri:
+        for chassis in chassis_members_response:                     
+           ChassisLEDValues[str(chassis.obj['@odata.id'])] = chassis.obj['IndicatorLED']
 
     if ChassisLEDValues:
         return ChassisLEDValues    
-        
-    
 
 if __name__ == "__main__":
     module = AnsibleModule(
