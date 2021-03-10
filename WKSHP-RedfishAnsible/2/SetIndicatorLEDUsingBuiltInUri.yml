@@ -1,12 +1,23 @@
-## Version 0.118
+##
+## This Ansible Redfish playbook crawls a Redfish tree using the Ansible built-in uri method
+## to discoer resources and then act on them. The crawl process starts at a well-known 
+## and standard Redfish location (/redfish/v1/Chassis). Doing so ensures that it works 
+## against all types of Redfish implementations.
+##
+## Then, it discovers all the items present in this standard location and modifies a specific standard 
+## Redfish property (IndicatorLED). 
+##
+## 
+
+## Version 0.122
+##
 ##
 - hosts: OneViewManagedBmcs
   connection: local
   gather_facts: False
   vars:
           URL: "https://{{ inventory_hostname }}:{{ ansible_port }}"
-          ChassisURI: "{{ URL }}/redfish/v1/Chassis"
-          NewIndicatorLEDValue: 'ToBeDefined'
+          ChassisURI: "{{ URL }}/redfish/v1/Chassis"                 # Redfish standard chassis location
           
   tasks:
 
@@ -22,12 +33,11 @@
                             content-type: 'application/json'
             register: ChassisInventory 
             
-          - name: 1.1- Save location of each item of the collection
+          - name: 1.1- Save location of each item in the collection
             set_fact:
-               ChassisLocationCollection: "{{ ChassisInventory.content | from_json 
+               ChassisLocations: "{{ ChassisInventory.content | from_json 
                        | json_query('Members[].\"@odata.id\"') }}"
-
-                
+              
 
           - name: 1.2- Retrieve and print selected properties of each item of the collection
             uri:
@@ -39,41 +49,22 @@
                             X-Auth-Token: "{{ token }}"
                             accept: 'application/json'
                             content-type: 'application/json'
-            with_items: "{{ ChassisLocationCollection }}"
+            with_items: "{{ ChassisLocations }}"
             register: ChassisCollectionProperties 
           
           - debug:
-                msg: "{{ ChassisCollectionProperties.results | json_query('[].json.{Id: \"@odata.id\", ChassisType: ChassisType, IndicatorLED: IndicatorLED}') }}"
-        
-          
-          - name: 1.3- Save IndicatorLED value for each item in the collection
-            set_fact:
-               IndicatorLEDValue: "{{ ChassisCollectionProperties.results | json_query('[].json.{IndicatorLED: IndicatorLED}') }}"
-              
-          #- debug:
-          #      msg: "{{ IndicatorLEDValue }}"
-
-
-          - name: 2.0- Toggle each item IndicatorLED Value (TBD)
-            set_fact:
-               NewIndicatorLEDValue: "{% if lookup('vars', item|dict2items) == 'Off' %} 'Lit' {% else %} 'Off' {% endif %}"
-               #NewIndicatorLEDValue: "{{ 'Off' if  lookup('vars', item) == 'Lit' else 'Off' }}"
-            with_items: '{{ IndicatorLEDValue }}'
-
-          
-          - debug:
-               msg: "{{ NewIndicatorLEDValue }}" 
+                msg: "{{ ChassisCollectionProperties.results | json_query('[].json.{Id: Id, ChassisType: ChassisType, IndicatorLED: IndicatorLED}') }}"
           
           
           - name: 2.1- PATCH IndicatorLED with new value using Ansible build-in uri module
             uri:
-                    url: "{{ ChassisURI }}"
+                    url: "{{ ChassisURI }}/{{ item.Id }}"
                     return_content: yes
                     validate_certs: no
                     status_code:
                             - 200
                             - 201
-                            - 204
+                            - 204      # Needed only when testing against a DMTF Redfish Server simulator
                     method: PATCH
                     body_format: json
                     headers:
@@ -81,15 +72,11 @@
                             accept: 'application/json'
                             content-type: 'application/json'
                     body:
-                            IndicatorLED: "{{ NewIndicatorLEDValue }}"
-
-            register: IndicatorLEDPatchResponse
-
-          - debug:
-                msg="Response Status => {{ IndicatorLEDPatchResponse | json_query('status') }}"
+                            IndicatorLED: "{{ 'Lit' if item.IndicatorLED == 'Off' else 'Off' }}"
+            with_items: "{{ ChassisCollectionProperties.results | json_query('[].json.{Id: Id, IndicatorLED: IndicatorLED}') }}"
             
 
-          - name: 3.0- Retrieve (again) IndicatorLED New status to verify previous PATCH
+          - name: 3.0- Retrieve IndicatorLED New status to verify previous PATCH
             uri:
                     url: "{{ URL }}/{{ item }}"
                     return_content: yes
@@ -99,9 +86,9 @@
                             X-Auth-Token: "{{ token }}"
                             accept: 'application/json'
                             content-type: 'application/json'
-            with_items: "{{ ChassisLocationCollection }}"
-            register: ChassisCollectionProperties 
+            with_items: "{{ ChassisLocations }}"
+            register: NewChassisCollectionProperties 
           
           - debug:
-                msg: "{{ ChassisCollectionProperties.results | json_query('[].json.{Id: \"@odata.id\", ChassisType: ChassisType, IndicatorLED: IndicatorLED}') }}"
+                msg: "{{ NewChassisCollectionProperties.results | json_query('[].json.{Id: \"@odata.id\", ChassisType: ChassisType, IndicatorLED: IndicatorLED}') }}"
 
