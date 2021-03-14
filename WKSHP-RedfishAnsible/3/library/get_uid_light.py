@@ -13,7 +13,8 @@
  # under the License.
 
 # Ansible Module derived from https://github.com/HewlettPackard/python-ilorest-library/blob/master/examples/Redfish/set_uid_light.py
-# Version 0.117
+
+# Version 0.118
 
 # -*- coding: utf-8 -*-
 """
@@ -74,7 +75,7 @@ if __name__ == "__main__":
     module = AnsibleModule(
         argument_spec = dict(
             url      = dict(required=True, type='str'),
-            session_key   = dict(required=True, stype='str')
+            session_key   = dict(required=True, type='str')
         )
     )
     # Set variables based on vars fed from .yml    

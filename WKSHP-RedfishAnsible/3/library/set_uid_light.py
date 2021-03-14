@@ -12,12 +12,11 @@
  # License for the specific language governing permissions and limitations
  # under the License.
 
-# -*- coding: utf-8 -*-
-
-
 # Ansible Module derived from https://github.com/HewlettPackard/python-ilorest-library/blob/master/examples/Redfish/set_uid_light.py
-# Version 0.115
 
+# Version 0.117
+
+# -*- coding: utf-8 -*-
 """
 Didactic example of an Ansible Redfish module for setting the UID light of a computer chassis
 and its enclosure (if any) using the HPE python-ilorest-library and a session key (i.e. OneView token)
@@ -104,7 +103,8 @@ def set_uid_light(_redfishobj):
             else:
                 print("Success!")
                 #print(json.dumps(resp.dict, indent=4, sort_keys=True))
-                time.sleep(10) #going to wait 10 seconds before obtaining the LED indicator state
+                # Uncomment the following line if you test against a real physical server
+                #time.sleep(10) #going to wait 10 seconds before obtaining the LED indicator state
 
                 # ToDo: Better error handling
                 sys.stdout.write("Updated Indicator LED Status for chassis \'%s\': \'%s\'\n\n\n" % \
@@ -115,7 +115,7 @@ if __name__ == "__main__":
     module = AnsibleModule(
         argument_spec = dict(
             url      = dict(required=True, type='str'),
-            session_key   = dict(required=True, stype='str')
+            session_key   = dict(required=True, type='str')
         )
     )
     # Set variables based on vars fed from .yml

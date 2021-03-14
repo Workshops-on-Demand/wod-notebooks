@@ -9,7 +9,7 @@
 ##
 ## 
 
-## Version 0.122
+## Version 0.123
 ##
 ##
 - hosts: OneViewManagedBmcs
@@ -56,7 +56,7 @@
                 msg: "{{ ChassisCollectionProperties.results | json_query('[].json.{Id: Id, ChassisType: ChassisType, IndicatorLED: IndicatorLED}') }}"
           
           
-          - name: 2.1- PATCH IndicatorLED with new value using Ansible build-in uri module
+          - name: 2.1- PATCH IndicatorLED with new value using Ansible built-in uri module
             uri:
                     url: "{{ ChassisURI }}/{{ item.Id }}"
                     return_content: yes
