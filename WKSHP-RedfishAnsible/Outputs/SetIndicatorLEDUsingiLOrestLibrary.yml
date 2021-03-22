@@ -1,0 +1,43 @@
+## This Ansible Playbook retrieves, and then modifies the IndicatorLED 
+## of a compute node and its enclosure,if any. It calls the 
+## get_uid_light and set_uid_light Ansible modules.
+## Sources of those Ansible modules are in your 3/library sub-directory.
+##
+## These Ansible modules are derived from the python Redfish examples of the
+## HPE python-ilorest-library GitHub site.
+##
+## You should study the sources of these modules to better understand 
+## how authentication is performed (session key) and how they crawl the Redfish tree to stay 
+## generic and support rack-mount and non iLO based Redfish implementations.
+
+
+# Version 0.138
+#
+- hosts: OneViewManagedBmcs
+  connection: local
+  gather_facts: False
+
+  tasks:
+     - name: 1.0- Get and print IndicatorLED values
+       get_uid_light:
+          url: "https://{{ inventory_hostname }}:{{ ansible_port }}"
+          session_key: "{{ token }}"
+       register: ChassisLEDValues
+       
+     - debug:
+          msg: "{{ ChassisLEDValues }}"
+          
+     - name: 2.0- Toggle Indicator LED
+       set_uid_light:
+          url: "https://{{ inventory_hostname }}:{{ ansible_port }}"
+          session_key: "{{ token }}"
+          
+     - name: 3.0-Get and print IndicatorLED values again
+       get_uid_light:
+          url: "https://{{ inventory_hostname }}:{{ ansible_port }}"
+          session_key: "{{ token }}"
+       register: ChassisLEDValues
+          
+     - debug:
+          msg: "{{ ChassisLEDValues }}"
+          
