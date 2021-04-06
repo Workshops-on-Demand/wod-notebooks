@@ -12,20 +12,35 @@
 ## in its Chassis category (aka data type). The list of all the commands for all Redfish data types
 ## is present in the CATEGORY_COMMANDS_ALL dictionnary of GitHub sources at: https://github.com/ansible-collections/community.general/blob/main/plugins/modules/remote_management/redfish/redfish_command.py
 
-# Version 0.117
+# Version 0.2
 #
 
-- hosts: OneViewManagedBmcs
+- hosts: RackMountBmcs
   connection: local
   gather_facts: False
 
   tasks:
+# The following task is commented out because our iLO 5 simulator does not reply with a
+# suitable response to the session creation request.
+
+#      - name: "Create Session"
+#        community.general.redfish_command:
+#             category: Sessions
+#             command: CreateSession
+#             baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
+#             username: "{{ username }}"
+#             password: "{{ password }}"
+#        register: SessionProperties
+
+
+# The following task simulates an auth_token based authentication using 
+# Ansible variable: {{ SessionProperties.session.token }}
       - name: "1.0- redfish_info: Retrieve Indicator LEDs status"
         community.general.redfish_info:
              category: Chassis
              command: GetChassisInventory
              baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
-             auth_token: "{{ token }}"
+             auth_token: "SessionProperties.session.token"
         register: ChassisInventory
              
       - debug:
@@ -42,7 +57,7 @@
             baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"         
             command: "{{ 'IndicatorLedOn' if item.IndicatorLED == 'Off' else 'IndicatorLedOff' }}"
             resource_id: "{{ item.Id }}"
-            auth_token: "{{ token }}"
+            auth_token: "SessionProperties.session.token"
         with_items: "{{ ChassisLEDValues }}"
            
        
@@ -51,8 +66,19 @@
              category: Chassis
              command: GetChassisInventory
              baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
-             auth_token: "{{ token }}"
+             auth_token: "SessionProperties.session.token"
         register: ChassisInventory
              
       - debug:
            msg: "{{ ChassisInventory.redfish_facts.chassis.entries | json_query('[].{ChassisType: ChassisType, Id: Id, IndicatorLED: IndicatorLED}') }}"
+
+# The following tasks is commented out because there is no real session
+# opened in the iLO 5 simulator.
+
+#      - name: Delete Session
+#        community.general.redfish_command:
+#             category: Sessions
+#             command: DeleteSession
+#             baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
+#             auth_token: "SessionProperties.session.token"
+#             session_uri: "{{ SessionProperties.session.uri }}"
