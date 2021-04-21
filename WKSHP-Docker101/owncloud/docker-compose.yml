@@ -1,0 +1,20 @@
+version: '2'
+services:
+  web:
+    build: .
+    volumes:
+      - /data/owncloud:/data/owncloud
+      - /data/config:/var/www/html/owncloud/config
+    ports:
+      - "80:80"
+    links:
+      - db:mariadb
+  db:
+    image: mariadb
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=owncloud
+      - MYSQL_USER=owncloud
+      - MYSQL_PASSWORD=owncloudpwd
+    volumes:
+      - /data/db:/var/lib/mysql
