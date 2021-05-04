@@ -1,0 +1,49 @@
+- hosts: all
+  tasks:
+    - fail:
+        msg: COMPILE variable is empty ! Fat fingers ?!?
+      when: COMPILE is not defined
+
+    - name: Create list of files to compile
+      set_fact:
+        cmpfiles: "{{ COMPILE.split(',') }}"
+      when: COMPILE | length > 0
+
+    - name: Print the cmpfiles var
+      debug:
+        var: cmpfiles
+
+    - name: Compile shc scripts in place
+      command: "shc -f {{ SCRIPTDIR }}/{{ item }}"
+      with_items: "{{ cmpfiles }}"
+      when: COMPILE | length > 0
+
+    - name: Deliver compiled shc scripts
+      become: yes
+      become_user: root
+      copy:
+        src: "{{ item }}"
+        dest: "{{ item | regex_replace(SCRIPTDIR, STDDIR + '/student' + STDID) }}"
+        owner: student{{ STDID }}
+        group: student{{ STDID }}
+        mode: 0700
+      with_fileglob: "{{ SCRIPTDIR }}/*.shc.x"
+      when: COMPILE | length > 0
+
+    - name: setup ACL for the scripts
+      become: yes
+      become_user: root
+      ansible.posix.acl:
+        path: "{{ item | regex_replace(SCRIPTDIR, STDDIR + '/student' + STDID) }}"
+        recursive: no
+        entity: jupyter
+        etype: user
+        permissions: rwx
+        state: present
+      with_fileglob: "{{ SCRIPTDIR }}/*.shc.x"
+      when: COMPILE | length > 0
+
+    - name: Remove shc scripts in place
+      command: "rm -f {{ SCRIPTDIR }}/{{ item }}.c.x {{ SCRIPTDIR }}/{{ item }}.x"
+      with_items: "{{ cmpfiles }}"
+      when: COMPILE | length > 0
