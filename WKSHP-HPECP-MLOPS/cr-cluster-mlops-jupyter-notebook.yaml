@@ -1,27 +1,32 @@
 apiVersion: "kubedirector.hpe.com/v1beta1"
 kind: "KubeDirectorCluster"
-metadata:
+metadata: 
   name: "mlops-jupyter-notebook-student{{ STDID }}"
-spec:
+  labels: 
+    description: ""
+spec: 
   app: "jupyter-notebook"
+  namingScheme: "CrNameRole"
   appCatalog: "local"
   connections: 
-    secrets: 
-      - "hpecp-ext-auth-secret"
-      - "sc-secret-mlops-student{{ STDID }}"
-        #"some secrets"
-    #configmaps: 
-      #- 
-        #"some configmaps"
     clusters: 
-      - "training-engine-shared"
-        #"some clusters"
-  roles:
-  - id: controller
-    resources:
-      requests:
-        memory: "2Gi"
-        cpu: "1"
-      limits:
-        memory: "2Gi"
-        cpu: "1"
+      - training-engine-shared
+    secrets: 
+      - hpecp-ext-auth-secret
+      - sc-secret-mlops-student{{ STDID }}
+  roles: 
+    - 
+      id: "controller"
+      members: 1
+      resources: 
+        requests: 
+          cpu: "1"
+          memory: "2Gi"
+          nvidia.com/gpu: "0"
+        limits: 
+          cpu: "1"
+          memory: "2Gi"
+          nvidia.com/gpu: "0"
+      #Note: "if the application is based on hadoop3 e.g. using StreamCapabilities interface, then change the below dtap label to 'hadoop3', otherwise for most applications use the default 'hadoop2'"
+      #podLabels: 
+        #hpecp.hpe.com/dtap: "hadoop2"
