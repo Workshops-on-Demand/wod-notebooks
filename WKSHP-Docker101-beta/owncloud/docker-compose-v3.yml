@@ -1,0 +1,52 @@
+version: '3'
+services:
+  web:
+    build: .
+    image: lab7-2.labossi.hpintelco.org:5500/owncloud_web
+    volumes:
+      - ocvol:/data/owncloud
+      - cfgvol:/var/www/html/owncloud/config
+    ports:
+      - "8000:80"
+    links:
+      - db:mariadb
+    networks:
+      oclan:
+  db:
+    image: mariadb
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=owncloud
+      - MYSQL_USER=owncloud
+      - MYSQL_PASSWORD=owncloudpwd
+    volumes:
+      - dbvol:/var/lib/mysql
+    networks:
+      oclan:
+        aliases:
+          - db
+networks:
+    oclan:
+        driver: overlay
+
+volumes:
+  dbvol:
+    driver: local
+    driver_opts:
+      type: nfs
+      o: addr=10.11.51.136,rw
+      device: ":/data/db"
+  cfgvol:
+    driver: local
+    driver_opts:
+      type: nfs
+      o: addr=10.11.51.136,rw
+      device: ":/data/config"
+  ocvol:
+    driver: local
+    driver_opts:
+      type: nfs
+      o: addr=10.11.51.136,rw
+      device: ":/data/owncloud"

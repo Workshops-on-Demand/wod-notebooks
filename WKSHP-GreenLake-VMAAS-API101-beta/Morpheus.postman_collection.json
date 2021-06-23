@@ -1,0 +1,3178 @@
+{
+	"info": {
+		"_postman_id": "1ce069e0-8676-46b7-b16f-f45cd8198d52",
+		"name": "Morpheus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RDA",
+			"item": [
+				{
+					"name": "Get station id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tenant-ID",
+								"value": "bmn076e7eokj66agdrlg",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://{{url}}/station_id",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"station_id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Gateway",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Tenant-ID",
+								"value": "bmn076e7eokj66agdrlg",
+								"type": "text"
+							},
+							{
+								"key": "X-Service-Instance-ID",
+								"value": "a92j047a-f192-3781-c902-e4ebello5n264",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"ssid\": \"3225d636-bb42-49e4-b0b2-bc851af2ed10\",\n\t\"token\": \"CHNZ-DRQU\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{url}}/gateway",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"gateway"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create service",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Tenant-ID",
+								"value": "bmn076e7eokj66agdrlg",
+								"type": "text"
+							},
+							{
+								"key": "X-Service-Instance-ID",
+								"value": "a92j047a-f192-3781-c902-e4ebello5n264",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"endpoints\":[\n\t\t{ \n\t\"address\": \"10.202.40.199\"\n     }\n     ]\n}    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{url}}/service",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "glhc\\cstadmin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Pa$$w0rd",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{url}}/oauth/token?grant_type=password&scope=write&client_id=morph-customer",
+							"protocol": "https",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"oauth",
+								"token"
+							],
+							"query": [
+								{
+									"key": "grant_type",
+									"value": "password"
+								},
+								{
+									"key": "scope",
+									"value": "write"
+								},
+								{
+									"key": "client_id",
+									"value": "morph-customer"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Policies",
+			"item": [
+				{
+					"name": "Get Policies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/policies",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Policy Types",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/policy-types",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"policy-types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Delayed Removal Policy for User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"policy\": {\r\n    \"name\": \"Delayed Removal User\",\r\n    \"description\": \"Assigned to User\",\r\n    \"policyType\": {\r\n      \"code\": \"delayedRemoval\"\r\n    },\r\n    \"config\": {\r\n      \"removalAge\": 10\r\n    },\r\n    \"enabled\": true,\r\n    \"refType\": \"User\",\r\n    \"refId\": 45,\r\n    \"accounts\": []\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/policies",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Expiration Policy for Group",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"policy\": {\r\n    \"name\": \"Expiration\",\r\n    \"description\": \"Assigned to Group\",\r\n    \"policyType\": {\r\n      \"code\": \"lifecycle\"\r\n    },\r\n    \"config\": {\r\n        \"lifecycleType\": \"fixed\",\r\n        \"lifecycleAge\": \"2\",\r\n        \"lifecycleRenewal\": \"7\",\r\n        \"lifecycleNotify\": \"1\",\r\n        \"lifecycleMessage\": \"Instance ${instance?.name} is set to expire on ${instance?.expireDate}\",\r\n        \"lifecycleAutoRenew\": \"on\",\r\n        \"lifecycleExtensionsBeforeApproval\": \"0\"\r\n    },\r\n    \"enabled\": true,\r\n    \"refType\": \"ComputeSite\",\r\n    \"refId\": 9,\r\n    \"accounts\": []\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/policies",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Instance Naming Pattern",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"policy\": {\r\n    \"name\": \"Instance Name Pattern\",\r\n    \"description\": \"User configurable - Pattern ${groupName}\",\r\n    \"policyType\": {\r\n      \"code\": \"naming\"\r\n    },\r\n    \"config\": {\r\n        \"namingType\": \"user\",\r\n        \"namingPattern\": \"${groupName}\",\r\n        \"namingConflict\": \"on\"\r\n    },\r\n    \"enabled\": true,\r\n    \"accounts\": []\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/policies",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Network Quota",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"policy\": {\r\n    \"name\": \"Network Quota\",\r\n    \"description\": \"\",\r\n    \"policyType\": {\r\n      \"code\": \"maxNetworks\"\r\n    },\r\n    \"config\": {\r\n        \"maxNetworks\": \"2\"\r\n    },\r\n    \"enabled\": true,\r\n    \"refType\": \"ComputeSite\",\r\n    \"refId\": 3,\r\n    \"accounts\": []\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/policies",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User Enforcement",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"policy\": {\r\n    \"name\": \"Enforce User Creation\",\r\n    \"description\": \"\",\r\n    \"policyType\": {\r\n      \"code\": \"createUser\"\r\n    },\r\n    \"config\": {\r\n        \"createUserType\": \"fixed\",\r\n        \"createUser\": \"on\"\r\n    },\r\n    \"enabled\": true,\r\n    \"accounts\": []\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/policies",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Shutdown Policy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"policy\": {\r\n    \"name\": \"Shutdown Virtual Machines\",\r\n    \"description\": \"\",\r\n    \"policyType\": {\r\n      \"code\": \"shutdown\"\r\n    },\r\n    \"config\": {\r\n        \"shutdownType\": \"user\",\r\n        \"shutdownAge\": \"1\",\r\n        \"shutdownRenewal\": \"7\",\r\n        \"shutdownNotify\": \"1\",\r\n        \"shutdownMessage\": \"Instance ${instance?.name} is set to shutdown on ${instance?.shutdownDate}\",\r\n        \"shutdownAutoRenew\": \"on\",\r\n        \"shutdownExtensionsBeforeApproval\": \"0\"\r\n    },\r\n    \"refType\": \"ComputeSite\",\r\n    \"refId\": 9,\r\n    \"enabled\": true,\r\n    \"accounts\": []\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/policies",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create VM Limits",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"policy\": {\r\n    \"name\": \"Limit VMs for Production\",\r\n    \"description\": \"\",\r\n    \"policyType\": {\r\n      \"code\": \"maxVms\"\r\n    },\r\n    \"config\": {\r\n        \"maxVms\": \"100\"\r\n    },\r\n    \"refType\": \"ComputeSite\",\r\n    \"refId\": 12,\r\n    \"enabled\": true,\r\n    \"accounts\": []\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/policies",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"policies"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reports",
+			"item": [
+				{
+					"name": "Get Specific Report",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{dev_1_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/reports/",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"reports",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generate a report",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{dev_1_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"report\": {\r\n    \"type\": \"cloudUsageInstanceType\",\r\n    \"startDate\": \"2021-01-20\",\r\n    \"endDate\": \"2021-01-29\",\r\n    \"cloudId\": \"3\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/reports",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"reports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Report Types",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{dev_1_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/report-types",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"report-types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Undo Delete",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{dev_1_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/instances/18/cancel-removal",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"instances",
+								"18",
+								"cancel-removal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Instances",
+			"item": [
+				{
+					"name": "Get Instances",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/instances",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"instances"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Instances ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/instances/7189",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"instances",
+								"7189"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Instance History",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{dev_1_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/instances/7811/history",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"instances",
+								"7811",
+								"history"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Instance",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"zoneId\": 1,\r\n    \"instance\": {\r\n    \"name\": \"api-vm-2\",\r\n    \"site\": {\r\n      \"id\": 9\r\n    },\r\n    \"instanceType\": {\r\n      \"code\": \"ubuntu16\"\r\n    },\r\n    \"layout\": {\r\n      \"id\": 1196\r\n    },\r\n    \"plan\": {\r\n      \"id\": 449\r\n    }\r\n  },\r\n  \"volumes\": [\r\n      {\r\n          \"name\": \"root\",\r\n          \"size\": 15,\r\n          \"datastoreId\": \"auto\" \r\n      }\r\n  ],\r\n  \"networkInterfaces\": [\r\n    {\r\n      \"network\": {\r\n        \"id\": 10\r\n      },\r\n      \"networkInterfaceTypeId\": 4\r\n    }\r\n  ],\r\n  \"config\": {\r\n      \"resourcePoolId\": 2\r\n  },\r\n  \"tags\": [\r\n    {\"name\": \"api-provisioned\", \"value\": \"True\"}\r\n  ],\r\n  \"taskSetId\": 14\r\n}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/instances",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"instances"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete instance",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "{{Token}}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{url}}/api/instances/1920",
+							"protocol": "https",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"instances",
+								"1920"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Instances by tags",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{dev_1_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/instances?tags.SmartPurge=Archieved",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"instances"
+							],
+							"query": [
+								{
+									"key": "tags.SmartPurge",
+									"value": "Archieved"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clone Instance",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"clone-7189\",\r\n    \"group\": {\r\n        \"id\": 1\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/instances/7189/clone",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"instances",
+								"7189",
+								"clone"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Backup Instance",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/instances/7856/backup",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"instances",
+								"7856",
+								"backup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Snapshots",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/instances/7856/snapshots",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"instances",
+								"7856",
+								"snapshots"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Backups",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/instances/7856/backups",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"instances",
+								"7856",
+								"backups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eject Disks",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/instances/7856/eject",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"instances",
+								"7856",
+								"eject"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Automation",
+			"item": [
+				{
+					"name": "Tasks",
+					"item": [
+						{
+							"name": "Tasks",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/tasks",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"tasks"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update a Task",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"task\":{\r\n    \"name\": \"cleanup tmp files\"\r\n  }}"
+								},
+								"url": {
+									"raw": "https://{{URL}}/api/tasks/27",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"tasks",
+										"27"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Specific Task",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/tasks/27",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"tasks",
+										"27"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Task",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"task\": {\r\n    \"name\": \"cleanup tmp files\",\r\n    \"taskType\": {\r\n      \"code\": \"script\"\r\n    },\r\n    \"executeTarget\": \"resource\",\r\n    \"file\": {\r\n      \"sourceType\": \"local\",\r\n      \"content\": \"rm -rf /var/www/app1/tmp/*\\nrm -rf /var/www/app2/tmp/*\"\r\n    }\r\n  }}"
+								},
+								"url": {
+									"raw": "https://{{URL}}/api/tasks",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"tasks"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete task",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/tasks/27",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"tasks",
+										"27"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Execute Task",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"job\":{\r\n    \"targetType\": \"instance\",\r\n    \"instances\": [7190,7189]\r\n  }}"
+								},
+								"url": {
+									"raw": "https://{{URL}}/api/tasks/27/execute",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"tasks",
+										"27",
+										"execute"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Tasks-Types",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/task-types",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"task-types"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Workflow",
+					"item": [
+						{
+							"name": "Create Operational Workflow",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"taskSet\": {\r\n    \"name\": \"operational workflow\",\r\n    \"type\": \"operation\",\r\n    \"optionTypes\": [1109,1104],\r\n    \"tasks\": [\r\n      {\r\n        \"taskId\": 27,\r\n        \"taskPhase\": \"postProvision\"\r\n      },\r\n      {\r\n        \"taskId\": 4,\r\n        \"taskPhase\": \"preProvision\"\r\n      },\r\n      {\r\n        \"taskId\": 16,\r\n        \"taskPhase\": \"reconfigure\"\r\n      }\r\n    ]\r\n  }}"
+								},
+								"url": {
+									"raw": "https://{{URL}}/api/task-sets/",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"task-sets",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Workflows",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/task-sets/",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"task-sets",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Workflow",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"taskSet\": {\r\n    \"name\": \"my workflow\",\r\n    \"tasks\": [\r\n      {\r\n        \"taskId\": 27,\r\n        \"taskPhase\": \"postProvision\"\r\n      },\r\n      {\r\n        \"taskId\": 4,\r\n        \"taskPhase\": \"preProvision\"\r\n      },\r\n      {\r\n        \"taskId\": 16,\r\n        \"taskPhase\": \"reconfigure\"\r\n      }\r\n    ]\r\n  }}"
+								},
+								"url": {
+									"raw": "https://{{URL}}/api/task-sets/",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"task-sets",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Workflow",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"taskSet\":{\r\n    \"tasks\": [\r\n      {\r\n        \"taskId\": 27,\r\n        \"taskPhase\": \"postProvision\"\r\n      },\r\n      {\r\n        \"taskId\": 4,\r\n        \"taskPhase\": \"preProvision\"\r\n      },\r\n      {\r\n        \"taskId\": 16,\r\n        \"taskPhase\": \"reconfigure\"\r\n      }\r\n    ]\r\n  }}"
+								},
+								"url": {
+									"raw": "https://{{URL}}/api/task-sets/16",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"task-sets",
+										"16"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Execute Workflow",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"job\":{\r\n    \"targetType\": \"instance\",\r\n    \"instances\": [7190],\r\n    \"customOptions\": {\r\n      \"mysqlVersion\":\"5.7\"\r\n    }\r\n  }}"
+								},
+								"url": {
+									"raw": "https://{{URL}}/api/task-sets/15/execute",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"task-sets",
+										"15",
+										"execute"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Specific Workflow",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/task-sets/14",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"task-sets",
+										"14"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Workflow",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/task-sets/16",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"task-sets",
+										"16"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Power Schedule",
+					"item": [
+						{
+							"name": "Get Power Schedules",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/power-schedules",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"power-schedules"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Specific Power Schedules",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/power-schedules/14",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"power-schedules",
+										"14"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Power Schedule",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"schedule\": {\r\n    \"name\": \"business hours only\",\r\n    \"description\": null,\r\n    \"enabled\": true,\r\n    \"scheduleType\": \"power\",\r\n    \"scheduleTimezone\": \"UTC\",\r\n    \"sundayOn\": 0,\r\n    \"sundayOff\": 0,\r\n    \"mondayOn\": 7,\r\n    \"mondayOff\": 19,\r\n    \"tuesdayOn\": 7,\r\n    \"tuesdayOff\": 19,\r\n    \"wednesdayOn\": 7,\r\n    \"wednesdayOff\": 19,\r\n    \"thursdayOn\": 7,\r\n    \"thursdayOff\": 19,\r\n    \"fridayOn\": 7,\r\n    \"fridayOff\": 19,\r\n    \"saturdayOn\": 0,\r\n    \"saturdayOff\": 0,\r\n    \"enabled\": true\r\n  }\r\n}"
+								},
+								"url": {
+									"raw": "https://{{URL}}/api/power-schedules/",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"power-schedules",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Power Schedule",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"schedule\": {\r\n    \"mondayOff\": 20,\r\n    \"tuesdayOff\": 20,\r\n    \"wednesdayOff\": 20,\r\n    \"thursdayOff\": 20,\r\n    \"fridayOff\": 15\r\n  }\r\n}"
+								},
+								"url": {
+									"raw": "https://{{URL}}/api/power-schedules/14",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"power-schedules",
+										"14"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remove Instance to Power Schedule",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"instances\": [\r\n    8206\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "https://{{URL}}/api/power-schedules/15/remove-instances",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"power-schedules",
+										"15",
+										"remove-instances"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Instance to Power Schedule",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"instances\": [\r\n    8206\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "https://{{URL}}/api/power-schedules/15/add-instances",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"power-schedules",
+										"15",
+										"add-instances"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Power Schedule",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/power-schedules/14",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"power-schedules",
+										"14"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Execute Schedules",
+					"item": [
+						{
+							"name": "Get all Execute Schedules",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/execute-schedules",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"execute-schedules"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Execute Schedule",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"schedule\": {\r\n    \"name\": \"Friday at Midnight\",\r\n    \"description\": null,\r\n    \"enabled\": true,\r\n    \"scheduleType\": \"execute\",\r\n    \"scheduleTimezone\": \"UTC\",\r\n    \"cron\": \"0 0 * * 5\"\r\n  }\r\n}"
+								},
+								"url": {
+									"raw": "https://{{URL}}/api/execute-schedules",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"execute-schedules"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Execute Schedule",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/execute-schedules/3",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"execute-schedules",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Execute Schedule",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"schedule\": {\r\n    \"name\": \"Daily at two AM\",\r\n    \"description\": \"Daily at 2AM\",\r\n    \"cron\": \"0 2 * * *\"\r\n  }\r\n}"
+								},
+								"url": {
+									"raw": "https://{{URL}}/api/execute-schedules/3",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"execute-schedules",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Specific Execute Schedules",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/execute-schedules/3",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"execute-schedules",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Execution Request",
+					"item": [
+						{
+							"name": "GET Execution Request",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/execution-request/execute",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"execution-request",
+										"execute"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Specific Execution Request",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://{{URL}}/api/execution-request/execute/24",
+									"protocol": "https",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"execution-request",
+										"execute",
+										"24"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "get specific Job",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/jobs/11",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"jobs",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all Jobs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/jobs",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Job",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"job\": {\r\n        \"name\": \"API TEST\",\r\n        \"task\": {\r\n          \"id\": 9\r\n        },\r\n        \"targetType\": \"instance\",\r\n        \"targets\": [\r\n          {\r\n            \"refId\": 7189\r\n          },\r\n          {\r\n            \"refId\": 7190\r\n          }\r\n        ],\r\n        \"scheduleMode\": \"manual\",\r\n        \"customOptions\":{\"dbVersion\":\"5.7\"},\r\n        \"run\": \"true\"\r\n     }}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/jobs",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Job",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"job\": {\r\n     \"scheduleMode\": \"2\"\r\n     }}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/jobs/11",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"jobs",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get job executions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/job-executions/336",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"job-executions",
+								"336"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Execute a job",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/jobs/12/execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"jobs",
+								"12",
+								"execute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Job Execution Events",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/job-executions/336/events/76586",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"job-executions",
+								"336",
+								"events",
+								"76586"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Library",
+			"item": [
+				{
+					"name": "Get Option Types",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/library/option-types",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"library",
+								"option-types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Policy Types",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{dev_1_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/policy-types",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"policy-types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Instance Types",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/instance-types",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"instance-types"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Deployments",
+			"item": [
+				{
+					"name": "Get Deploys",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/deploys",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"deploys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get deploys for Instance",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/instances/7189/deploys",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"instances",
+								"7189",
+								"deploys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deploy to an Instance",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"appDeploy\":{\r\n    \"deploymentId\": 17,\r\n    \"version\": \"5.0.9\"\r\n  }}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/instances/7189/deploys",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"instances",
+								"7189",
+								"deploys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Deploy",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"appDeploy\":{\r\n    \"config\": { }\r\n  }}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/deploys/17",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"deploys",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Run a Deploy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"appDeploy\":{\r\n    \"config\": { }\r\n  }}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/deploys/17/deploy",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"deploys",
+								"17",
+								"deploy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Run a Deploy Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"appDeploy\":{\r\n    \"config\": { }\r\n  }}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/deploys/17",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"deploys",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get deployments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/groups",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"groups"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Administration",
+			"item": [
+				{
+					"name": "Get Roles",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/roles",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"roles"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Roles",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/roles/92",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"roles",
+								"92"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Role",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"role\":{\r\n    \"authority\": \"API Test Role\",\r\n    \"description\": \"A test role\",\r\n    \"baseRoleId\": 2,\r\n    \"roleType\": \"user\"\r\n  }}"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/roles",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"roles"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Global Instance Type Access",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissionCode\": \"InstanceType\",\r\n    \"access\": \"custom\"\r\n  }"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/roles/92/update-permission",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"roles",
+								"92",
+								"update-permission"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Global Catalog Item Type access",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissionCode\": \"CatalogItemType\",\r\n    \"access\": \"custom\"\r\n  }"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/roles/92/update-permission",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"roles",
+								"92",
+								"update-permission"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Global Blueprint Access",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissionCode\": \"AppTemplate\",\r\n    \"access\": \"custom\"\r\n  }"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/roles/92/update-permission",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"roles",
+								"92",
+								"update-permission"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customized Instance Type Access",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"instanceTypeId\": 124,\r\n    \"access\": \"full\"\r\n  }"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/roles/92/update-instance-type",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"roles",
+								"92",
+								"update-instance-type"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customized Blueprint Access",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"appTemplateId\": 2,\r\n    \"access\": \"full\"\r\n  }"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/roles/92/update-blueprint",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"roles",
+								"92",
+								"update-blueprint"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customized Catalogue Item Type Access",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"catalogItemTypeId\": 1,\r\n    \"access\": \"full\"\r\n  }"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/roles/92/update-catalog-item-type",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"roles",
+								"92",
+								"update-catalog-item-type"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customized Persona Access",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"personaCode\": \"serviceCatalog\",\r\n    \"access\": \"full\"\r\n  }"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/roles/92/update-persona",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"roles",
+								"92",
+								"update-persona"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Roles",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/roles/28",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"roles",
+								"28"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Others",
+			"item": [
+				{
+					"name": "filter network",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "{{Token}}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"network\": {\r\n    \"scanNetwork\": \"off\",\r\n    \"applianceUrlProxyBypass\": \"true\",\r\n    \"noProxy\": null\r\n  },\r\n  \"resourcePermissions\": {\r\n    \"all\": false\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://{{url}}/api/networks/67",
+							"protocol": "https",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"networks",
+								"67"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get networks",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "{{Token}}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{url}}/api/networks",
+							"protocol": "https",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"networks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Groups",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/groups/9",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"groups",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Service plans",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "{{Token}}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  provisionTypeId: 6\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{url}}/api/service-plans?phrase=vmware",
+							"protocol": "https",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"service-plans"
+							],
+							"query": [
+								{
+									"key": "phrase",
+									"value": "scale",
+									"disabled": true
+								},
+								{
+									"key": "phrase",
+									"value": "vmware"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get library",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "{{Token}}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{url}}/api/library/instance-types?name=centos",
+							"protocol": "https",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"library",
+								"instance-types"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "centos"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get networkGroup",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "{{Token}}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{url}}/api/networks/groups",
+							"protocol": "https",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"networks",
+								"groups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Resource Pools",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "{{Token}}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{url}}/api/zones/1/resource-pools",
+							"protocol": "https",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"zones",
+								"1",
+								"resource-pools"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User settings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/user-settings",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"user-settings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Zones",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/zones",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"zones"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	}
+}
