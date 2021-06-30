@@ -11,7 +11,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
 # Workshops on Demand
 
 # Introduction to Understanding API basics and the value they provide
-In this workshop we’ll go through some of the basics of APIs: Definition, Structure, Usage through simple examples.
+In this workshop, we’ll go through some of the basics of APIs: Definition, Structure, Usage through simple examples.
 
 # Author: [Didier Lalli](mailto:didier.lalli@hpe.com)
 
