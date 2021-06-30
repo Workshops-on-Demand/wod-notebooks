@@ -1,5 +1,5 @@
-![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)    ![Dockerlogo](Pictures/docker.png)  
- 
+![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)
+
 # Welcome to the Hack Shack
 Powered by [HPE DEV Team](https://hpedev.io)
 
@@ -10,27 +10,15 @@ Powered by [HPE DEV Team](https://hpedev.io)
 
 # Workshops-on-Demand
 
-# Introduction to Docker101
-In this workshop we’ll go through ....
+# Introduction to Kubernetes Basics 
+This tutorial provides a walkthrough of the basics of the Kubernetes cluster orchestration system. Each module contains some background information on major Kubernetes features and concepts, and includes interactive labs using a Kubernetes cluster managed by HPE Ezmeral Container Platform.
 
-# Authors: [Bruno Cornec](mailto:bruno.cornec@hpe.com) & [Rene Ribaud](mailto:rene@flossita.org) & [Frederic Passeron](mailto:frederic.passeron@hpe.com)
+# Author: [Didier Lalli](mailto:didier.lalli@hpe.com)
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
-
-## Objectives of the Docker Lab
-At the end of the Lab students should be able to install Docker, use the CLI to create a new image, a container, launch an application in it, store data, configure the network.
-
-This Lab is intended to be trial and error so that during the session students should understand really what is behind the tool.  Blindly following instructions is not an effective way to learn IMHO. You've been warned ;-)
-
-Expected duration : 120 minutes
-
-## Reference documents
-When dealing with the installation and configuration of Docker, the first step  is to check the reference Web site http://docker.io/:
-
-At the start of each section there is an estimate of how long it will take to complete.
 
 
 ## Lab flow
@@ -60,22 +48,27 @@ In a nutshell, a notebook works as follows:
 
 Enjoy the labs ! :-)
 
+
 ## Workflow
 
-### Lab 1: Introduction to container technology
-Description: In this section, we’ll go through some of ...
-* [Lab 1](1-WKSHP-Intro-to-Containers-techno.ipynb)
-
-### Lab 2: Using Docker
-Description: In this section, we’ll go through some of ...
-* [Lab 2](2-WKSHP-Using-Docker.ipynb)
-
-### Lab 3: Using Docker Compose
-Description: In this section, we’ll go through some of ...
-* [Lab 3](3-WKSHP-Using-Docker-Compose.ipynb)
-
-### Conclusion
-* [Conclusion](4-WKSHP-COnclusion.ipynb)
+### [Intro](1-WKSHP-K8S101.ipynb)
+### [Module 1: Explore your Kubernetes cluster](2-WKSHP-K8S101-mod1.ipynb)
+### [Module 2: Deploy an app](3-WKSHP-K8S101-mod2.ipynb)
+### [Module 3: Explore your app](4-WKSHP-K8S101-mod3.ipynb)
+### [Module 4: Using a Service to Expose Your App](5-WKSHP-K8S101-mod4.ipynb)
+### [Module 5: Scale up your app](6-WKSHP-K8S101-mod5.ipynb)
+### [Module 6: Update your app](7-WKSHP-K8S101-mod6.ipynb)
+### [Conclusion](8-WKSHP-Conclusion.ipynb)
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
+
+
+```python
+
+```
+
+
+```python
+
+```

@@ -1,5 +1,5 @@
-![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)    ![Dockerlogo](Pictures/docker.png)  
- 
+![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)
+
 # Welcome to the Hack Shack
 Powered by [HPE DEV Team](https://hpedev.io)
 
@@ -8,29 +8,17 @@ Powered by [HPE DEV Team](https://hpedev.io)
   
 </p>
 
-# Workshops-on-Demand
+# Workshops on Demand
 
-# Introduction to Docker101
-In this workshop we’ll go through ....
+# Introduction to Understanding API basics and the value they provide
+In this workshop we’ll go through some of the basics of APIs: Definition, Structure, Usage through simple examples.
 
-# Authors: [Bruno Cornec](mailto:bruno.cornec@hpe.com) & [Rene Ribaud](mailto:rene@flossita.org) & [Frederic Passeron](mailto:frederic.passeron@hpe.com)
+# Author: [Didier Lalli](mailto:didier.lalli@hpe.com)
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
-
-## Objectives of the Docker Lab
-At the end of the Lab students should be able to install Docker, use the CLI to create a new image, a container, launch an application in it, store data, configure the network.
-
-This Lab is intended to be trial and error so that during the session students should understand really what is behind the tool.  Blindly following instructions is not an effective way to learn IMHO. You've been warned ;-)
-
-Expected duration : 120 minutes
-
-## Reference documents
-When dealing with the installation and configuration of Docker, the first step  is to check the reference Web site http://docker.io/:
-
-At the start of each section there is an estimate of how long it will take to complete.
 
 
 ## Lab flow
@@ -58,24 +46,26 @@ In a nutshell, a notebook works as follows:
 
 • You cannot run a cell when another is already running but you can interrupt a running cell with the stop button
 
+
 Enjoy the labs ! :-)
+
 
 ## Workflow
 
-### Lab 1: Introduction to container technology
-Description: In this section, we’ll go through some of ...
-* [Lab 1](1-WKSHP-Intro-to-Containers-techno.ipynb)
+### Lab 1: REST_API_Basics
+Descriptione: In this section, we’ll go through some of the basics of APIs: Definition, Structure, Usage through simple examples.
+* [Lab 1](1-WKSHP-REST_API_Basics.ipynb)
 
-### Lab 2: Using Docker
-Description: In this section, we’ll go through some of ...
-* [Lab 2](2-WKSHP-Using-Docker.ipynb)
-
-### Lab 3: Using Docker Compose
-Description: In this section, we’ll go through some of ...
-* [Lab 3](3-WKSHP-Using-Docker-Compose.ipynb)
-
-### Conclusion
-* [Conclusion](4-WKSHP-COnclusion.ipynb)
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
+
+
+```python
+
+```
+
+
+```python
+
+```

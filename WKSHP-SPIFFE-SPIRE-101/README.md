@@ -1,5 +1,5 @@
-![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)    ![Dockerlogo](Pictures/docker.png)  
- 
+![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)
+
 # Welcome to the Hack Shack
 Powered by [HPE DEV Team](https://hpedev.io)
 
@@ -10,27 +10,20 @@ Powered by [HPE DEV Team](https://hpedev.io)
 
 # Workshops-on-Demand
 
-# Introduction to Docker101
-In this workshop we’ll go through ....
+# Introduction to SPIFFE/SPIRE
+SPIFFE, the Secure Production Identity Framework for Everyone, is a set of open-source standards for securely identifying software systems in dynamic and heterogeneous environments. Enterprise application or software services are increasingly running across multiple platforms spanning multiple data centers and public clouds. Since these services span various domains, the most efficient way to secure them is by a Zero Trust model. In this model, nothing is taken for granted, and every request has to be verified. Service identity and authentication is perhaps the most fundamental piece of building Zero Trust environments. If not done right and early, it could undermine your efforts to enable Zero Trust in your organization and introduce risk, complexity, and slow down development velocity.
 
-# Authors: [Bruno Cornec](mailto:bruno.cornec@hpe.com) & [Rene Ribaud](mailto:rene@flossita.org) & [Frederic Passeron](mailto:frederic.passeron@hpe.com)
+CNCF’s SPIFFE and SPIRE projects provide a universal service identity plane managing identity and trust within a zero trust security model. These projects provide a system for service to identify and authenticate themselves without the use of shared-secrets or network base security controls. Systems that adopt SPIFFE can easily and reliably mutually authenticate wherever they are running. 
+
+This workshop will introduce SPIFFE and SPIRE concepts, and demonstrate several simple use cases.
+
+
+# Author: [Didier Lalli](mailto:didier.lalli@hpe.com)
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
-
-## Objectives of the Docker Lab
-At the end of the Lab students should be able to install Docker, use the CLI to create a new image, a container, launch an application in it, store data, configure the network.
-
-This Lab is intended to be trial and error so that during the session students should understand really what is behind the tool.  Blindly following instructions is not an effective way to learn IMHO. You've been warned ;-)
-
-Expected duration : 120 minutes
-
-## Reference documents
-When dealing with the installation and configuration of Docker, the first step  is to check the reference Web site http://docker.io/:
-
-At the start of each section there is an estimate of how long it will take to complete.
 
 
 ## Lab flow
@@ -60,22 +53,23 @@ In a nutshell, a notebook works as follows:
 
 Enjoy the labs ! :-)
 
+
 ## Workflow
 
-### Lab 1: Introduction to container technology
-Description: In this section, we’ll go through some of ...
-* [Lab 1](1-WKSHP-Intro-to-Containers-techno.ipynb)
+### Lab 1: SPIRE Fundamentals
 
-### Lab 2: Using Docker
-Description: In this section, we’ll go through some of ...
-* [Lab 2](2-WKSHP-Using-Docker.ipynb)
+* [Lab 1](1-WKSHP-SPIRE-Lab1.ipynb)
 
-### Lab 3: Using Docker Compose
-Description: In this section, we’ll go through some of ...
-* [Lab 3](3-WKSHP-Using-Docker-Compose.ipynb)
-
-### Conclusion
-* [Conclusion](4-WKSHP-COnclusion.ipynb)
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
+
+
+```bash
+
+```
+
+
+```bash
+
+```

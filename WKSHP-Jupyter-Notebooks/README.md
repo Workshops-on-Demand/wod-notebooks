@@ -1,5 +1,5 @@
-![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)    ![Dockerlogo](Pictures/docker.png)  
- 
+![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)
+
 # Welcome to the Hack Shack
 Powered by [HPE DEV Team](https://hpedev.io)
 
@@ -10,27 +10,19 @@ Powered by [HPE DEV Team](https://hpedev.io)
 
 # Workshops-on-Demand
 
-# Introduction to Docker101
-In this workshop we’ll go through ....
+# Introduction to Delivering Hand on Experience with Jupyter Notebooks
+In this workshop we’ll go through the different steps to allow you to develop your own Jupyter Notebooks based Workshops.
+The HPE DEV Team have been working for more than a year on developing workshops for physical events, then for virtual events and finally for [Workshops-on-Demand](https://hackshack.hpedev.io/workshops).
+This tutorial is a guide for those who would be willing to leverage our experience to develop some new content . it will cover the basics of a jupyter notebook technologies. It should also learn you how to install the necessary tooling to develop on your own laptop.
 
-# Authors: [Bruno Cornec](mailto:bruno.cornec@hpe.com) & [Rene Ribaud](mailto:rene@flossita.org) & [Frederic Passeron](mailto:frederic.passeron@hpe.com)
+
+
+# Author: [Frederic Passeron](mailto:frederic.passeron@hpe.com)
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
-
-## Objectives of the Docker Lab
-At the end of the Lab students should be able to install Docker, use the CLI to create a new image, a container, launch an application in it, store data, configure the network.
-
-This Lab is intended to be trial and error so that during the session students should understand really what is behind the tool.  Blindly following instructions is not an effective way to learn IMHO. You've been warned ;-)
-
-Expected duration : 120 minutes
-
-## Reference documents
-When dealing with the installation and configuration of Docker, the first step  is to check the reference Web site http://docker.io/:
-
-At the start of each section there is an estimate of how long it will take to complete.
 
 
 ## Lab flow
@@ -60,22 +52,26 @@ In a nutshell, a notebook works as follows:
 
 Enjoy the labs ! :-)
 
+
 ## Workflow
 
-### Lab 1: Introduction to container technology
-Description: In this section, we’ll go through some of ...
-* [Lab 1](1-WKSHP-Intro-to-Containers-techno.ipynb)
+### Lab 1: Introduction to Jupyter Notebooks
+Description: In this section, we’ll go through some of the basics of a jupyter notebook technology. You will edit your first notebook !
+* [Lab 1](1-Introduction-to-Jupyter-Notebooks.ipynb)
 
-### Lab 2: Using Docker
-Description: In this section, we’ll go through some of ...
-* [Lab 2](2-WKSHP-Using-Docker.ipynb)
+### Lab 2: How to develop a workshop on your laptop
+Description: In this section, we’ll show you how to install jupyter notebook on your laptop and how you can leverage it to build up your own Notebooks and Workshops.
+* [Lab 2](2-WKSHP-HowTo-Dev-with-laptop.ipynb)
 
-### Lab 3: Using Docker Compose
-Description: In this section, we’ll go through some of ...
-* [Lab 3](3-WKSHP-Using-Docker-Compose.ipynb)
+### Lab 3: How to install your own Jupyterhub environment
+Description: In this section, we’ll show you how to install your own jupyterhub server to suport customers' workshops, trainings or plain sandboxing tests
+* [Lab 3](3-WKSHP-HowTo-Install-Jupyterhub)
 
-### Conclusion
-* [Conclusion](4-WKSHP-COnclusion.ipynb)
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
+
+
+```python
+
+```

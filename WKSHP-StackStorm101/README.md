@@ -1,42 +1,33 @@
-![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)    ![Dockerlogo](Pictures/docker.png)  
- 
+![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)  ![StackStormlogo](Pictures/stackstorm.jpg)
+
+
 # Welcome to the Hack Shack
 Powered by [HPE DEV Team](https://hpedev.io)
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
-</p>
+
 
 # Workshops-on-Demand
 
-# Introduction to Docker101
-In this workshop we’ll go through ....
+# Introduction to StackStorm101
+This notebook will walk you through some of the basics of stackstorm. This notebook has been developed to accomodate mutiple users logging into the same stackstorm server. This is not by any means a super deep dive but hopefully will explain why stackstorm should be in your automation toolbag. 
 
-# Authors: [Bruno Cornec](mailto:bruno.cornec@hpe.com) & [Rene Ribaud](mailto:rene@flossita.org) & [Frederic Passeron](mailto:frederic.passeron@hpe.com)
+# Author: [Rick A kauffman](mailto:rick.a.kauffman@hpe.com) adaptation by [Frederic Passeron](mailto:frederic.passeron@hpe.com)
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
 
-## Objectives of the Docker Lab
-At the end of the Lab students should be able to install Docker, use the CLI to create a new image, a container, launch an application in it, store data, configure the network.
-
-This Lab is intended to be trial and error so that during the session students should understand really what is behind the tool.  Blindly following instructions is not an effective way to learn IMHO. You've been warned ;-)
-
-Expected duration : 120 minutes
-
-## Reference documents
-When dealing with the installation and configuration of Docker, the first step  is to check the reference Web site http://docker.io/:
-
-At the start of each section there is an estimate of how long it will take to complete.
-
 
 ## Lab flow
 HackShack Workshops are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
-In a nutshell, a notebook works as follows:
+## WARNING! To learn stackstorm we have to start at the bottom. Bear with me to the end and we can explore stackstorm a different way.
+
+    In a nutshell, a notebook works as follows:
 
 • A Notebook is a series de cells
 
@@ -60,22 +51,18 @@ In a nutshell, a notebook works as follows:
 
 Enjoy the labs ! :-)
 
+
 ## Workflow
 
-### Lab 1: Introduction to container technology
-Description: In this section, we’ll go through some of ...
-* [Lab 1](1-WKSHP-Intro-to-Containers-techno.ipynb)
+### Lab 1: The Basics
+Description: In this section, we’ll go through some of the main concepts behind StackStorm. StackStorm is an automation framework that uses Sensors to watch and listen to alarm/event queues. Triggers to tell Rules when to launch, Actions/Workflows to change the existing state.
+* [Lab 1](1-WKSHP-Stackstorm_Basics.ipynb)
 
-### Lab 2: Using Docker
-Description: In this section, we’ll go through some of ...
-* [Lab 2](2-WKSHP-Using-Docker.ipynb)
-
-### Lab 3: Using Docker Compose
-Description: In this section, we’ll go through some of ...
-* [Lab 3](3-WKSHP-Using-Docker-Compose.ipynb)
-
-### Conclusion
-* [Conclusion](4-WKSHP-COnclusion.ipynb)
-
-# Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
+
+<h2>Next&nbsp;&nbsp;&nbsp;&nbsp;<a href="1-WKSHP-Stackstorm_Basics.ipynb#sc" target="New" title="Next: Lab1"><i class="fas fa-chevron-circle-right" style="color:#FFAD33;"></i></a></h2>
+
+
+```python
+
+```
