@@ -58,13 +58,3 @@ Description: In this section, we’ll go through some of the fundamentals of Rus
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```python
-
-```
-
-
-```python
-
-```
