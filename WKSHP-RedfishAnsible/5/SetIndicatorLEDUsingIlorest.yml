@@ -29,7 +29,7 @@
     shell: >
       /usr/sbin/ilorest --nologo --cache-dir {{ cache_dir }}
       set IndicatorLED="{{ 'Lit' if 'Off' in IndicatorLedStatus.stdout else 'Off' }}"
-      --selector=Chassis. --commit
+      --selector=Chassis. #--commit
     register: Ret
 
   - debug:

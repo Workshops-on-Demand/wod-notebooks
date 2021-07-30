@@ -14,7 +14,7 @@
 
 # Ansible Module derived from https://github.com/HewlettPackard/python-ilorest-library/blob/master/examples/Redfish/set_uid_light.py
 
-# Version 0.117
+# Version 0.118
 
 # -*- coding: utf-8 -*-
 """
@@ -125,13 +125,23 @@ if __name__ == "__main__":
     # flag to force disable resource directory. Resource directory and associated operations are
     # intended for HPE servers.
     DISABLE_RESOURCE_DIR = False
+    
+    # Starting with version 3.2.2 of the HPE python-redfish-library,
+    # RedfishClient requires a ca_cert_data parameter
+    ca_cert_data = {}
+    #ca_cert_data["cert_file"] = "c:\\test\\ppcacuser.crt"
+    #ca_cert_data["key_file"] = "c:\\test\\ppcacuserpriv.key"
+    #ca_cert_data["key_password"] = "password"
 
     try:
         # Create a Redfish client object using a Session Authentication Token
-        REDFISHOBJ = RedfishClient(base_url=SYSTEM_URL, session_key=SESSION_KEY)
+        REDFISHOBJ = RedfishClient(base_url=SYSTEM_URL, session_key=SESSION_KEY, ca_cert_data=ca_cert_data)
                                                                             
         # Login with the Redfish client
-        REDFISHOBJ.login()
+        if not ca_cert_data:
+            REDFISHOBJ.login()
+        else:
+            REDFISHOBJ.login(auth='certificate')
     except ServerDownOrUnreachableError as excp:
         sys.stderr.write("ERROR: server not reachable or does not support RedFish.\n")
         sys.exit()
