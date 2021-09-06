@@ -9,7 +9,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
 
 *Version: HPE HPC CCPE Tutorial, 1.4*
 
-In this workshop, you will learn basic of using CPE to develope and analyze high-performance codes and workflows.  
+In this workshop, you will learn basic of using CPE to develop and analyze high-performance codes and workflows.  
 
 # Authors: [Jonathan Sparks](mailto:jonathan.sparks@hpe.com), [Denis Choukroun](mailto:denis.choukroun@hpe.com)
 
@@ -31,7 +31,7 @@ Enjoy the labs ! :-)
 
 # Cray Programming Environment Container lab
 
-This workshop lab covers using Cray PE in a container for code development and anyalysis as well as using both [podman](https://podman.io/) and [singularity](https://sylabs.io/) for parallel exection.
+This workshop lab covers using Cray PE in a container for code development and analysis as well as using both [podman](https://podman.io/) and [singularity](https://sylabs.io/) for parallel execution.
 
 Topics covered are, how to compiling code, analyze performance, identify bottlenecks as well as building containers using CPE as a base build files (aka Dockerfile), basics of building container images, and techniques for managing the size of container images, as well as build High Performance containers.
 
@@ -40,24 +40,24 @@ The lab assumes you are familiar with basic Linux shell commands.
 Before beginning, please make sure the lab environment is correctly setup by running the two cells below. To run a cell, highlight the cell and press control-enter or click on the "Run" button in the toolbar.
 
 
-><img src="Pictures/einstein.png" width="50" height="50" />**Note:** _In this workshop, you will use a set of open source tools, such as podman, skepeo and singularity to build, debug, interogate and execute containers. 
-**Note:** we will introduce several differnet programming toolchains from standard GNU, to HPE Cray Programming Environment._ 
+><img src="Pictures/einstein.png" width="50" height="50" />**Note:** _In this workshop, you will use a set of open source tools, such as podman, skepeo and singularity to build, debug, interrogate and execute containers. 
+**Note:** we will introduce several different programming tool-chains from standard GNU, to HPE Cray Programming Environment._ 
 
 
 ### **Let's get hands on!**
 
 ## Lab 1: CPE environment basics
-In this first lab, you will learn the basics of setting up the deveopment environment and who to use modules for interactive use and automate the environment with a container.
+In this first lab, you will learn the basics of setting up the development environment and who to use modules for interactive use and automate the environment with a container.
 
 * [Lab 1](1-WKSHP-Environment-Basics.ipynb)
 
 ## Lab 2: CPE compiler basics
-In this first lab, you will learn the basics of using the CPE toolchain to compile applications.
+In this first lab, you will learn the basics of using the CPE tool-chain to compile applications.
 
 * [Lab 2](2-WKSHP-Application-Builds.ipynb)
 
 ## Lab 3: CPE application analysis
-In this first lab, you will learn to use the CPE application analysis tools to profile and identify perfromance bottle necks in the code.
+In this first lab, you will learn to use the CPE application analysis tools to profile and identify performance bottle necks in the code.
 
 * [Lab 3](3-WKSHP-Application-Analysis.ipynb)
 
@@ -78,13 +78,14 @@ In this first lab, you will learn how CPE is used to compile a complex simulatio
 * [Lab 6](6-WKSHP-Complete-Simulation-Leslie3d.ipynb)
 
 
+## Lab 7: CPE and Spack
+In this first lab, you will learn how to use CPE and Spack together
+
+* [Lab 7](7-WKSHP-CPE-Spack.ipynb)
+
+
 ## Join the HPE DEV Community
 ![QRCode](Pictures/QRCode-HPEDEV.png)
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.jpg)
-
-
-```python
-
-```

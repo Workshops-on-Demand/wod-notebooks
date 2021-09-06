@@ -64,15 +64,15 @@ Enjoy the labs ! :-)
 ## Workflow
 
 ### Lab 1: Authentification
-Description: In this section, we’ll go through some of ...
+Description: In this section, we’ll go through some of the necessary steps to retrieve the API Token necessary for authewntification. Then we will look some of the components used to build, deploy a new instance.
 * [Lab 1](1-WKSHP-VMAAS-Authentification.ipynb)
 
 ### Lab 2: Instance Creation
-Description: In this section, we’ll go through some of ...
+Description: In this section, we’ll go through some of basics actions to create an instance and then manage it (stop / start / snpashot, etc...)
 * [Lab 2](2-WKSHP-WKSHP-VMAAS-Instance.ipynb)
 
 ### Lab 3: Tasks
-Description: In this section, we’ll go through some of ...
+Description: In this section, we will works with tasks.
 * [Lab 3](3-WKSHP-WKSHP-VMAAS-Tasks.ipynb)
 
 ### Lab 4: Blueprint deployemnt

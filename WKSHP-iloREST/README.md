@@ -2,11 +2,11 @@
 
 Powered by [HPE DEV Team](https://hpedev.io)
 
-Version 0.52
+Version 0.53
 
 # Author: [François Donzé](francois.donze@hpe.com)
 
-Watch my videos on [YouTube](https://www.youtube.com/channel/UCIZhrIYcNh3wHLiY4ola5ew) and read my [blogs](https://developer.hpe.com/blog)
+Watch Redfish videos on [YouTube](https://www.youtube.com/channel/UCIZhrIYcNh3wHLiY4ola5ew) and [blogs](https://developer.hpe.com/search?term=redfish)
 
 
 # Introduction to iLOrest, the HPE RESTful Interface tool
@@ -38,7 +38,9 @@ The material presented in this workshop cannot be considered as a replacement of
 
 Each student has a dedicated [Jupyter](https://jupyter.org/) environment hosted by a Linux host that provides a set of [Jupyter Notebooks](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html).
 
-The Jupyter Notebooks can access a dedicated [OpenBMC](https://www.openbmc.org/)  simulator and a [DMTF Redfish server]( https://github.com/DMTF/Redfish-Mockup-Server) populated with iLO 5 data. Those simulators have `GET` and `SET` methods. You can also access a shared [HPE iLO 5](http://hpe.com/info/ilo) in `GET` mode only.
+The Jupyter Notebooks can access a dedicated [OpenBMC](https://www.openbmc.org/)  simulator and a [DMTF Redfish server]( https://github.com/DMTF/Redfish-Mockup-Server) populated with iLO 5 data. Read this [article](https://developer.hpe.com/blog/build-your-own-ilo-redfish-simulator/) to build your own iLO 5 simulator. 
+
+The OpenBMC and the iLO 5 simulators support `GET` and `SET` methods. You can also access a shared [HPE iLO 5](http://hpe.com/info/ilo) in `GET` mode only.
 
 ![ProgrammingRedfsihInfrastructureDescription](Pictures/ProgrammingRedfishInfraDescription.png)
 
