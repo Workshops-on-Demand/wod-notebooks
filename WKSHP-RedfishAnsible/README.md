@@ -2,7 +2,7 @@
 
 Powered by [HPE DEV Team](https://hpedev.io)
 
-Version 0.119
+Version 0.120
 
 # Introduction to Redfish Ansible playbooks
 

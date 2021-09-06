@@ -2,7 +2,7 @@
 
 Powered by [HPE DEV Team](https://hpedev.io)
 
-Version 0.50
+Version 0.51
 
 # Author: [François Donzé](francois.donze@hpe.com)
 
