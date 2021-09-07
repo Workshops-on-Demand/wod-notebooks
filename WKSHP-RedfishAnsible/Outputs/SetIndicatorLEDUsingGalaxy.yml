@@ -1,22 +1,21 @@
-## This Ansible Playbook retrieves IndicatorLED values and change their status using 
-## the redfish_info and redfish_command Galaxy collections. 
+## This Ansible Playbook retrieves IndicatorLED values and changes their status using 
+## the redfish_info and redfish_command Galaxy collections and their auth_token authentication
+## method. 
 ##
-## 1. Redfish_info has a GetChassisInventory command for in the Chassis category (data type).
+## 1. Redfish_info has a GetChassisInventory command for the Chassis category (data type).
 ## Once you have retrieved the chassis inventory, you have to extract and save
 ## the resources (i.e. items) and properties (i.e. IndicatorLED) you need.
-## This collection performs authentication, crawls the Redfish tree and manage errors for you. 
+## This collection performs authentication with a [fake] OneView SSO token obtained in the first notebook.
+## Then, it crawls the Redfish tree and manages errors for you. 
 ## 
-## 2. Redfish_command has a specific set of commands to modify the IndicatorLED chassis property
+## 2. Redfish_command has a specific command to modify the IndicatorLED chassis property
 ## in its Chassis category (aka data type). The list of all the commands for all Redfish data types
 ## is present in the CATEGORY_COMMANDS_ALL dictionnary of GitHub sources at: https://github.com/ansible-collections/community.general/blob/main/plugins/modules/remote_management/redfish/redfish_command.py
 
-# Version 0.116
+# Version 0.117
 #
 
 - hosts: OneViewManagedBmcs
-  vars:
-      username: "foo"
-      password: "bar"
   connection: local
   gather_facts: False
 
@@ -26,8 +25,7 @@
              category: Chassis
              command: GetChassisInventory
              baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
-             username: "{{ username }}"
-             password: "{{ password }}"
+             auth_token: "{{ token }}"
         register: ChassisInventory
              
       - debug:
@@ -44,9 +42,7 @@
             baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"         
             command: "{{ 'IndicatorLedOn' if item.IndicatorLED == 'Off' else 'IndicatorLedOff' }}"
             resource_id: "{{ item.Id }}"
-            username: "{{ username }}"
-            password: "{{ password }}"
-        register: result
+            auth_token: "{{ token }}"
         with_items: "{{ ChassisLEDValues }}"
            
        
@@ -55,8 +51,7 @@
              category: Chassis
              command: GetChassisInventory
              baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
-             username: "{{ username }}"
-             password: "{{ password }}"
+             auth_token: "{{ token }}"
         register: ChassisInventory
              
       - debug:

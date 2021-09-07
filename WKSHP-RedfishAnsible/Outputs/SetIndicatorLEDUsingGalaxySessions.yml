@@ -12,7 +12,7 @@
 ## in its Chassis category (aka data type). The list of all the commands for all Redfish data types
 ## is present in the CATEGORY_COMMANDS_ALL dictionnary of GitHub sources at: https://github.com/ansible-collections/community.general/blob/main/plugins/modules/remote_management/redfish/redfish_command.py
 
-# Version 0.2
+# Version 0.21
 #
 
 - hosts: RackMountBmcs
@@ -20,8 +20,8 @@
   gather_facts: False
 
   tasks:
-# The following task is commented out because our iLO 5 simulator does not reply with a
-# suitable response to the session creation request.
+# The following task is commented out because our iLO 5 and HPE Superdome Flex 
+# simulators does not reply with a suitable response to the session creation request.
 
 #      - name: "Create Session"
 #        community.general.redfish_command:
@@ -73,7 +73,7 @@
            msg: "{{ ChassisInventory.redfish_facts.chassis.entries | json_query('[].{ChassisType: ChassisType, Id: Id, IndicatorLED: IndicatorLED}') }}"
 
 # The following tasks is commented out because there is no real session
-# opened in the iLO 5 simulator.
+# opened in the iLO 5 and the HPE Superdome Flex simulators.
 
 #      - name: Delete Session
 #        community.general.redfish_command:
