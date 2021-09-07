@@ -11,9 +11,22 @@ Powered by [HPE DEV Team](https://hpedev.io)
 # Workshops-on-Demand
 
 # Introduction to SPIFFE/SPIRE
-SPIFFE, the Secure Production Identity Framework for Everyone, is a set of open-source standards for securely identifying software systems in dynamic and heterogeneous environments. Enterprise application or software services are increasingly running across multiple platforms spanning multiple data centers and public clouds. Since these services span various domains, the most efficient way to secure them is by a Zero Trust model. In this model, nothing is taken for granted, and every request has to be verified. Service identity and authentication is perhaps the most fundamental piece of building Zero Trust environments. If not done right and early, it could undermine your efforts to enable Zero Trust in your organization and introduce risk, complexity, and slow down development velocity.
+SPIFFE, the Secure Production Identity Framework for Everyone, is a set of open-source standards for securely identifying software systems in dynamic and heterogeneous environments.
 
-CNCF’s SPIFFE and SPIRE projects provide a universal service identity plane managing identity and trust within a zero trust security model. These projects provide a system for service to identify and authenticate themselves without the use of shared-secrets or network base security controls. Systems that adopt SPIFFE can easily and reliably mutually authenticate wherever they are running. 
+![Spiffe-Spire](Pictures/spire-agent-spiffe-workload1.png)
+
+Enterprise application or software services are increasingly running across multiple platforms spanning multiple data centers and public clouds. Since these services span various domains, the most efficient way to secure them is by a Zero Trust model. In this model, nothing is taken for granted, and every request has to be verified. Service identity and authentication is perhaps the most fundamental piece of building Zero Trust environments.
+
+![Spiffe-Spire](Pictures/spire-trust-domains.png)
+
+If not done right and early, it could undermine your efforts to enable Zero Trust in your organization and introduce risk, complexity, and slow down development velocity.
+
+CNCF’s SPIFFE and SPIRE projects provide a universal service identity plane managing identity and trust within a zero trust security model. These projects provide a system for service to identify and authenticate themselves without the use of shared-secrets or network base security controls. Systems that adopt SPIFFE can easily and reliably mutually authenticate wherever they are running.
+
+![Spiffe-Spire](Pictures/single-spire-server.png)
+
+![Spiffe-Spire](Pictures/multiple-spire-servers.png)
+
 
 This workshop will introduce SPIFFE and SPIRE concepts, and demonstrate several simple use cases.
 
