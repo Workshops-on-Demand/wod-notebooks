@@ -2,7 +2,7 @@
 
 Powered by [HPE DEV Team](https://hpedev.io)
 
-Version 0.120
+Version 0.121
 
 # Introduction to Redfish Ansible playbooks
 
@@ -43,9 +43,11 @@ In a nutshell, a notebook works as follows:
 
 ## Workshop goals
 
-The goal of this workshop is to present an overview of the management of HPE iLO based servers, including HPE Synergy compute nodes, using Ansible and the Redfish API.
+The goal of this workshop is to present an overview of the management of HPE servers using several Ansible Redfish methods.
 
-In this workshopw, you will able to perform several exercises against a OneView Data Center Simulator (DCS) and then a SY480 Gen10 Redfish simulator.
+This goal is achieved through exercises performed against a OneView Data Center Simulator (DCS), iLO 5 Redfish simulators (HPE SY480 Gen10 and HPE ProLiant DL360 Gen10) and a Superdome Flex Redfish simmulator (exercises 2,3 and 4).
+
+> NOTE: Creating your own iLO 5 or Superdome Flex RMC simulator is explained in [this article](https://developer.hpe.com/blog/build-your-own-ilo-redfish-simulator/). 
 
 ## Disclaimer
 
@@ -55,9 +57,9 @@ The material presented in this workshop has been designed to be educative and di
 
 Each student has a dedicated [Jupyter](https://jupyter.org/) environment hosted by a Linux host that provides a set of [Jupyter Notebooks](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html).
 
-The Jupyter Notebooks have access to an HPE OneView DCS and a [DMTF Redfish server]( https://github.com/DMTF/Redfish-Mockup-Server) providing access to a HPE Synergy iLO 5 mockup.
+The Jupyter Notebooks have access to an HPE OneView DCS and [DMTF Redfish servers]( https://github.com/DMTF/Redfish-Mockup-Server) providing access the simulators listed in the previous paragraph.
 
->Note: Your iLO 5 simulator may not respond exactly like a real ilO 5, but this will not alter the content of the workshop.
+>Note: Your simulators may not always respond exactly like real ilO 5 or RMC, but this will not alter the content of the workshop.
 
 
 ## Workshop description

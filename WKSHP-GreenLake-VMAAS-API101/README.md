@@ -1,4 +1,4 @@
-![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)       ![GreenLake](Pictures/greenlake.jpg)
+![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)       ![GreenLake](Pictures/greenlake-hero.jpg)
 
 # Welcome to the Hack Shack
 Powered by [HPE DEV Team](https://hpedev.io)
@@ -10,7 +10,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
 
 # Workshops-on-Demand
 
-# Introduction to HPE GreenLake VMAAS API
+# Introduction to HPE GreenLake Private Cloud Virtual Machines API
 HPE GreenLake Central is an advanced software-as-a-service platform that provides you with a consistent cloud experience for all your applications and data—on-premises or off-premises. It provides you with insights and controls to manage your hybrid IT estate, complementing your use of public clouds and data centers. HPE GreenLake Central gives you the ability to choose where and how to place your workloads and data, and—through the services you purchase—enables you to monitor security, compliance, capacity, resource utilization, and costs.
 
 In HPE GreenLake Central, you can do the following:
@@ -71,13 +71,9 @@ Description: In this section, we’ll go through some of the necessary steps to 
 Description: In this section, we’ll go through some of basics actions to create an instance and then manage it (stop / start / snpashot, etc...)
 * [Lab 2](2-WKSHP-WKSHP-VMAAS-Instance.ipynb)
 
-### Lab 3: Tasks
-Description: In this section, we will works with tasks.
-* [Lab 3](3-WKSHP-WKSHP-VMAAS-Tasks.ipynb)
-
-### Lab 4: Blueprint deployemnt
-Description: In this section, we’ll go through some of ...
-* [Lab 4](4-WKSHP-WKSHP-VMAAS-Blueprint.ipynb)
+### Lab 3: Blueprint deployment
+Description: In this section, we’ll go through a simple yet relevant blueprint deployment.
+* [Lab 3](3-WKSHP-WKSHP-VMAAS-Blueprint.ipynb)
 
 
 # Thank you!
