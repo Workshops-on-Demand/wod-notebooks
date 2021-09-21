@@ -1,31 +1,33 @@
----
 apiVersion: "kubedirector.hpe.com/v1beta1"
 kind: "KubeDirectorCluster"
 metadata: 
   name: "jupyter-notebook-student{{ STDID }}"
-  namespace: "k8smltenant"
+  labels: 
+    description: ""
 spec: 
   app: "jupyter-notebook"
+  namingScheme: "CrNameRole"
   appCatalog: "local"
   connections: 
-    secrets: 
-      - "hpecp-ext-auth-secret"
-      - "sc-secret-ai101-student{{ STDID }}"
-        #"some secrets"
-    #configmaps: 
-      #- 
-        #"some configmaps"
     #clusters: 
       #- "training-engine-shared"
-        #"some clusters"
+    secrets: 
+      - sc-secret-ai101-student{{ STDID }}
+      - kc-secret-ai101-student{{ STDID }}
+      - hpecp-ext-auth-secret
   roles: 
     - 
       id: "controller"
       members: 1
       resources: 
         requests: 
-          memory: "4Gi"
           cpu: "2"
+          memory: "4Gi"
+          nvidia.com/gpu: "0"
         limits: 
-          memory: "4Gi"
           cpu: "2"
+          memory: "4Gi"
+          nvidia.com/gpu: "0"
+      #Note: "if the application is based on hadoop3 e.g. using StreamCapabilities interface, then change the below dtap label to 'hadoop3', otherwise for most applications use the default 'hadoop2'"
+      #podLabels: 
+        #hpecp.hpe.com/dtap: "hadoop2"
