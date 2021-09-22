@@ -7,7 +7,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
 
 # Building a dynamic machine learning pipeline with KubeDirector
 
-*Version: KubeDirector v0.5.0+*
+*Version: KubeDirector v0.5.3+*
 
 In this workshop, you will learn the steps to create an end-to-end machine learning (ML) pipeline, from data preparation to model deployment through model training and registry, using Kubernetes and another open source application, called [**KubeDirector**](https://github.com/bluek8s/kubedirector/wiki), on a [CNCF-certified Kubernetes cluster](https://www.cncf.io/certification/software-conformance/). You will learn how the key use of KubeDirector applications, KubeDirector clusters and a new capability, called **_Connections_** that enables a **dynamic** ML pipeline.
  
@@ -26,27 +26,6 @@ You can freely copy the Jupyter Notebooks, including their output, in order to p
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html).
 
-In a nutshell, a notebook works as follows:
-
-• A Notebook is a series de cells
-
-• Notebook uses a kernel (visible in the upper right corner of the Notebook)
-
-• Cell can be Markdown or Code (in the selected kernel)
-
-• To Run a cell use:
-
-    o The Play Button at the top
-    o Ctrl-Enter (run and stay on same cell)
-    o Shift-Enter (run and move to next cell)
-    
-• Running a markdown cell is just rendering it
-
-• Running a Code cell runs the code and display the output just below the cell
-
-• When a cell is running it displays a [*] to its left, then when finished, it displays a counter of the number of execution of that cell
-
-• You cannot run a cell when another is already running but you can interrupt a running cell with the stop button
 
 Enjoy the labs ! :-)
 
@@ -61,9 +40,9 @@ In this lab, we will explore how to create and control a machine learning pipeli
 ## Documentation
 Recommended reading: [Building Dynamic Machine Learning Pipelines with KubeDirector](https://developer.hpe.com/blog/building-dynamic-machine-learning-pipelines-with-kubedirector) 
 
-Find out more about the _KubeDirector_ open source project at the GitHub site [here](https://github.com/bluek8s/kubedirector), on the KubeDirector wiki [here](https://github.com/bluek8s/kubedirector/wiki), and KubeDirectorApp data structure [here](https://github.com/bluek8s/kubedirector/wiki/KubeDirectorApp-Definition).   
+Find out more about the _KubeDirector_ open source project [here](https://kubedirector.io).
 
-The documentation for HPE Ezmeral Container Platform is accessible on-line [here](http://docs.bluedata.com/home). 
+The documentation for HPE Ezmeral Container Platform is accessible on-line [here](https://docs.containerplatform.hpe.com/). 
 
 # Workflow
 
@@ -73,7 +52,7 @@ The diagram below depicts the components that come together to build the ML pipe
 
 <img src="Pictures/ML-Pipeline-logical-diagram-v5.png" height="600" width="600" align="right">
 
-* **A CNCF-certified Kubernetes cluster with KubeDirector (v0.5.0+)** installed with the KubeDirector applications for machine learning pipeline registered (training engine, jupyter notebook, deployment engine). For this workshop, the Kubernetes cluster is managed by HPE Ezmeral Container Platform (HPE ECP).
+* **A CNCF-certified Kubernetes cluster with KubeDirector (v0.5.3+)** installed with the KubeDirector applications for machine learning pipeline registered (training engine, jupyter notebook, deployment engine). For this workshop, the Kubernetes cluster is managed by HPE Ezmeral Container Platform (HPE ECP).
 * **A local (lightweight) Jupyter Notebook KubeDirector cluster** used by data scientists as a code sandbox to develop, train and test their models.
 * **A tenant-shared training KubeDirector cluster** with large compute capacity (ideally with GPUs). Data scientists can interact with remote larger capacity training cluster to train their models faster.
 * **A model registry**. A ConfigMap resource is used to store metadata about the trained model in the Kubernetes cluster.

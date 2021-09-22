@@ -7,7 +7,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
 
 # Deploying end-to-end machine learning workflows with HPE Ezmeral ML Ops
 
-*Version: HPE Ezmeral ML Ops built on HPE Ezmeral Container Platform 5.2+*
+*Version: HPE Ezmeral ML Ops built on HPE Ezmeral Container Platform 5.3+*
 
 [HPE Ezmeral ML Ops](https://www.hpe.com/us/en/solutions/machine-learning-operations.html) is a container-based software platform for organizations that want to operationalize the machine learning (ML) workflow process for delivering ML models to production with ease. HPE Ezmeral ML Ops extends the capabilities of the HPE Ezmeral Container Platform (HPE ECP), enabling the data science teams to run all their ML tasks **in a single platform**, using the underlying HPE Ezmeral Container Platform, Kubernetes and [KubeDirector](https://kubedirector.io/) an open source application from HPE. With HPE Ezmeral ML Ops, data science teams can quickly spin up, &mdash; **on-demand** &mdash;, their development environment, develop and experiment several models with the analytic toolkits of their choice, perform parameters optimization and train their models against enterprise production data. HPE Ezmeral ML Ops is also for Operations teams who are tasked to deploy trained ML models artifacts &mdash; handed over by data scientists &mdash; into production by creating a secure RESTful API service layer to serve the model as a prediction service, so it can be consumed by application clients to draw predictions on new data points.
 
@@ -27,27 +27,6 @@ You can freely copy the Jupyter Notebooks, including their output, in order to p
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
 
-In a nutshell, a notebook works as follows:
-
-• A Notebook is a series de cells
-
-• Notebook uses a kernel (visible in the upper right corner of the Notebook)
-
-• Cell can be Markdown or Code (in the selected kernel)
-
-• To Run a cell use:
-
-    o The Play Button at the top
-    o Ctrl-Enter (run and stay on same cell)
-    o Shift-Enter (run and move to next cell)
-    
-• Running a markdown cell is just rendering it
-
-• Running a Code cell runs the code and display the output just below the cell
-
-• When a cell is running it displays a [*] to its left, then when finished, it displays a counter of the number of execution of that cell
-
-• You cannot run a cell when another is already running but you can interrupt a running cell with the stop button
 
 Enjoy the labs ! :-)
 

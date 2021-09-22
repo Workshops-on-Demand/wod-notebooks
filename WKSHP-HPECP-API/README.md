@@ -7,7 +7,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
 
 # Introduction to the HPE Ezmeral Container Platform REST API 
 
-*Version: HPE Ezmeral Container Platform 5.1*
+*Version: HPE Ezmeral Container Platform 5.3 (or later)*
 
 In this workshop, you will learn how developers can interact with HPE Ezmeral Container Platform (HPE ECP) programmatically through its REST API to accelerate their application development and deployment on containers. The workshops does not cover how to perform IT administrative tasks through the REST API.
 
@@ -25,28 +25,6 @@ You can freely copy the Jupyter Notebooks, including their output, in order to p
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
 
-In a nutshell, a notebook works as follows:
-
-• A Notebook is a series de cells
-
-• Notebook uses a kernel (visible in the upper right corner of the Notebook)
-
-• Cell can be Markdown or Code (in the selected kernel)
-
-• To Run a cell use:
-
-    o The Play Button at the top
-    o Ctrl-Enter (run and stay on same cell)
-    o Shift-Enter (run and move to next cell)
-    
-• Running a markdown cell is just rendering it
-
-• Running a Code cell runs the code and display the output just below the cell
-
-• When a cell is running it displays a [*] to its left, then when finished, it displays a counter of the number of execution of that cell
-
-• You cannot run a cell when another is already running but you can interrupt a running cell with the stop button
-
 
 Enjoy the labs ! :-)
 
@@ -58,9 +36,9 @@ You will start you off with some fundamental knowledge about how to interact wit
 ## Documentation
 The REST API documentation for HPE Ezmeral Container Platform is accessible from an HPE Ezmeral Container Platform deployment.
 
-The documentation for HPE Ezmeral Container Platform is accessible on-line [here](http://docs.bluedata.com/home).  
+The documentation for HPE Ezmeral Container Platform is accessible on-line [here](https://docs.containerplatform.hpe.com/).  
 
-Find out more about the open source KubeDirector project at the GitHub site [here](https://github.com/bluek8s/kubedirector) and on the wiki [here](https://github.com/bluek8s/kubedirector/wiki)  
+Find out more about the open source KubeDirector project [here](https://kubedirector.io/).
 
 # Lab environment - A high level overview of the physical architecture of the HPE Ezmeral Container Platform deployment
 This high-level architecture diagram depicts how you can interact programmatically with the HPE Ezmeral Container Platform. 
@@ -89,6 +67,8 @@ Continuing with our lab series, this lab will walk you through how you, as a ten
 
 * [Lab 2](2-WKSHP-HPECP-DeployApp-K8S-Tenant-tf.ipynb)
 
+# Join the HPE DEV Community
+![QRCode](Pictures/QRCode-HPEDEV.png)
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.jpg)
