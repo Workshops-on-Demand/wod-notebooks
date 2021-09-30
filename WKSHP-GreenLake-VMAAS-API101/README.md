@@ -10,7 +10,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
 
 # Workshops-on-Demand
 
-# Introduction to HPE GreenLake Private Cloud Virtual Machines API
+# HPE GreenLake for Private Cloud API: Extract the power of the Virtual Machine AS A Service (VMAAS) API
 HPE GreenLake Central is an advanced software-as-a-service platform that provides you with a consistent cloud experience for all your applications and data—on-premises or off-premises. It provides you with insights and controls to manage your hybrid IT estate, complementing your use of public clouds and data centers. HPE GreenLake Central gives you the ability to choose where and how to place your workloads and data, and—through the services you purchase—enables you to monitor security, compliance, capacity, resource utilization, and costs.
 
 In HPE GreenLake Central, you can do the following:
@@ -23,7 +23,7 @@ Services you use through HPE GreenLake Central appear as widgets on the HPE Gree
 
 - With help from your HPE representative, manage your users and their access to resources in your environment, including access to other tools that are part of the services you purchase or use on a trial basis.
 
-In this workshop we’ll go through some basic usage of the Virtual Machine As a Service API that IT OPS / DEV OPS would use to interact programmatically with their resources. You will see through the basics of the authentification mechanisms. Then you'll get a chance to list a few of these resources available in your tenant. Deploying an instance is a simple but efficient example one needs to go through too along with all the different actions related to it (stop, start, restart, backup...). You will also run some tasks and finally get your hands on a simple blueprint deployment. This workshop does not cover all the features of the HPE GreenLake VMAAS offering. It simply offers you the possiibility to tet just a few of them.
+In this workshop we’ll go through some basic usage of the Virtual Machine As a Service API that IT OPS / DEV OPS would use to interact programmatically with their resources. You will see through the basics of the authentication mechanisms. Then you'll get a chance to list a few of these resources available in your tenant. Deploying an instance is a simple but efficient example one needs to go through too along with all the different actions related to it (stop, start, restart, backup...). This workshop does not cover all the features of the HPE GreenLake VMAAS offering. It simply offers you the possiibility to test just a few of them.
 
 # Authors:[Frederic Passeron](mailto:frederic.passeron@hpe.com)    &     [Vinnarasu Ganesan](mailto:vinnarasu.ganesan@hpe.com)
 
@@ -63,28 +63,18 @@ Enjoy the labs ! :-)
 
 ## Workflow
 
-### Lab 1: Authentification
-Description: In this section, we’ll go through some of the necessary steps to retrieve the API Token necessary for authewntification. Then we will look some of the components used to build, deploy a new instance.
+### Lab 1: Authentication
+Description: In this section, we’ll go through some of the necessary steps to retrieve the API Token necessary for authentication. Then we will look some of the components used to build, deploy a new instance.
 * [Lab 1](1-WKSHP-VMAAS-Authentification.ipynb)
 
 ### Lab 2: Instance Creation
-Description: In this section, we’ll go through some of basics actions to create an instance and then manage it (stop / start / snpashot, etc...)
+Description: In this section, we’ll go through some of basics actions to create an instance and then manage it (stop / start / suspend, etc...)
 * [Lab 2](2-WKSHP-WKSHP-VMAAS-Instance.ipynb)
 
-### Lab 3: Blueprint deployment
-Description: In this section, we’ll go through a simple yet relevant blueprint deployment.
-* [Lab 3](3-WKSHP-WKSHP-VMAAS-Blueprint.ipynb)
+### Lab 3: Instance Management
+Description: In this section, we’ll go through some additional instance management features like snapshotting, cloning.
+* [Lab 3](3-WKSHP-VMAAS-Instance-Advanced.ipynb)
 
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```python
-
-```
-
-
-```python
-
-```
