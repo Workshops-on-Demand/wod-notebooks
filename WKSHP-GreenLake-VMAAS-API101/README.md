@@ -10,20 +10,20 @@ Powered by [HPE DEV Team](https://hpedev.io)
 
 # Workshops-on-Demand
 
-# HPE GreenLake for Private Cloud API: Extract the power of the Virtual Machine AS A Service (VMAAS) API
+# HPE GreenLake for private cloud API: Extract the power of the Virtual Machines as a Service (VMaaS) API
 HPE GreenLake Central is an advanced software-as-a-service platform that provides you with a consistent cloud experience for all your applications and data—on-premises or off-premises. It provides you with insights and controls to manage your hybrid IT estate, complementing your use of public clouds and data centers. HPE GreenLake Central gives you the ability to choose where and how to place your workloads and data, and—through the services you purchase—enables you to monitor security, compliance, capacity, resource utilization, and costs.
 
 In HPE GreenLake Central, you can do the following:
 
 - View and manage the services available to you in your HPE GreenLake environment.
 
-Services you use through HPE GreenLake Central appear as widgets on the HPE GreenLake Central Dashboard.
+Services you use through HPE GreenLake Central appear as cards on the HPE GreenLake Central Dashboard.
 
 - Request and try services that have been offered to you to evaluate through HPE GreenLake Central.
 
 - With help from your HPE representative, manage your users and their access to resources in your environment, including access to other tools that are part of the services you purchase or use on a trial basis.
 
-In this workshop we’ll go through some basic usage of the Virtual Machine As a Service API that IT OPS / DEV OPS would use to interact programmatically with their resources. You will see through the basics of the authentication mechanisms. Then you'll get a chance to list a few of these resources available in your tenant. Deploying an instance is a simple but efficient example one needs to go through too along with all the different actions related to it (stop, start, restart, backup...). This workshop does not cover all the features of the HPE GreenLake VMAAS offering. It simply offers you the possiibility to test just a few of them.
+In this workshop we’ll go through some basic usage of the Virtual Machines as a Service API that IT OPS / DEV OPS would use to interact programmatically with their resources. You will see through the basics of the authentication mechanisms. Then you'll get a chance to list a few of these resources available in your tenant. Deploying an instance is a simple but and efficient; you can then perform example one needs to go through too along with all the different actions related to the instance (stop, start, restart, backup...). You will also run some tasks and finally get your hands on a simple blueprint deployment. This workshop does not cover all of the features of the HPE GreenLake VMaaS offering. It simply offers you the possibility to test just a few of them.
 
 # Authors:[Frederic Passeron](mailto:frederic.passeron@hpe.com)    &     [Vinnarasu Ganesan](mailto:vinnarasu.ganesan@hpe.com)
 
@@ -38,9 +38,9 @@ HackShack Workshops are delivered through a central point that allows a portable
 
 In a nutshell, a notebook works as follows:
 
-• A Notebook is a series de cells
+• A Notebook is a series of cells
 
-• Notebook uses a kernel (visible in the upper right corner of the Notebook)
+• A Notebook uses a kernel (visible in the upper right corner of the Notebook)
 
 • Cell can be Markdown or Code (in the selected kernel)
 
