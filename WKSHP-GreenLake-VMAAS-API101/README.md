@@ -23,6 +23,11 @@ Services you use through HPE GreenLake Central appear as cards on the HPE GreenL
 
 - With help from your HPE representative, manage your users and their access to resources in your environment, including access to other tools that are part of the services you purchase or use on a trial basis.
 
+
+# What is the HPE GreenLake for private cloud service?
+
+HPE GreenLake for private cloud combines the agility and simplicity of the cloud with the governance and control of an on-premises environment allowing customers to meet business and application requirements for privacy, data location, and latency. This true cloud service delivers an intuitive user experience. It features a self-service dashboard and automated provisioning of VMs, is ready to scale up or scale down on demand, is delivered on a pay-per-use basis, and is operated for the customer. This is a workload-optimized solution, built to meet parameters for flexibility, resiliency, scale, and VM performance. As an on-premises based service, it allows the customer to leverage their existing investments in IT infrastructure toolsets such as VM templates/images, backup solutions, network infrastructure, and more with room to scale. 
+
 In this workshop we’ll go through some basic usage of the Virtual Machines as a Service API that IT OPS / DEV OPS would use to interact programmatically with their resources. You will see through the basics of the authentication mechanisms. Then you'll get a chance to list a few of these resources available in your tenant. Deploying an instance is a simple but and efficient; you can then perform example one needs to go through too along with all the different actions related to the instance (stop, start, restart, backup...). You will also run some tasks and finally get your hands on a simple blueprint deployment. This workshop does not cover all of the features of the HPE GreenLake VMaaS offering. It simply offers you the possibility to test just a few of them.
 
 # Authors:[Frederic Passeron](mailto:frederic.passeron@hpe.com)    &     [Vinnarasu Ganesan](mailto:vinnarasu.ganesan@hpe.com)
@@ -78,3 +83,8 @@ Description: In this section, we’ll go through some additional instance manage
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
+
+
+```python
+
+```
