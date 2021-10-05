@@ -70,7 +70,7 @@ Enjoy the labs ! :-)
 
 ### Lab 1: Authentication
 Description: In this section, we’ll go through some of the necessary steps to retrieve the API Token necessary for authentication. Then we will look some of the components used to build, deploy a new instance.
-* [Lab 1](1-WKSHP-VMAAS-Authentification.ipynb)
+* [Lab 1](1-WKSHP-VMAAS-Authentication.ipynb)
 
 ### Lab 2: Instance Creation
 Description: In this section, we’ll go through some of basics actions to create an instance and then manage it (stop / start / suspend, etc...)
