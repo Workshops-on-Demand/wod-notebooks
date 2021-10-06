@@ -17,7 +17,9 @@ This lab is an introduction to Aruba's Python SDK, named pyaoscx v2.0.  Note tha
 
 # Prerequisites
 Prior to this lab, users must have a basic understanding of Python v3.x as well as fundamentals of class structures and basic programming concepts.
-Some helpful resources to getting started with Python concepts can be found in other [HPE DEV Hackshack Workshops](https://hackshack.hpedev.io/workshops)!
+Some helpful resources to getting started with Python concepts can be found in other HPE DEV Hackshack workshops-on-demand, such as:
+* [Introduction to Python Programming](https://hackshack.hpedev.io/workshop/15)
+* [API 101 - API basics and the value they provide](https://hackshack.hpedev.io/workshop/9)
 
 
 
