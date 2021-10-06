@@ -10,10 +10,16 @@ Powered by [HPE DEV Team](https://hpedev.io)
 
 # Workshops-on-Demand
 
-# Introduction to[Workshop title]
-In this workshop we’ll go through ....
+# Intructor: [Alvin Castro](mailto:aruba-automation@hpe.com)
 
-# Author: [Name](mailto:email)
+# Introduction to the pyaoscx v2.0 Aruba Python SDK
+This lab is an introduction to Aruba's Python SDK, named pyaoscx v2.0.  Note that this instruction will be specific to the v2.0 or later pyaoscx module, as the class structure and mtehod calls all function differently compared to v1.x
+
+# Prerequisites
+Prior to this lab, users must have a basic understanding of Python v3.x as well as fundamentals of class structures and basic programming concepts.
+Some helpful resources to getting started with Python concepts can be found in other [HPE DEV Hackshack Workshops](https://hackshack.hpedev.io/workshops)!
+
+
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
@@ -51,13 +57,17 @@ Enjoy the labs ! :-)
 
 ## Workflow
 
-### Lab 1: Lab 1 title
-Descriptione: In this section, we’ll go through some of ...
-* [Lab 1](1-WKSHP-title.ipynb)
+### Lab 1: Introduction to the pyaoscx v2.0 Aruba Python SDK
+Description: In this section, we’ll go through:
+  * Setup a Python workflow skeleton to login to the switch
+  * Operate a Switch Config using either  Open Granulated Approach or Imperative Factory Approach
+  * Add ports to a LAG and tag a VLAN to the lag leveraging Open Granulated Approach or Imperative Factory Approach
+
+## [Lab 1](1-WKSHP-Aruba-Lab-1.ipynb)
 
 
 # Thank you!
-![grommet.JPG](Pictures/grommet.JPG)
+![grommet.JPG](Pictures/grommet.jpg)
 
 
 ```python
