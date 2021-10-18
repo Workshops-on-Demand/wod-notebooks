@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: backend-envoy-student76
+  name: backend-envoy-student{{ STDID }}
 data:
   envoy.yaml: |
     node:
@@ -45,7 +45,7 @@ data:
           tls_context:
             common_tls_context:
               tls_certificate_sds_secret_configs:
-              - name: "spiffe://example.org/ns/testspiresds/sa/student76/backend"
+              - name: "spiffe://example.org/ns/testspiresds/sa/student{{ STDID }}/backend"
                 sds_config:
                   api_config_source:
                     api_type: GRPC
@@ -56,7 +56,7 @@ data:
                 # validate the SPIFFE ID of incoming clients (optionally)
                 default_validation_context:
                   match_subject_alt_names:
-                    - exact: "spiffe://example.org/ns/testspiresds/sa/student76/frontend"
+                    - exact: "spiffe://example.org/ns/testspiresds/sa/student{{ STDID }}/frontend"
                 # obtain the trust bundle from SDS
                 validation_context_sds_secret_config:
                   name: "spiffe://example.org"

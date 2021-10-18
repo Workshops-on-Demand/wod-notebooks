@@ -8,7 +8,7 @@ set -e
 
 ##echo "${bb}deleting registration entry for the backend - envoy...${nn}"
 echo "deleting registration entry for the backend - envoy..."
-BackendEntryID=$(kubectl exec -n spire spire-server-0 -- /opt/spire/bin/spire-server entry show | grep -B 1 -E 'spiffe.*testspiresds.*student76.*backend' | grep 'Entry ID' | awk '{print $4}')
+BackendEntryID=$(kubectl exec -n spire spire-server-0 -- /opt/spire/bin/spire-server entry show | grep -B 1 -E 'spiffe.*testspiresds.*student{{ STDID }}.*backend' | grep 'Entry ID' | awk '{print $4}')
 delBackendEntryID=$(echo $BackendEntryID | tr -d '\r')
 echo $delBackendEntryID
 
@@ -16,7 +16,7 @@ kubectl exec -n spire spire-server-0 -- /opt/spire/bin/spire-server entry delete
 
 ##echo "${bb}Deleting registration entry for the frontend-2 - envoy...${nn}"
 echo "Deleting registration entry for the frontend-2 - envoy..."
-Frontend2EntryID=$(kubectl exec -n spire spire-server-0 -- /opt/spire/bin/spire-server entry show | grep -B 1 -E 'spiffe.*testspiresds.*student76.*frontend-2' | grep 'Entry ID' | awk '{print $4}') 
+Frontend2EntryID=$(kubectl exec -n spire spire-server-0 -- /opt/spire/bin/spire-server entry show | grep -B 1 -E 'spiffe.*testspiresds.*student{{ STDID }}.*frontend-2' | grep 'Entry ID' | awk '{print $4}') 
 delFrontend2EntryID=$(echo $Frontend2EntryID | tr -d '\r')
 echo $delFrontend2EntryID
 
@@ -24,7 +24,7 @@ kubectl exec -n spire spire-server-0 -- /opt/spire/bin/spire-server entry delete
 
 ##echo "${bb}Deleting registration entry for the frontend - envoy...${nn}"
 echo "Deleting registration entry for the frontend - envoy..."
-FrontendEntryID=$(kubectl exec -n spire spire-server-0 -- /opt/spire/bin/spire-server entry show | grep -B 1 -E 'spiffe.*testspiresds.*student76.*frontend' | grep 'Entry ID' | awk '{print $4}')
+FrontendEntryID=$(kubectl exec -n spire spire-server-0 -- /opt/spire/bin/spire-server entry show | grep -B 1 -E 'spiffe.*testspiresds.*student{{ STDID }}.*frontend' | grep 'Entry ID' | awk '{print $4}')
 delFrontendEntryID=$(echo $FrontendEntryID | tr -d '\r')
 echo $delFrontendEntryID
 

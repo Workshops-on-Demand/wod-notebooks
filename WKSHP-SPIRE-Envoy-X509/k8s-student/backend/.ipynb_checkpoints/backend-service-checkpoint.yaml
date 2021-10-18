@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: backend-envoy-student76
+  name: backend-envoy-student{{ STDID }}
 spec:
   clusterIP: None
   ports:
@@ -9,4 +9,4 @@ spec:
      protocol: TCP
      targetPort: 9001
   selector:
-      app: backend-student76
+      app: backend-student{{ STDID }}

@@ -20,7 +20,7 @@ It may be challenging for organizations to modify their applications to use the 
 
 In this workshop, you'll go through the deployment of three containerized applications (2 frontend services and 1 backend service) in a Kubernetes cluster and the configuration of **Envoy sidecar proxies** sitting in front of these applications. The Envoy proxies will be configured to use the SPIRE Agent SDS implementation and establish secure communication through mTLS connections on behalf of the applications. You'll configure the existing SPIRE system to provide service identity to Envoy proxy services in the form of X.509 certificates (aka X.509 SVIDs) that will be consumed by Envoy proxies, so the applications can communicate securely.
 
-For this hands-on workshop, the SPIRE components (Server and Agents) have already been deployed in a Kubernetes cluster managed by HPE Ezmeral Container Platform. For more information on how to get a SPIRE Server and SPIRE Agent running in a Kubernetes cluster, check out [here](https://spiffe.io/docs/latest/try/getting-started-k8s/). 
+For this hands-on workshop, the SPIRE components (Server and Agents) have already been deployed in a Kubernetes cluster managed by **HPE Ezmeral Runtime** (formerly known as HPE Ezmeral Container Platform). For more information on how to get a SPIRE Server and SPIRE Agent running in a Kubernetes cluster, check out [here](https://spiffe.io/docs/latest/try/getting-started-k8s/). 
 
 A SPIRE deployment is composed of a SPIRE Server and a SPIRE Agent installed on each Kubernetes worker node on which a service is running: 
 
@@ -29,38 +29,14 @@ A SPIRE deployment is composed of a SPIRE Server and a SPIRE Agent installed on 
 **SPIRE Agent:** This component is responsible for delivering identities to the workload services. It seats on each Kubernetes worker nodes and it is responsible for serving the *Workload API* and for providing identified services with their certificate SVIDs. By default, SPIRE Agent acts as SDS Provider for Envoy.
 
 
-# Author: [Denis Choukroun](mailto:denis.choukroun@hpe.com)
+# Author: [Name](mailto:email)
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
+
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
 
-
-## Lab flow
-HackShack Workshops are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
-
-In a nutshell, a notebook works as follows:
-
-• A Notebook is a series de cells
-
-• Notebook uses a kernel (visible in the upper right corner of the Notebook)
-
-• Cell can be Markdown or Code (in the selected kernel)
-
-• To Run a cell use:
-
-    o The Play Button at the top
-    o Ctrl-Enter (run and stay on same cell)
-    o Shift-Enter (run and move to next cell)
-    
-• Running a markdown cell is just rendering it
-
-• Running a Code cell runs the code and display the output just below the cell
-
-• When a cell is running it displays a [*] to its left, then when finished, it displays a counter of the number of execution of that cell
-
-• You cannot run a cell when another is already running but you can interrupt a running cell with the stop button
 
 Enjoy the labs ! :-)
 
@@ -79,7 +55,7 @@ As shown in the diagram, to use SPIRE to establish mTLS connection between workl
 * A SPIRE Server (already deployed in the Kubernetes cluster),
 * A SPIRE Agent already deployed on each K8s worker node and that also acts as SDS Provider for Envoy that issues identity documents to Envoy proxies on application service's behalf,
 * Creation of registration entries on SPIRE Server to identify services and issue the service identifier (SPIFFE ID) and X.509 certificates (SVIDs) for the services,
-* Configuration of Envoy sidecar proxies sitting in front of the backend and fronted services, so they request their service identities to SPIRE and establish encrypted mTLS connections on each application service's behalf. 
+* Configuration of Envoy sidecar proxies sitting in front of the backend and frontend services, so they request their service identities to SPIRE and establish encrypted mTLS connections on each application service's behalf. 
 
 In this hands-on technical workshop you will learn how to:
 
@@ -90,8 +66,8 @@ In this hands-on technical workshop you will learn how to:
     
 **Note:** In this workshop, you will all share the resources of the same Kubernetes Cluster.
     
-### Lab 1: Authenticate as tenant user to HPE Ezmeral Container Platform
-In this first lab, you will connect to the HPE Ezmeral Container Platform REST API endpoint and retrieve an authentication session token to be used for fetching the KubeConfig file you will need to interact with the Kubernetes cluster available for your tenant.
+### Lab 1: Authenticate as tenant user to HPE Ezmeral Runtime
+In this first lab, you will connect to the HPE Ezmeral Runtime REST API endpoint and retrieve an authentication session token to be used for fetching the KubeConfig file you will need to interact with the Kubernetes cluster available for your tenant.
     
 * [Lab 1](1-WKSHP-SPIRE-Envoy-X509-Get-Kubeconfig.ipynb)
 

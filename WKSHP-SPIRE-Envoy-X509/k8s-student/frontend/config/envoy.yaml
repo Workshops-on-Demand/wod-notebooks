@@ -53,12 +53,12 @@ static_resources:
     lb_policy: ROUND_ROBIN
     hosts:
       - socket_address:
-          address: backend-envoy-student76
+          address: backend-envoy-student{{ STDID }}
           port_value: 9001
     tls_context:
       common_tls_context:
         tls_certificate_sds_secret_configs:
-          - name: "spiffe://example.org/ns/testspiresds/sa/student76/frontend"
+          - name: "spiffe://example.org/ns/testspiresds/sa/student{{ STDID }}/frontend"
             sds_config:
               api_config_source:
                 api_type: GRPC
@@ -69,7 +69,7 @@ static_resources:
           # validate the SPIFFE ID of the server (recommended)
           default_validation_context:
             match_subject_alt_names:
-              exact: "spiffe://example.org/ns/testspiresds/sa/student76/backend"
+              exact: "spiffe://example.org/ns/testspiresds/sa/student{{ STDID }}/backend"
           validation_context_sds_secret_config:
             name: "spiffe://example.org"
             sds_config:

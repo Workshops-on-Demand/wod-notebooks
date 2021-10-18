@@ -13,30 +13,30 @@ register() {
 echo "Creating registration entry for the backend - envoy..."
 register \
     -parentID spiffe://example.org/ns/spire/sa/spire-agent \
-    -spiffeID spiffe://example.org/ns/testspiresds/sa/student76/backend \
+    -spiffeID spiffe://example.org/ns/testspiresds/sa/student{{ STDID }}/backend \
     -selector k8s:ns:testspiresds \
-    -selector k8s:sa:student76 \
-    -selector k8s:pod-label:app:backend-student76 \
+    -selector k8s:sa:student{{ STDID }} \
+    -selector k8s:pod-label:app:backend-student{{ STDID }} \
     -selector k8s:container-name:envoy
 
 ##echo "${bb}Creating registration entry for the frontend - envoy...${nn}"
 echo "Creating registration entry for the frontend - envoy..."
 register \
     -parentID spiffe://example.org/ns/spire/sa/spire-agent \
-    -spiffeID spiffe://example.org/ns/testspiresds/sa/student76/frontend \
+    -spiffeID spiffe://example.org/ns/testspiresds/sa/student{{ STDID }}/frontend \
     -selector k8s:ns:testspiresds \
-    -selector k8s:sa:student76 \
-    -selector k8s:pod-label:app:frontend-student76 \
+    -selector k8s:sa:student{{ STDID }} \
+    -selector k8s:pod-label:app:frontend-student{{ STDID }} \
     -selector k8s:container-name:envoy
 
 ##echo "${bb}Creating registration entry for the frontend - envoy...${nn}"
 echo "Creating registration entry for the frontend - envoy..."
 register \
     -parentID spiffe://example.org/ns/spire/sa/spire-agent \
-    -spiffeID spiffe://example.org/ns/testspiresds/sa/student76/frontend-2 \
+    -spiffeID spiffe://example.org/ns/testspiresds/sa/student{{ STDID }}/frontend-2 \
     -selector k8s:ns:testspiresds \
-    -selector k8s:sa:student76 \
-    -selector k8s:pod-label:app:frontend-2-student76 \
+    -selector k8s:sa:student{{ STDID }} \
+    -selector k8s:pod-label:app:frontend-2-student{{ STDID }} \
     -selector k8s:container-name:envoy
 
 ##echo "${bb}Listing created registration entries...${nn}"

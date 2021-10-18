@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend-2-student76
+  name: frontend-2-student{{ STDID }}
   labels:
-    app: frontend-2-student76
+    app: frontend-2-student{{ STDID }}
 spec:
   selector:
     matchLabels:
-      app: frontend-2-student76
+      app: frontend-2-student{{ STDID }}
   template:
     metadata:
       labels:
-        app: frontend-2-student76
+        app: frontend-2-student{{ STDID }}
     spec:
-      serviceAccountName: student76
+      serviceAccountName: student{{ STDID }}
       containers:
       - name: envoy
         image: envoyproxy/envoy-alpine:v1.14.1
@@ -38,11 +38,11 @@ spec:
       volumes:
       - name: envoy-config
         configMap:
-          name: frontend-2-envoy-student76
+          name: frontend-2-envoy-student{{ STDID }}
       - name: spire-agent-socket
         hostPath:
           path: /run/spire/sockets
           type: DirectoryOrCreate
       - name: symbank-webapp-2-config
         configMap:
-          name: symbank-webapp-2-config-student76
+          name: symbank-webapp-2-config-student{{ STDID }}
