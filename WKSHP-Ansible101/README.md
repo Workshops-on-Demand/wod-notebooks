@@ -14,7 +14,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
 
 Gone are the days when an administrator could, realistically, count the number of machines they were responsible for, and the days of very large scale deployments are here. This also means gone are the days when an admin could reasonably log into all of those machines to do the configuration by hand. Today it's best to rely on an automation framework to do this on a larger, more replicable, scale. Ansible is one such automation framework and this is a intended to walk folks through the very basics of Ansible, getting it set up, up and running, passing data, fetching information and generally getting comfortable with the basics of what configuration management is.
 
-Ansible is an open-source software:
+In a nutshell, Ansible is an open-source software:
 * configuration manager
 * simple
 * extensible via modules
@@ -29,7 +29,9 @@ It supports devices and things you wouldn’t expect:
 * VMware
 * Storage devices (HPE, Netapp, Pure Storage, etc)
 
-In the following workshop, we will introduce the basics around Ansible. 
+If you want to see more automation related workshops, take a look at the following:
+* [Stackstorm 101 - Introduction to the Stackstorm automation features](https://hackshack.hpedev.io/workshop/21)
+
 
 # Authors:[Frederic Passeron](mailto:frederic.passeron@hpe.com)    
 
@@ -69,17 +71,17 @@ Enjoy the labs ! :-)
 
 ## Workflow
 
-### Lab 1: Authentication
+### Lab 1: Architecture
 Description: In this section, we’ll go through some of the necessary steps to retrieve the API Token necessary for authentication. Then we will look some of the components used to build, deploy a new instance.
-* [Lab 1](1-WKSHP-VMAAS-Authentication.ipynb)
+* [Lab 1](1-WKSHP-Ansible101-Architecture.ipynb)
 
-### Lab 2: Instance Creation
+### Lab 2: Passing Data
 Description: In this section, we’ll go through some of basics actions to create an instance and then manage it (stop / start / suspend, etc...)
-* [Lab 2](2-WKSHP-WKSHP-VMAAS-Instance.ipynb)
+* [Lab 2](2-WKSHP-Ansible101-Passing-Data.ipynb)
 
-### Lab 3: Instance Management
+### Lab 3: Fectching Information
 Description: In this section, we’ll go through some additional instance management features like snapshotting, cloning.
-* [Lab 3](3-WKSHP-VMAAS-Instance-Advanced.ipynb)
+* [Lab 3](3-WKSHP-Ansible101-Fetching-Information.ipynb)
 
 
 # Thank you!
