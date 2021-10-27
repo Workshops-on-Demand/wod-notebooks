@@ -59,13 +59,3 @@ Descriptione: In this section, we’ll go through some of the basics of APIs: De
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```python
-import
-```
-
-
-```python
-
-```

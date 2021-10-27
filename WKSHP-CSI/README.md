@@ -86,9 +86,4 @@ CSI leaves a lot of headroom to innovate. Check out what we can do specifically 
 
 # Conclusion
 
-You are done! Let's [conclude this workshop](X-WKSHP-CSI-Conclusion.ipynb)!
-
-
-```python
-
-```
+You are done! Let's [conclude this workshop](5-WKSHP-CSI-Conclusion.ipynb)!

@@ -68,8 +68,3 @@ We will switch to Python to do what we previously did with PowerShell
 # Thank You!
 ![grommet.JPG](Pictures/grommet.JPG)
 
-
-
-```powershell
-
-```

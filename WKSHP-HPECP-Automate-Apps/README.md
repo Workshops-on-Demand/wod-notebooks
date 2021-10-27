@@ -80,8 +80,3 @@ In this lab, we will explore the various data sources provided by the HPECP to i
 
 * [Lab 2](2-WKSHP-HPECP-Charge-back-and-reporting.ipynb)
 
-
-
-```python
-
-```

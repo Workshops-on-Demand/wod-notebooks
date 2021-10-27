@@ -58,13 +58,3 @@ Descriptione: In this section, we’ll go through some of ...
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```python
-
-```
-
-
-```python
-
-```

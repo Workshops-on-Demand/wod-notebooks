@@ -110,13 +110,3 @@ Start the labs by clicking on the link below !
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```python
-
-```
-
-
-```python
-
-```

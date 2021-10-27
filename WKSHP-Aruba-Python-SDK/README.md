@@ -70,13 +70,3 @@ Description: In this section, we’ll go through:
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.jpg)
-
-
-```python
-
-```
-
-
-```python
-
-```

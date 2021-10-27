@@ -76,13 +76,3 @@ Enjoy the labs ! :-)
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```bash
-
-```
-
-
-```bash
-
-```

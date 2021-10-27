@@ -102,13 +102,3 @@ Description: In this section, we’ll create, present and delete a block volume.
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```python
-
-```
-
-
-```python
-
-```

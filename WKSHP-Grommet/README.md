@@ -115,8 +115,3 @@ In this lab, we'll connect your GitHub repo to netlify to deploy the application
 ![grommet.JPG](Pictures/grommet.jpg)
 
 
-
-
-```python
-
-```

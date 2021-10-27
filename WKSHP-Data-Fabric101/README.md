@@ -79,13 +79,3 @@ Description: In this section, we’ll go through applying several security conce
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```python
-
-```
-
-
-```python
-
-```

@@ -72,20 +72,3 @@ There is only one lab in this worskhop:
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-
-
-```python
-
-```

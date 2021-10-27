@@ -86,8 +86,3 @@ Description: In this section, we’ll go through some additional instance manage
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```python
-
-```

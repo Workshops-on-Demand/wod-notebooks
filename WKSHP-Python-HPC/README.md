@@ -59,8 +59,3 @@ Description: In this section, we’ll cover python, why it is considered slow, m
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```python
-
-```

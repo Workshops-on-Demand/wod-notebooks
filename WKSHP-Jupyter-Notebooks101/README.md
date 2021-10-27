@@ -70,8 +70,3 @@ Description: In this section, we’ll show you how to install your own jupyterhu
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```python
-
-```

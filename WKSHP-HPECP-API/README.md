@@ -72,8 +72,3 @@ Continuing with our lab series, this lab will walk you through how you, as a ten
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.jpg)
-
-
-```python
-
-```

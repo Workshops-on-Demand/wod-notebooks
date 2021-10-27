@@ -61,8 +61,3 @@ Description: In this section, we’ll go through some of the main concepts behin
 ![grommet.JPG](Pictures/grommet.JPG)
 
 <h2>Next&nbsp;&nbsp;&nbsp;&nbsp;<a href="1-WKSHP-Stackstorm_Basics.ipynb#sc" target="New" title="Next: Lab1"><i class="fas fa-chevron-circle-right" style="color:#FFAD33;"></i></a></h2>
-
-
-```python
-
-```

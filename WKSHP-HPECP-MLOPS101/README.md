@@ -92,8 +92,3 @@ Description: In this lab we will :
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```python
-
-```
