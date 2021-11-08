@@ -42,7 +42,7 @@ In a nutshell, a notebook works as follows:
 
 • Running a Code cell runs the code and display the output just below the cell
 
-• When a cell is running it displays a [*] to its left, then when finished, it displays a counter of the number of execution of that cell
+• When a cell is running it displays a [*] to its left, then when finished, it displays a counter of the number of executions in the notebook
 
 • You cannot run a cell when another is already running but you can interrupt a running cell with the stop button
 
