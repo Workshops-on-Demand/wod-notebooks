@@ -1,11 +1,11 @@
-# Version 0.11
+# Version 0.12
 ---
 
 - hosts: OneViewManagedBmcs
   connection: local
   gather_facts: no
   vars:
-      ilo_user: demopaq
+      ilo_user: username
       ilo_pass: password
 
   tasks:

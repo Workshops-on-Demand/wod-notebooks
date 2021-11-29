@@ -12,16 +12,18 @@
 ## in its Chassis category (aka data type). The list of all the commands for all Redfish data types
 ## is present in the CATEGORY_COMMANDS_ALL dictionnary of GitHub sources at: https://github.com/ansible-collections/community.general/blob/main/plugins/modules/remote_management/redfish/redfish_command.py
 
-# Version 0.21
+# Version 0.22
 #
 
-- hosts: RackMountBmcs
+- hosts: OneViewManagedBmcs
   connection: local
   gather_facts: False
 
   tasks:
-# The following task is commented out because our iLO 5 and HPE Superdome Flex 
-# simulators does not reply with a suitable response to the session creation request.
+# As of the writing of this script, SuperdomeFlex 280 RMC cannot be accessed
+# via the OneView SSO feature. Hence, to create a Redfish Authenticated Session,
+# in an SDF 280 RMC, you will need to uncomment the following, and provide suitable
+# credentials. A Session Token will be stored in Ansible variable SessionProperties.session.token
 
 #      - name: "Create Session"
 #        community.general.redfish_command:
@@ -40,7 +42,7 @@
              category: Chassis
              command: GetChassisInventory
              baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
-             auth_token: "SessionProperties.session.token"
+             auth_token: "{{ SessionProperties.session.token }}"
         register: ChassisInventory
              
       - debug:
