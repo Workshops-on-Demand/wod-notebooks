@@ -1,36 +1,29 @@
-![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)    ![Dockerlogo](Pictures/docker.png)  
- 
+![HPEDEVLogo](Pictures/hpe-dev-logo.png)
+
 # Welcome to the Hack Shack
 Powered by [HPE DEV Team](https://hpedev.io)
+
+# Instructor: [Jay Pathak](mailto:jpathak@hpe.com)
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 </p>
 
-# Workshops-on-Demand
+# Introduction to the Aruba Central API using PyCentral SDK
+In this workshop we’ll go through Aruba Central’s API gateway and illustrate how to make an API call to Aruba Central using PyCentral SDK within a Python script. PyCentral SDK is a python library developer specifically for Aruba Central's REST API. We will see how to use in-built modules to make API calls to various GET/POST REST API endpoints.
 
-# Introduction to Docker 101
-In this workshop we’ll go through the understanding of Containers and Docker, from basic concepts up to running a full Web based application containerized
+# Prerequisites
+Prior to this lab, users must have a basic understanding of the following:
+- Python3 fundamentals
+- Aruba Central
 
-# Authors: [Bruno Cornec](mailto:bruno.cornec@hpe.com) & [Rene Ribaud](mailto:rene@flossita.org) & [Frederic Passeron](mailto:frederic.passeron@hpe.com)
+Some helpful resources to getting started with Python concepts can be found in other HPE Hackshack courses!
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
-
-## Objectives of the Docker Lab
-At the end of the Lab students should be able to install Docker, use the CLI to create a new image, a container, launch an application in it, store data, configure the network.
-
-This Lab is intended to be trial and error so that during the session students should understand really what is behind the tool.  Blindly following instructions is not an effective way to learn IMHO. You've been warned ;-)
-
-Expected duration : 120 minutes
-
-## Reference documents
-When dealing with the installation and configuration of Docker, the first step  is to check the reference Web site http://docker.io/:
-
-At the start of each section there is an estimate of how long it will take to complete.
 
 
 ## Lab flow
@@ -62,20 +55,16 @@ Enjoy the labs ! :-)
 
 ## Workflow
 
-### Lab 1: Introduction to container technology
-Description: In this section, we’ll go through some of ...
-* [Lab 1](1-WKSHP-Intro-to-Containers-techno.ipynb)
+### Lab 1: Aruba Central API Gateway
+Description: In this section, we’ll go through Aruba Central's API Gateway page and understand the various options available.
+* [Lab 1](1-WKSHP-API-Gateway.ipynb)
+* [Lab 2](2-WKSHP-PyCentral-SDK.ipynb)
 
-### Lab 2: Using Docker
-Description: In this section, we’ll go through some of ...
-* [Lab 2](2-WKSHP-Using-Docker.ipynb)
-
-### Lab 3: Using Docker Compose
-Description: In this section, we’ll go through some of ...
-* [Lab 3](3-WKSHP-Using-Docker-Compose.ipynb)
-
-### Conclusion
-* [Conclusion](4-WKSHP-COnclusion.ipynb)
 
 # Thank you!
-![grommet.JPG](Pictures/grommet.JPG)
+![grommet.JPG](Pictures/grommet.jpg)
+
+
+```python
+
+```
