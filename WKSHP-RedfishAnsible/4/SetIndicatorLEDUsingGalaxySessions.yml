@@ -12,7 +12,7 @@
 ## in its Chassis category (aka data type). The list of all the commands for all Redfish data types
 ## is present in the CATEGORY_COMMANDS_ALL dictionnary of GitHub sources at: https://github.com/ansible-collections/community.general/blob/main/plugins/modules/remote_management/redfish/redfish_command.py
 
-# Version 0.22
+# Version 0.23
 #
 
 - hosts: OneViewManagedBmcs
@@ -42,7 +42,7 @@
              category: Chassis
              command: GetChassisInventory
              baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
-             auth_token: "{{ SessionProperties.session.token }}"
+             auth_token: "{{ token }}"
         register: ChassisInventory
              
       - debug:
@@ -59,7 +59,7 @@
             baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"         
             command: "{{ 'IndicatorLedOn' if item.IndicatorLED == 'Off' else 'IndicatorLedOff' }}"
             resource_id: "{{ item.Id }}"
-            auth_token: "SessionProperties.session.token"
+            auth_token: "{{ token }}"
         with_items: "{{ ChassisLEDValues }}"
            
        
@@ -68,7 +68,7 @@
              category: Chassis
              command: GetChassisInventory
              baseuri: "{{ inventory_hostname }}:{{ ansible_port }}"
-             auth_token: "SessionProperties.session.token"
+             auth_token: "{{ token }}"
         register: ChassisInventory
              
       - debug:
