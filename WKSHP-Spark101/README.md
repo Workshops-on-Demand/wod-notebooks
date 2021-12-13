@@ -1,25 +1,20 @@
-![HPEDEVLogo](Pictures/hpe-dev-logo.png)
+![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)    ![Sparklogo](Pictures/spark.png)
 
 # Welcome to the Hack Shack
 Powered by [HPE DEV Team](https://hpedev.io)
-
-# Instructor: [Jay Pathak](mailto:jpathak@hpe.com)
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 </p>
 
-# Introduction to the Aruba Central API using PyCentral SDK
-In this workshop we’ll go through Aruba Central’s API gateway and illustrate how to make an API call to Aruba Central using PyCentral SDK within a Python script. PyCentral SDK is a python library developer specifically for Aruba Central's REST API. We will see how to use in-built modules to make API calls to various GET/POST REST API endpoints.
+# Workshops-on-Demand
 
-# Prerequisites
-Prior to this lab, users must have a basic understanding of the following:
-- [API](https://hackshack.hpedev.io/workshop/9)
-- [Python3 fundamentals](https://hackshack.hpedev.io/workshop/15)
-- Aruba Central
+# Introduction to Spark101
+In this workshop we’ll go through some of basics concepts aroud Apache Spark.
+Apache Spark is a unified analytics engine for large-scale data processing. It provides high-level APIs in Java, Scala, Python and R, and an optimized engine that supports general execution graphs. It also supports a rich set of higher-level tools including Spark SQL for SQL and structured data processing, MLlib for machine learning, GraphX for graph processing, and Structured Streaming for incremental computation and stream processing.
 
-Some helpful resources to getting started with Python concepts can be found in other HPE Hackshack courses!
+# Authors: [Chris Snow](mailto:chris.snow@hpe.com)  [Frederic Passeron](mailto:frederic.passeron@hpe.com) 
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
@@ -54,16 +49,20 @@ In a nutshell, a notebook works as follows:
 
 Enjoy the labs ! :-)
 
+
 ## Workflow
 
-### Lab 1: Aruba Central API Gateway
-Description: In this section, we’ll go through Aruba Central's API Gateway page and understand the various options available.
-* [Lab 1](1-WKSHP-API-Gateway.ipynb)
-* [Lab 2](2-WKSHP-PyCentral-SDK.ipynb)
+### Lab 1: Spark Basics.
+Description: In this section, we’ll go through some of ...
+here is the token necessary to connect to the next lab hosted on a separate jupyterhub.
+
+token = {{ SPARKTOK }} 
+
+* [Lab 1](http://{{ JPHOSTEXT }}:$$HTTPPORT)
 
 
 # Thank you!
-![grommet.JPG](Pictures/grommet.jpg)
+![grommet.JPG](Pictures/grommet.JPG)
 
 
 ```python
