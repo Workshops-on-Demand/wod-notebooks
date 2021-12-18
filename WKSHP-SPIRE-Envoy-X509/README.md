@@ -10,9 +10,9 @@ Powered by [HPE DEV Team](https://hpedev.io)
 
 # Workshops-on-Demand
 
-# Securing Microservice Communication with Envoy using X.509 SPIFFE IDs 
+# Creating a Zero Trust Model for Microservices Architectures with SPIRE and Envoy 
 
-This workshop will get you started with SPIRE and Envoy Secret Directory Service (SDS) to create a **Zero Trust** security model within a microservice architecture in Kubernetes. A Zero Trust security model uses cryptographic identities for authenticating every system and application services, and allows these services to establish a two-way (mutual) authentication and communicate securily in the environment. 
+This workshop will get you started with SPIRE and Envoy Secret Directory Service (SDS) to create a **Zero Trust** security model within a microservices architecture in Kubernetes. A Zero Trust security model uses cryptographic identities for authenticating every system and application services, and allows these services to establish a two-way (mutual) authentication and communicate securily in the environment. 
 
 SPIRE is the production-ready implementation of the Secure Production Identity Framework for Everyone (SPIFFE) open-source specifications for implementing a Zero Trust security model through an Identity control plane and for establishing trust among services in dynamic and heterogeneous environments. The heart of these specifications is the one that defines short lived cryptographic identity documents called **SVIDs** (SPIFFE Verifiable Identity Document). Services can retrieve their service identities through the SPIRE **Workload API** and then use these identity documents when authenticating to other services, for example when establishing end-to-end mutual TLS (mTLS) encrypted connections and communicate securely, thus creating a Zero Trust security model.
 
@@ -30,7 +30,7 @@ A SPIRE deployment is composed of a SPIRE Server and a SPIRE Agent installed on 
 _For this hands-on workshop, the SPIRE components (Server and Agents) have already been deployed in a Kubernetes cluster managed by **HPE Ezmeral Runtime Enterprise** (formerly known as HPE Ezmeral Container Platform). For more information on how to get a SPIRE Server and SPIRE Agent running in a Kubernetes cluster, check out [here](https://spiffe.io/docs/latest/try/getting-started-k8s/)._ 
 
 
-# Author: [Name](mailto:email)
+# Authors: [Florian Buehr](mailto:florian.buehr@hpe.com); [Denis Choukroun](mailto:denis.choukroun@hpe.com)
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
@@ -43,7 +43,7 @@ Enjoy the labs ! :-)
 
 
 ## Definitions
-Before diving into the heart of the hands-on exercises, we believe it is important you understand some of the SPIFFE/SPIRE and Envoy definitions:
+Before diving into the heart of the hands-on exercises, we believe it is important you understand some of the SPIFFE/SPIRE and Envoy concepts and terminologies:
 
 - ***Envoy:*** Envoy is a popular open-source service proxy that is widely used to provide abstracted, secure, authenticated and encrypted communication between services. Envoy is a self contained process that is designed to run alongside every application service. All of the Envoy proxies form a communication mesh in wich each application sends and receives messages to and from **localhost** and is unaware of the network topology.
 
@@ -67,12 +67,12 @@ To illustrate how SPIRE can be used for application identity management and allo
 
 
 <p align="center">
-  <img src="Pictures/SPIFFE-Envoy-with-X509-SVIDs-v3.png">
+  <img src="Pictures/SPIFFE-Envoy-with-X509-SVIDs-v4.png">
 
 As shown in the diagram, to use SPIRE to establish mTLS connection between workloads requires the following:
    
 * A SPIRE Server (already deployed in the Kubernetes cluster),
-* A SPIRE Agent already deployed on each K8s worker node and that also acts as SDS Provider for Envoy that issues identity documents to Envoy proxies on application service's behalf,
+* A SPIRE Agent already deployed on each K8s worker node and that also acts as SDS Provider for Envoy. The agent issues identity documents, through the Workload API, to Envoy proxies on application service's behalf.
 * The application services (containerized application running on the Kubernetes cluster) along with their Envoy sidecar proxy,
 * Creation of registration entries on SPIRE Server to identify services and issue the service identifier (SPIFFE ID) and X.509 certificates (SVIDs) for the services,
 * Configuration of Envoy sidecar proxies sitting in front of the backend and frontend services, so they request their service identities to SPIRE and establish encrypted mTLS connections on each application service's behalf. 
@@ -87,8 +87,8 @@ In this hands-on technical workshop you will:
 
 >**Note:** _In this workshop, you will all share the resources of a Kubernetes cluster running on HPE Ezmeral Runtime Enterprise with SPIRE components (Server and Agents) already deployed. To learn the fundamentals of SPIFFE and SPIRE, feel free to register to the hands-on workshop [SPIFFE - SPIRE 101 – An introduction to SPIFFE server and SPIRE agent security concepts](https://hackshack.hpedev.io/workshop/27)._
     
-### Lab 1: Authenticate as tenant user to HPE Ezmeral Runtime
-In this first lab, you will connect to the HPE Ezmeral Runtime REST API endpoint and retrieve an authentication session token to be used for fetching the KubeConfig file you will need to interact with the Kubernetes cluster available for your tenant.
+### Lab 1: Authenticate as tenant user to HPE Ezmeral Runtime Enterprise
+In this first lab, you will connect to the HPE Ezmeral Runtime Enterprise REST API endpoint and retrieve an authentication session token to be used for fetching the KubeConfig file you will need to interact with the Kubernetes cluster available for your tenant.
     
 * [Lab 1](1-WKSHP-SPIRE-Envoy-X509-Get-Kubeconfig.ipynb)
 
@@ -99,8 +99,3 @@ In this second lab, you will deploy the application services and configure Envoy
     
 # Thank you!
 ![grommet.JPG](Pictures/grommet.jpg)
-
-
-```python
-
-```

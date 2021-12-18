@@ -29,8 +29,8 @@ register \
     -selector k8s:pod-label:app:frontend-student{{ STDID }} \
     -selector k8s:container-name:envoy
 
-##echo "${bb}Creating registration entry for the frontend - envoy...${nn}"
-echo "Creating registration entry for the frontend - envoy..."
+##echo "${bb}Creating registration entry for the frontend-2 - envoy...${nn}"
+echo "Creating registration entry for the frontend-2 - envoy..."
 register \
     -parentID spiffe://example.org/ns/spire/sa/spire-agent \
     -spiffeID spiffe://example.org/ns/testspiresds/sa/student{{ STDID }}/frontend-2 \
