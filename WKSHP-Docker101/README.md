@@ -63,19 +63,28 @@ Enjoy the labs ! :-)
 ## Workflow
 
 ### Lab 1: Introduction to container technology
-Description: In this section, we’ll go through some of ...
+Description: In this section, we’ll go through some of the basics concepts around Docker (Docker Engine,Docker Compose, Docker Machine, andDocker Swarm)
 * [Lab 1](1-WKSHP-Intro-to-Containers-techno.ipynb)
 
 ### Lab 2: Using Docker
-Description: In this section, we’ll go through some of ...
+Description: In this section, you will create your first containers.
 * [Lab 2](2-WKSHP-Using-Docker.ipynb)
 
-### Lab 3: Using Docker Compose
-Description: In this section, we’ll go through some of ...
-* [Lab 3](3-WKSHP-Using-Docker-Compose.ipynb)
+### Lab 3: Using Dockerfile
+Description: In this section, we’ll go through some of the necessary steps to configure nextcloud in a container
+* [Lab 3](3-WKSHP-Using-Dockerfile.ipynb)
+
+### Lab 4: Using Docker Compose
+Description: In this section, we’ll go through some of the necessary steps to configure a multi tiered app leveraging Docker Compose functionnalities
+* [Lab 4](4-WKSHP-Using-Docker-Compose.ipynb)
 
 ### Conclusion
-* [Conclusion](4-WKSHP-COnclusion.ipynb)
+* [Conclusion](5-WKSHP-COnclusion.ipynb)
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
+
+
+```python
+
+```

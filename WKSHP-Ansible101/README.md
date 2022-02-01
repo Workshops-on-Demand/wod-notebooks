@@ -72,17 +72,20 @@ Enjoy the labs ! :-)
 ## Workflow
 
 ### Lab 1: Architecture
-Description: In this section, we’ll go through some of the necessary steps to retrieve the API Token necessary for authentication. Then we will look some of the components used to build, deploy a new instance.
+Description: In this section, we’ll go through some of a quick overview of the different components of Ansible.
 * [Lab 1](1-WKSHP-Ansible101-Architecture.ipynb)
 
-### Lab 2: Passing Data
-Description: In this section, we’ll go through some of basics actions to create an instance and then manage it (stop / start / suspend, etc...)
-* [Lab 2](2-WKSHP-Ansible101-Passing-Data.ipynb)
+### Lab 2: Inventory, Playbooks, and Tasks
+Description: In this section, we will see how inventory, Playbooks and tasks actually fold together to make ansible such a great solution
+* [Lab 2](2-WKSHP-Ansible101-Playbooks.ipynb)
 
-### Lab 3: Fectching Information
-Description: In this section, we’ll go through some additional instance management features like snapshotting, cloning.
-* [Lab 3](3-WKSHP-Ansible101-Fetching-Information.ipynb)
+### Lab 3: Templates and variables
+Description: In this section, we’ll go through some additional Ansible features like Templates and variables
+* [Lab 3](3-WKSHP-Ansible101-Templates.ipynb)
 
+### Lab 4: Roles and Vaults
+Description: In this section, we’ll see some advanced features of Ansible like roles and vaults.
+* [Lab 3](3-WKSHP-Ansible101-Roles.ipynb)
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
