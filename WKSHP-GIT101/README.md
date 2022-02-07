@@ -33,7 +33,7 @@ However, the notebooks can be downloaded on to your own laptop for further use o
 
 In a nutshell, a notebook works as follows:
 
-• A Notebook is a series de cells
+• A Notebook is a series of cells
 
 • Notebook uses a kernel (visible in the upper right corner of the Notebook)
 
