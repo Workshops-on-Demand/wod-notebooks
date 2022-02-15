@@ -1,4 +1,4 @@
-![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)    ![Sparklogo](Pictures/ml101.jpg)
+![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)    
 
 # Welcome to the Hack Shack
 Powered by [HPE DEV Team](https://hpedev.io)
@@ -10,10 +10,8 @@ Powered by [HPE DEV Team](https://hpedev.io)
 
 # Workshops-on-Demand
 
-# Introduction to Machine Learning Concepts
-In this workshop we’ll go through some of basics concepts around Machine Learning.
-Machine Learning is an application of artificial intelligence where a computer/machine learns from the past experiences (input data) and makes future predictions. The performance of such a system should be at least human level.
-
+# Introduction to ML101
+In this workshop we’ll go through some of basics concepts aroud Machine Learning.
 
 
 # Authors: [Chris Snow](mailto:chris.snow@hpe.com)  [Frederic Passeron](mailto:frederic.passeron@hpe.com) 
@@ -67,3 +65,6 @@ token = {{ MLTOK }}
 ![grommet.JPG](Pictures/grommet.JPG)
 
 
+```python
+
+```
