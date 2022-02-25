@@ -1,6 +1,6 @@
 ![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)    ![Dockerlogo](Pictures/docker.png)  
  
-# Welcome to the Hack Shack
+# Welcome to the HPE DEV Hack Shack
 Powered by [HPE DEV Team](https://hpedev.io)
 
 <p align="center">
@@ -8,10 +8,10 @@ Powered by [HPE DEV Team](https://hpedev.io)
   
 </p>
 
-# Workshops-on-Demand
+# HPE DEV Workshops-on-Demand
 
 # Introduction to Docker 101
-In this workshop we’ll go through the understanding of Containers and Docker, from basic concepts up to running a full Web based application containerized
+In this workshop, we’ll go through the fundamentals of containers and Docker, from basic concepts up to running a full containerized web-based application. 
 
 # Authors: [Bruno Cornec](mailto:bruno.cornec@hpe.com) & [Rene Ribaud](mailto:rene@flossita.org) & [Frederic Passeron](mailto:frederic.passeron@hpe.com)
 
@@ -21,30 +21,30 @@ You can freely copy the Jupyter Notebooks, including their output, in order to p
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
 
 ## Objectives of the Docker Lab
-At the end of the Lab students should be able to install Docker, use the CLI to create a new image, a container, launch an application in it, store data, configure the network.
+At the end of the lab, students should be able to install Docker, use the CLI to create a new image, create a container, launch an application in it, store data, and configure the network.
 
-This Lab is intended to be trial and error so that during the session students should understand really what is behind the tool.  Blindly following instructions is not an effective way to learn IMHO. You've been warned ;-)
+This lab is intended to support a trial and error method so that, during the session, students should fully understand what is behind the tool. Blindly following instructions is not an effective way to learn, IMHO. You've been warned ;-)
 
 Expected duration : 120 minutes
 
 ## Reference documents
-When dealing with the installation and configuration of Docker, the first step  is to check the reference Web site http://docker.io/:
+When dealing with the installation and configuration of Docker, the first step  is to check the reference website http://docker.io/:
 
-At the start of each section there is an estimate of how long it will take to complete.
+At the start of each section, there is an estimate of how long it will take to complete.
 
 
 ## Lab flow
-HackShack Workshops are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+The HPE DEV Hack Shack Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files, which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
 In a nutshell, a notebook works as follows:
 
-• A Notebook is a series de cells
+• A notebook is a series of cells
 
-• Notebook uses a kernel (visible in the upper right corner of the Notebook)
+• The notebook uses a kernel (visible in the upper right corner of the notebook)
 
-• Cell can be Markdown or Code (in the selected kernel)
+• A cell can be markdown or code (in the selected kernel)
 
-• To Run a cell use:
+• To run a cell, use:
 
     o The Play Button at the top
     o Ctrl-Enter (run and stay on same cell)
@@ -52,22 +52,22 @@ In a nutshell, a notebook works as follows:
     
 • Running a markdown cell is just rendering it
 
-• Running a Code cell runs the code and display the output just below the cell
+• Running a code cell runs the code and displays the output just below the cell
 
-• When a cell is running it displays a [*] to its left, then when finished, it displays a counter of the number of execution of that cell
+• When a cell is running, it displays a [*] to its left. Then, when finished, it displays a counter of the number of executions of that cell
 
-• You cannot run a cell when another is already running but you can interrupt a running cell with the stop button
+• You cannot run a cell when another is already running, but you can interrupt a running cell with the stop button
 
 Enjoy the labs ! :-)
 
 ## Workflow
 
 ### Lab 1: Introduction to container technology
-Description: In this section, we’ll go through some of the basics concepts around Docker (Docker Engine,Docker Compose, Docker Machine, andDocker Swarm)
+Description: In this section, we’ll go through some of the basic concepts around Docker (Docker Engine, Docker Compose, Docker Machine, and Docker Swarm)
 * [Lab 1](1-WKSHP-Intro-to-Containers-techno.ipynb)
 
 ### Lab 2: Using Docker
-Description: In this section, you will create your first containers.
+Description: In this section, you will create your first containers
 * [Lab 2](2-WKSHP-Using-Docker.ipynb)
 
 ### Lab 3: Using Dockerfile
@@ -75,7 +75,7 @@ Description: In this section, we’ll go through some of the necessary steps to 
 * [Lab 3](3-WKSHP-Using-Dockerfile.ipynb)
 
 ### Lab 4: Using Docker Compose
-Description: In this section, we’ll go through some of the necessary steps to configure a multi tiered app leveraging Docker Compose functionnalities
+Description: In this section, we’ll go through some of the necessary steps to configure a multi-tiered app leveraging Docker Compose functionalities
 * [Lab 4](4-WKSHP-Using-Docker-Compose.ipynb)
 
 ### Conclusion
