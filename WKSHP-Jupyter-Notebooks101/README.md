@@ -8,7 +8,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
   
 </p>
 
-# Workshops-on-Demand
+# HPE DEV Workshops-on-Demand
 
 # Introduction to Delivering Hand on Experience with Jupyter Notebooks
 In this workshop we’ll go through the different steps to allow you to develop your own Jupyter Notebooks based Workshops.

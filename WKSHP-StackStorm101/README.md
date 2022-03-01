@@ -9,7 +9,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
   
 
 
-# Workshops-on-Demand
+# HPE DEV Workshops-on-Demand
 
 # Introduction to StackStorm101
 This notebook will walk you through some of the basics of stackstorm. This notebook has been developed to accomodate mutiple users logging into the same stackstorm server. This is not by any means a super deep dive but hopefully will explain why stackstorm should be in your automation toolbag. 

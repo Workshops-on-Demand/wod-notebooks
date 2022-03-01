@@ -8,7 +8,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
   
 </p>
 
-# Workshops-on-Demand
+# HPE DEV Workshops-on-Demand
 
 # Introduction to GIT 101 Understand GIT well enough to join the open source community!
 In this workshop, you’ll learn how to master basic Git concepts that will allow you to become members of the open source community. This workshop covers real-life use cases.

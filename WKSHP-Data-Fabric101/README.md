@@ -8,7 +8,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
   
 </p>
 
-# Workshops-on-Demand
+# HPE DEV Workshops-on-Demand
 
 # Introduction to HPE Ezmeral Data Fabric 101 Workshop
 Willing to discover the insights of the Ezmeral Data Fabric filesystem? This workshop will help you to understand the basics of administrating the filesystem through a DevOps experience to:

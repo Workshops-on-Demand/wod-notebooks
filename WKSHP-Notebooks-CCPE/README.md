@@ -3,7 +3,7 @@
 # Welcome to Hack Shack
 Powered by [HPE DEV Team](https://hpedev.io)
 
-# Workshops-on-Demand
+# HPE DEV Workshops-on-Demand
 
 # An introduction to HPE Cray Programming Environment (CPE)
 

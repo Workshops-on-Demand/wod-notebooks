@@ -3,7 +3,7 @@
 # Welcome to Hack Shack
 Powered by [HPE DEV Team](https://hpedev.io)
 
-# Workshops-on-Demand
+# HPE DEV Workshops-on-Demand
 
 # Introduction to the HPE Ezmeral Container Platform REST API 
 

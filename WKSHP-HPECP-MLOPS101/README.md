@@ -8,7 +8,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
   
 </p>
 
-# Workshops-on-Demand
+# HPE DEV Workshops-on-Demand
 
 # Introduction to MLOPS101
 In this workshop, using an example related predicting chances of diabetes amongst Pima Indians, you will be looking at the steps to build an **ML pipeline** that implements a basic end-to-end data science machine learning workflow process and that brings models to production. All of this in a single platform: **HPE Ezmeral ML Ops**.  

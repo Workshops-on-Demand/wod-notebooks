@@ -7,7 +7,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
   <img src="Pictures/hackshackdisco.png">
 </p>
 
-# Workshops-on-Demand
+# HPE DEV Workshops-on-Demand
 
 # Introduction to Python for High Performance Computing (HPC)
 In this workshop we’ll go through some of the advantages and disadvantages of using Python for HPC and scientific computing, and how you can get better performance from your Python applications.

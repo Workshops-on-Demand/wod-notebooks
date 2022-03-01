@@ -8,7 +8,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
   
 </p>
 
-# Workshops-on-Demand
+# HPE DEV Workshops-on-Demand
 
 # Introduction to "Managing HPE Cloud Volumes with API"
 HPE Cloud volumes is an entreprise-based cloud storage service that provides storage volumes as a service for use with Amazon web services, Google cloud or Microsoft azure.

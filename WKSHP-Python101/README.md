@@ -8,7 +8,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
   
 </p>
 
-# Workshops-on-Demand
+# HPE DEV Workshops-on-Demand
 
 # Introduction to Python
 In this workshop we’ll go through the basics of Python programming language. You'll learn about variables and data types as well conditionnals and loops amongmany other things. 

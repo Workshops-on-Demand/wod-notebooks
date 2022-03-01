@@ -8,7 +8,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
   
 </p>
 
-# Workshops-on-Demand
+# HPE DEV Workshops-on-Demand
 
 # Introduction to Rust Programming language
 In this workshop, we will introduce the audience to Rust programming. This will be a hands-on session based on Jupyter Notebooks. We will also discuss lessons learn within the 3PAR/Primera team.
