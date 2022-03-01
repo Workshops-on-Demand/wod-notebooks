@@ -8,7 +8,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
   
 </p>
 
-# Workshops-on-Demand
+# HPE DEV Workshops-on-Demand
 
 # Ansible101: A simple Introduction Ansible Concepts
 
@@ -85,7 +85,16 @@ Description: In this section, we’ll go through some additional Ansible feature
 
 ### Lab 4: Roles and Vaults
 Description: In this section, we’ll see some advanced features of Ansible like roles and vaults.
-* [Lab 3](3-WKSHP-Ansible101-Roles.ipynb)
+* [Lab 4](3-WKSHP-Ansible101-Roles.ipynb)
+
+### Lab 5: CLI based Examples
+Description: In this section, we’ll see some advanced features of Ansible like roles and vaults.
+* [Lab 5](5-WKSHP-Ansible101-Bash-Examples.ipynb)
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
+
+
+```ansible
+
+```

@@ -56,9 +56,9 @@ Enjoy the labs ! :-)
 Description: In this section, we’ll go through some of ...
 here is the token necessary to connect to the next lab hosted on a separate jupyterhub.
 
-token = $$SPARKTOK
+token = {{ SPARKTOK }} 
 
-* [Lab 1](http://{{ JPHOSTEXT }}:$$HTTPPORT)
+* [Lab 1](1-WKSHP-Spark_Basics.ipynb)
 
 
 # Thank you!

@@ -8,7 +8,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
   
 </p>
 
-# Workshops-on-Demand
+# HPE DEV Workshops-on-Demand
 
 # Creating a Zero Trust Model for Microservices Architectures with SPIRE and Envoy 
 
@@ -99,3 +99,8 @@ In this second lab, you will deploy the application services and configure Envoy
     
 # Thank you!
 ![grommet.JPG](Pictures/grommet.jpg)
+
+
+```python
+
+```
