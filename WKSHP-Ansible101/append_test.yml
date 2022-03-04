@@ -1,0 +1,4 @@
+- hosts: target
+  gather_facts: true
+  tasks:
+    - debug: var=hostvars[inventory_hostname]['ansible_facts']['nodename']

@@ -1,0 +1,6 @@
+[target]
+16.31.86.90
+#{{ IP-WKSHP-Ansible101 }}
+
+[local]
+localhost
