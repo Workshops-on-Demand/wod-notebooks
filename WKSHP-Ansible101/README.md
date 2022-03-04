@@ -33,7 +33,7 @@ If you want to see more automation related workshops, take a look at the followi
 * [Stackstorm 101 - Introduction to the Stackstorm automation features](https://hackshack.hpedev.io/workshop/21)
 
 
-# Authors:[Frederic Passeron](mailto:frederic.passeron@hpe.com)    
+# Authors:[Frederic Passeron](mailto:frederic.passeron@hpe.com)  and  [Bruno Cornec](mailto:bruno.cornec@hpe.com)
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
