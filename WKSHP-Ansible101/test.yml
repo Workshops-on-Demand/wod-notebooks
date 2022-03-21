@@ -1,7 +1,0 @@
-- hosts: localhost
-  gather_facts: true
-  tasks:  
-    - name: ping
-      ping:
-    - debug: 
-        var: hostvars[inventory_hostname]
