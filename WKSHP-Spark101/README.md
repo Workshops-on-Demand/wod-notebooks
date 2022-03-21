@@ -14,7 +14,7 @@ Powered by [HPE DEV Team](https://hpedev.io)
 In this workshop we’ll go through some of basics concepts aroud Apache Spark.
 Apache Spark is a unified analytics engine for large-scale data processing. It provides high-level APIs in Java, Scala, Python and R, and an optimized engine that supports general execution graphs. It also supports a rich set of higher-level tools including Spark SQL for SQL and structured data processing, MLlib for machine learning, GraphX for graph processing, and Structured Streaming for incremental computation and stream processing.
 
-# Authors: [Chris Snow](mailto:chris.snow@hpe.com)  [Frederic Passeron](mailto:frederic.passeron@hpe.com) 
+# Authors: , [Gerhard Wenzel](mailto:gerhard.wenzel@hpe.com), [Chris Snow](mailto:chris.snow@hpe.com), and [Frederic Passeron](mailto:frederic.passeron@hpe.com) 
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
@@ -47,7 +47,21 @@ In a nutshell, a notebook works as follows:
 
 • You cannot run a cell when another is already running but you can interrupt a running cell with the stop button
 
+### Pre-requisites
+
+You should have basic Python knowledge and be familiar with using Jupyter Notebooks.  If not, the following free hands-on workshops are recommended:
+
+ - [Python 101](https://hackshack.hpedev.io/workshop/15)
+ - [Jupyter Notebooks 101](https://hackshack.hpedev.io/workshop/25)
+ 
+ If you are completely new to machine learning, the following free course is recommended to understand the concepts:
+ 
+ - [Artificial Intelligence & Machine Learning Concepts](https://learn.ezmeral.software.hpe.com/page/artificial-intelligence-machine-learning)
+
+
+
 Enjoy the labs ! :-)
+
 
 
 ## Workflow

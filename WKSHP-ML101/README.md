@@ -47,29 +47,28 @@ In a nutshell, a notebook works as follows:
 
 • You cannot run a cell when another is already running but you can interrupt a running cell with the stop button
 
-Enjoy the labs ! :-)
+### Pre-requisites
 
+You should have basic Python knowledge and be familiar with using Jupyter Notebooks.  If not, the following free hands-on workshops are recommended:
+
+ - [Python 101](https://hackshack.hpedev.io/workshop/15)
+ - [Jupyter Notebooks 101](https://hackshack.hpedev.io/workshop/25)
+ 
+ If you are completely new to machine learning, the following free course is recommended to understand the concepts:
+ 
+ - [Artificial Intelligence & Machine Learning Concepts](https://learn.ezmeral.software.hpe.com/page/artificial-intelligence-machine-learning)
+
+
+
+Enjoy the labs ! :-)
 
 ## Workflow
 
 ### Lab 1: Machine Learning Basics.
-Description: In this section, we’ll go through some of ...
-here is the token necessary to connect to the next lab hosted on a separate jupyterhub.
+Description: In this section, we’ll go through some of basics of Machine Learning. You won't turn into a data scientist just yet but you should understand better some of the main principles after this workshop.
 
-token = {{ MLTOK }} 
-
-* [Lab 1](1-WKSHP-ML_Basics.ipynb)
+[Before we start...](1-WKSHP-ML_Basics.ipynb)
 
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```bash
-
-```
-
-
-```bash
-
-```

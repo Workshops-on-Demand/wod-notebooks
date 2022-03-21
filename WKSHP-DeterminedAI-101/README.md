@@ -1,0 +1,90 @@
+![HPEDEVLogo](Pictures/hpe-dev-logo.png)
+
+# Welcome to Hack Shack
+Powered by [HPE DEV Team](https://hpedev.io)
+
+# HPE DEV Workshops-on-Demand
+
+# Getting started with Determined, the open-source deep learning training platform
+
+*Version: open source Determined 0.17.9+*
+
+Determined AI (or Determined) is an open source platform built to accelerate deep learning (DL) experimentation for data science teams. These teams can use Determined to build, train, and optimize their deep learning models. Determined provides the tools for accelerating experiments such as distributing training and hyperparameters tuning (also known as hyperparameters optimization or HPO). 
+
+In this workshop you will learn some fundamental features and terminology of Determined. You will take a specific deep learning model and walk through how to interact with the Determined system to train the DL model and visualize the result of the training process. You will experience how Determined makes it easy for ML engineers and Data Scientists to train deep learning models on one or more GPUs to accelerate training processes, and how it simplifies hyperparameters optimization (HPO) to improve model accuracy. 
+
+>**Note:** _This workshop is not intended to teach you about AI/ML/DL or how to "port" your deep learning model to Determined. It is intended to give a use case for data science and ML engineers to get started with Determined and some of its fundamental concepts and features. The DL model used in this hands-on is abbreviated from [the popular iris classification example](https://github.com/determined-ai/determined/tree/master/examples/computer_vision/iris_tf_keras)._
+
+
+# Authors: [Denis Choukroun](mailto:denis.choukroun@hpe.com)
+
+<p align="center">
+  <img src="Pictures/hackshackdisco.png">
+  
+</p>
+
+## Handouts
+HackShack Workshops are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+
+You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
+- You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
+- A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
+
+## A quick look at Jupyter Notebook
+Jupyter Notebook is an open source solution for interactive documents that are commonly used to hold code for ML/DL models. 
+A Notebook consists of cells. A cell can be a markdown cell (contains comments, text, images) or a code cell. 
+
+To execute code within the Notebook, you run each cell in turn by clicking on the ***Play button*** in the menu bar of the Notebook.
+
+> **Note:**  When you see a [*] next to the action it means your execution step is busy working within the notebook. When you see a digit number, it means the execution of the step is completed.  
+
+![QickLookNotebook](Pictures/Quick-look-Notebook.png)
+
+Enjoy the labs ! :-)
+
+
+## Learn more
+
+Visit the technical documentation [here](https://docs.determined.ai/latest/) for how to get started with Determined, and check out the [Determined GitHub repository](https://github.com/determined-ai/determined). 
+
+Be sure to also join the [Determined Community Slack group]( https://join.slack.com/t/determined-community/shared_invite/zt-cnj7802v-KcVbaUrIzQOwmkmY7gP0Ew). 
+
+# Lab Environment
+
+Determined is open source and it can be deployed on-prem in your data center, on any hardware, on Kubernetes or in the public clouds. 
+
+For this workshop, the Determined system consists of Determined software deployed as on-prem cluster, with GPUs, in a Kubernetes cluster managed by [HPE Ezmeral Runtime Enterprise](https://developer.hpe.com/platform/hpe-ezmeral-runtime/home/). You are all sharing the Kubernetes cluster resources with other participants.
+
+The diagram depicts the components that make the Determined system on the Kubernetes cluster. The Determined system consists of:
+
+<img src="Pictures/DetAI-Lab-Environment-architecture.png" height="382" width="700" align="right">
+
+* A **Master** which is attached to a **PostgreSQL** database. The Master and Database run as containers, each within a Kubernetes POD, in the worker nodes of the Kubernetes cluster. 
+    * The Master hosts the interfaces service endpoint that clients use to communicate with the Determined system, through a CLI, WebUI, and APIs. 
+    * The Master brings up PODs on the Kubernetes worker nodes to run tasks on demand, for example the model training tasks.
+    * As training tasks execute, the Master remains in communication with the training tasks PODs and saves training model metadata (for example the training & validation metrics received from the training tasks) as well as the state of the tasks in the PostgreSQL database.  
+* The Ingress Gateway makes the Master's interfaces service endpoints reachable from outside the Kubernetes cluster. 
+* The Distributed File System of the pre-integrated HPE Ezmeral Data Fabric is leveraged to provide both _persistent storage_ for containerized application such as the Determined PostgreSQL database and a _shared file system_ mounted on each Kubernetes worker host. The shared file system is needed by the Determined system to store the ***model datasets*** on which the model will be trained by the training tasks. The shared file system is also needed to store the ***model checkpoints*** which are saved versions of trained models that data science teams can access later for testing and analysis, and make them available to a deployment or serving solution such as Seldon core.
+
+# Lab Workflow
+
+## Lab 1: Learning the base principles of Determined
+In this first lab, you will be introduced to Determined system components and some of its important concepts and terminology. You will learn how to interact with **Determined** system deployed on Kubernetes using the Determined CLI. You will launch your first experiment (i.e.: training task) to train a deep learning model with Determined, monitor and visualize training task progress and the metrics of the training for analyzing results using Determined WebUI and the integrated TensorBoard. You will finally launch a JupyterLab server task from within Determined system, load and test your trained model by making predictions.
+
+* [Lab 1](1-WKSHP-DET-AI-101-Getting-started-DetCLI.ipynb)
+
+## Labs 2: Distributed Training with Determined
+For this part of the lab you will learn how to create an experiment that trains a single instance of the model with multiple GPUs, a process known as **Distributed Training**, without requiring any model code changes.
+
+* [Lab 2](2-WKSHP-DET-AI-101-Getting-started-Dist-Training.ipynb)
+
+## Labs 3: Hyperparameter Optimization with Determined
+For this part of the lab you will explore how Determined's hyperparameter tuning, also known as hyperparameter optimization (HPO) can help improve the model accuracy and let you find the best combination of hyperparameters for your particular model, without requiring any model code changes. 
+
+* [Lab 3](3-WKSHP-DET-AI-101-Getting-started-HPO.ipynb)
+
+## Join the HPE DEV Community
+![QRCode](Pictures/QRCode-HPEDEV.png)
+
+# Thank you!
+![grommet.JPG](Pictures/grommet.jpg)
