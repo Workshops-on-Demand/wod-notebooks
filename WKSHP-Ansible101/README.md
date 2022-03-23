@@ -92,8 +92,3 @@ Description: In this section, we’ll see some advanced features of Ansible like
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```ansible
-
-```
