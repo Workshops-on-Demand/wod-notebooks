@@ -1,0 +1,29 @@
+name: iris_adaptivesearch_Student900
+hyperparameters:
+  learning_rate:
+    type: log
+    minval: -5.0
+    maxval: 1.0
+    base: 10.0
+  learning_rate_decay: 1.0e-6
+  layer1_dense_size:
+    type: int
+    minval: 4
+    maxval: 32
+  global_batch_size:
+    type: int
+    minval: 5
+    maxval: 30
+searcher:
+  name: adaptive_asha
+  metric: val_categorical_accuracy
+  smaller_is_better: false
+  max_length:
+    batches: 5000
+  max_trials: 6
+entrypoint: model_def:IrisTrial
+bind_mounts:
+  - host_path: /opt/bluedata/mapr/mnt/k8s-df/exthcp/tenant-18/fsmount/repo/data
+    container_path: /opt/bluedata/mapr/mnt/k8s-df/exthcp/tenant-18/fsmount/repo/data
+    read_only: true
+

@@ -1,0 +1,7 @@
+description: notebook-student900
+resources:
+  slots: 0
+bind_mounts:
+  - host_path: /opt/bluedata/mapr/mnt/k8s-df/exthcp/tenant-18/fsmount/checkpoints
+    container_path: /determined_shared_fs
+idle_timeout: 30m

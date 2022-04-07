@@ -1,0 +1,23 @@
+name: iris_const_Student900
+hyperparameters:
+  learning_rate: 1.0e-4
+  learning_rate_decay: 1.0e-6
+  layer1_dense_size: 16
+  global_batch_size: 30
+resources:
+  slots_per_trial: 1 # default. Use 1 GPU to train the model.
+searcher:
+  name: single
+  metric: val_categorical_accuracy
+  smaller_is_better: false
+  max_length:
+    batches: 5000
+entrypoint: model_def:IrisTrial
+min_validation_period:
+  batches: 1000
+bind_mounts:
+  - host_path: /opt/bluedata/mapr/mnt/k8s-df/exthcp/tenant-18/fsmount/repo/data
+    container_path: /opt/bluedata/mapr/mnt/k8s-df/exthcp/tenant-18/fsmount/repo/data
+    read_only: true
+
+
