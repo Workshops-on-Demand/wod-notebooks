@@ -1,4 +1,4 @@
-name: iris_adaptivesearch_Student900
+name: iris_adaptivesearch_student900
 hyperparameters:
   learning_rate:
     type: log

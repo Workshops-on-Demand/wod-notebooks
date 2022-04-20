@@ -1,4 +1,4 @@
-name: iris_distri_Student900
+name: iris_distri_student900
 hyperparameters:
   learning_rate: 1.0e-4
   learning_rate_decay: 1.0e-6

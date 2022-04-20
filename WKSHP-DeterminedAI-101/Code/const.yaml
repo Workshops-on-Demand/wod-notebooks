@@ -1,4 +1,4 @@
-name: iris_const_Student900
+name: iris_const_student900
 hyperparameters:
   learning_rate: 1.0e-4
   learning_rate_decay: 1.0e-6
