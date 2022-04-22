@@ -1,9 +1,9 @@
 ![HPEDEVLogo](Pictures/hpe-dev-logo.png)
 
 # Welcome to Hack Shack
-Powered by [HPE DEV Team](https://hpedev.io)
+[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
 
-# HPE DEV Workshops-on-Demand
+# {{ BRANDINGWOD }} Workshops-on-Demand
 
 # An introduction to HPE Cray Programming Environment (CPE)
 
@@ -19,7 +19,7 @@ In this workshop, you will learn basic of using CPE to develop and analyze high-
 </p>
 
 ## Handouts
-HackShack Workshops are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+{{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
@@ -84,7 +84,7 @@ In this first lab, you will learn how to use CPE and Spack together
 * [Lab 7](7-WKSHP-CPE-Spack.ipynb)
 
 
-## Join the HPE DEV Community
+## Join the {{ BRANDING }} Community
 ![QRCode](Pictures/QRCode-HPEDEV.png)
 
 # Thank you!

@@ -1,7 +1,7 @@
 ![HPEDEVLogo](Pictures/hpe-dev-logo.png)
 
 # Welcome to Hack Shack
-Powered by [HPE DEV Team](https://hpedev.io)
+[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
 
 # Speaker: [Chris Crawford](mailto:chris.crawford@hpe.com)
 
@@ -19,7 +19,7 @@ You will start you off with some fundamental knowledge about how to interact wit
  
 
 # Lab flow
-Hack Shack Workshops are delivered through a central point that allows a portable, dynamic version of the lab guides. We are now leveraging a JupyterHub server on which all the different lab guides will be stored in a `Jupyter Notebook` format (*.ipynb). These Jupyter Notebooks are accessible from the internet for the event.
+{{ BRANDINGWOD }} Workshops-on-Demandare delivered through a central point that allows a portable, dynamic version of the lab guides. We are now leveraging a JupyterHub server on which all the different lab guides will be stored in a `Jupyter Notebook` format (*.ipynb). These Jupyter Notebooks are accessible from the internet for the event.
 
 The notebooks can be downloaded on to your own laptop for further usage or editing. In order to use  them, you will need to install the Jupyter Notebook application, which is available [here](https://jupyter.org/install).
 A Beginner's guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html).

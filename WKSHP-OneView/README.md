@@ -1,7 +1,7 @@
-![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)
+{{ BRANDINGLOGO }}
 
-# Welcome to the Hack Shack
-Powered by [HPE DEV Team](https://hpedev.io)
+# Welcome to the {{ BRANDINGWOD }} Hack Shack
+[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
@@ -25,7 +25,7 @@ http://en.wikipedia.org/wiki/Representational_state_transfer
 HPE OneView has a resource-oriented architecture that provides a uniform REST interface. Every resource has one Uniform Resource Identifier (URI) and represents a physical device or logical construct, and may be manipulated using REST APIs. To view the list of resources, see the [HPE OneView API Reference](https://techlibrary.hpe.com/docs/enterprise/servers/oneview5.0/cicf-api/en/index.html#about)  
 
 # Lab Flow
-HackShack workshops are delivered through a central point that allows a portable, dynamic version of the lab guides. We are now leveraging a jupyterhub server on which all the different labs guides will be stored in a Notebook format (*.ipynb). These Notebooks are accessible from the internet for the event.
+{{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. We are now leveraging a jupyterhub server on which all the different labs guides will be stored in a Notebook format (*.ipynb). These Notebooks are accessible from the internet for the event.
 
 Besides, the notebooks can be downloaded on to your own laptop for further usage or edition. In order to use  them, you will need to install the jupyter notebook application available [here](https://jupyter.org/install).
 Beginners guide available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)

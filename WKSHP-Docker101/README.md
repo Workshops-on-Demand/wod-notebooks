@@ -1,14 +1,14 @@
-![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)    ![Dockerlogo](Pictures/docker.png)  
+{{ BRANDINGLOGO }}    ![Dockerlogo](Pictures/docker.png)  
  
 # Welcome to the HPE DEV Hack Shack
-Powered by [HPE DEV Team](https://hpedev.io)
+[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 </p>
 
-# HPE DEV Workshops-on-Demand
+# {{ BRANDINGWOD }} Workshops-on-Demand
 
 # Introduction to Docker 101
 In this workshop, we’ll go through the fundamentals of containers and Docker, from basic concepts up to running a full containerized web-based application. 
@@ -34,7 +34,7 @@ At the start of each section, there is an estimate of how long it will take to c
 
 
 ## Lab flow
-The HPE DEV Hack Shack Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files, which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+The {{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files, which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
 In a nutshell, a notebook works as follows:
 

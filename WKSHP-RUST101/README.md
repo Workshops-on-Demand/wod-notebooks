@@ -1,14 +1,14 @@
-![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)
+{{ BRANDINGLOGO }}
 
-# Welcome to the Hack Shack
-Powered by [HPE DEV Team](https://hpedev.io)
+# Welcome to the {{ BRANDINGWOD }} Hack Shack
+[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 </p>
 
-# HPE DEV Workshops-on-Demand
+# {{ BRANDINGWOD }} Workshops-on-Demand
 
 # Introduction to Rust Programming language
 In this workshop, we will introduce the audience to Rust programming. This will be a hands-on session based on Jupyter Notebooks. We will also discuss lessons learn within the 3PAR/Primera team.
@@ -22,7 +22,7 @@ You can freely copy the Jupyter Notebooks, including their output, in order to p
 
 
 ## Lab flow
-HackShack Workshops are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+{{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
 In a nutshell, a notebook works as follows:
 

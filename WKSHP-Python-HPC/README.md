@@ -1,13 +1,13 @@
-![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)
+{{ BRANDINGLOGO }}
 
-# Welcome to the Hack Shack
-Powered by [HPE DEV Team](https://hpedev.io)
+# Welcome to the {{ BRANDINGWOD }} Hack Shack
+[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
 </p>
 
-# HPE DEV Workshops-on-Demand
+# {{ BRANDINGWOD }} Workshops-on-Demand
 
 # Introduction to Python for High Performance Computing (HPC)
 In this workshop we’ll go through some of the advantages and disadvantages of using Python for HPC and scientific computing, and how you can get better performance from your Python applications.
@@ -18,11 +18,11 @@ In this workshop we’ll go through some of the advantages and disadvantages of 
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
 - You can download the Jupyter Lab application from [here](https://jupyter.org/install). 
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
-- A previous HackShack introducing Jupyter is available [here](https://hackshack.hpedev.io/workshop/25)
-- For real beginners, there is also a Python 101 HackShack available from [here](https://hackshack.hpedev.io/workshop/15)
+- A previous Workshop-on-Demand introducing Jupyter is available [here](https://hackshack.hpedev.io/workshop/25)
+- For real beginners, there is also a [Python 101 {{ BRANDINGWOD }} Workshop-on-Demand](https://developer.hpe.com/hackshack/workshop/15) available from [here](https://hackshack.hpedev.io/workshop/15)
 
 ## Lab flow
-HackShack Workshops are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the training environment, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+{{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the training environment, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
 In a nutshell, a notebook works as follows:
 

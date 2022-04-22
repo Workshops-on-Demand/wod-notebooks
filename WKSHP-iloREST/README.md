@@ -1,6 +1,6 @@
-![HPE DEV Logo](Pictures/hpe-dev-logo.png)
+![Workshops-on-Demand Logo](Pictures/hpe-dev-logo.png)
 
-Powered by [HPE DEV Team](https://hpedev.io)
+[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
 
 Version 0.53
 

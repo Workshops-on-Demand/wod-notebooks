@@ -1,8 +1,8 @@
-![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)
+{{ BRANDINGLOGO }}
 
-# Welcome to the Hack Shack
+# Welcome to the {{ BRANDINGWOD }} Hack Shack
 
-Powered by [HPE DEV Team](https://hpedev.io)
+[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
 
 # Creator: [Michael Mattsson](mailto:michael.mattsson@hpe.com)
 
@@ -16,7 +16,7 @@ Find me on [Twitter](https://twitter.com/datamattsson), [LinkedIn](https://www.l
 
 In this workshop, we’ll go through some of the basic primitives that CSI introduces to Kubernetes as part of the HPE Ezmeral Container Platform. We will also revisit some of the staple objects such as `StorageClasses`, `PersistentVolumeClaims` and `PersistentVolumes`. 
 
-A recorded instructor led session of the CSI workshop is available in the [HPE DEV HackShack](https://hackshack.hpedev.io/replays/2).
+A recorded instructor led session of the CSI workshop is available in the [HPE DEV Workshop-on-Demand](https://hackshack.hpedev.io/replays/2).
 
 ## JupyterHub
 

@@ -1,7 +1,7 @@
 ![](Pictures/hpedevlogo-NB.jpg)
 
-# Welcome to the Hack Shack
-Powered by [HPE DEV Team](https://hpedev.io)
+# Welcome to the {{ BRANDINGWOD }} Hack Shack
+[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
@@ -23,7 +23,7 @@ In this workshop we will explore some advanced features of the OneView PowerShel
 The [Hackshack workshop w682](https://hackshack.hpedev.io/replays/8) provides an introduction to the OneView REST API. If you are not familiar with the OneView REST API and the OneView PowerShell library, it is recommended to register for this workshop prior to attend this one.
  
 # Lab Flow
-HackShack workshops are delivered through a central point that allows a portable, dynamic version of the lab guides. We are now leveraging a jupyterhub server on which all the different labs guides will be stored in a Notebook format (*.ipynb). These Notebooks are accessible from the internet for the event.
+{{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. We are now leveraging a jupyterhub server on which all the different labs guides will be stored in a Notebook format (*.ipynb). These Notebooks are accessible from the internet for the event.
 
 Besides, the notebooks can be downloaded to your own laptop for further usage or edition. In order to use  them, you will need to install the jupyter notebook application available [here](https://jupyter.org/install).
 Beginners guide available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)

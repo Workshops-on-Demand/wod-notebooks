@@ -1,14 +1,14 @@
-![HPEDEVlogo](Pictures/hpedevlogo-NB.JPG)       ![GreenLake](Pictures/greenlake-hero.jpg)
+{{ BRANDINGLOGO }}       ![GreenLake](Pictures/greenlake-hero.jpg)
 
-# Welcome to the Hack Shack
-Powered by [HPE DEV Team](https://hpedev.io)
+# Welcome to the {{ BRANDINGWOD }} Hack Shack
+[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 </p>
 
-# HPE DEV Workshops-on-Demand
+# {{ BRANDINGWOD }} Workshops-on-Demand
 
 # Introduction to HPE GreenLake Private Cloud Virtual Machines API
 HPE GreenLake Central is an advanced software-as-a-service platform that provides you with a consistent cloud experience for all your applications and data—on-premises or off-premises. It provides you with insights and controls to manage your hybrid IT estate, complementing your use of public clouds and data centers. HPE GreenLake Central gives you the ability to choose where and how to place your workloads and data, and—through the services you purchase—enables you to monitor security, compliance, capacity, resource utilization, and costs.
@@ -34,7 +34,7 @@ You can freely copy the Jupyter Notebooks, including their output, in order to p
 
 
 ## Lab flow
-HackShack Workshops are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+{{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
 In a nutshell, a notebook works as follows:
 

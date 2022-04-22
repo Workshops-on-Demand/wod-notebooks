@@ -1,14 +1,14 @@
-![HPEDEVlogo](Pictures/hpe-dev-logo.png)
+{{ BRANDINGLOGO }}
 
-# Welcome to the Hack Shack
-Powered by [HPE DEV Team](https://hpedev.io)
+# Welcome to the {{ BRANDINGWOD }} Hack Shack
+[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 </p>
 
-# HPE DEV Workshops-on-Demand
+# {{ BRANDINGWOD }} Workshops-on-Demand
 
 # Creating a Zero Trust Model for Microservices Architectures with SPIRE and Envoy 
 

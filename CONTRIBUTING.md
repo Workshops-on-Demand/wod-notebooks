@@ -1,6 +1,6 @@
 This is maintained by the [HPEDEV Team](https://hpedev.io)
 
-We accept contributions from the HPE DEV Community. 
+We accept contributions from the {{ BRANDING }} Community. 
 
 -	Fork the repo then clone your copy to:
     -	Add a folder for your stuff.
