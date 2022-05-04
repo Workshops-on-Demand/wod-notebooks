@@ -53,7 +53,7 @@ Enjoy the labs ! :-)
 ## Workflow
 
 ### Lab 1: REST_API_Basics
-Descriptione: In this section, we’ll go through some of the basics of APIs: Definition, Structure, Usage through simple examples.
+Description: In this section, we’ll go through some of the basics of APIs: Definition, Structure, Usage through simple examples.
 * [Lab 1](1-WKSHP-REST_API_Basics.ipynb)
 
 

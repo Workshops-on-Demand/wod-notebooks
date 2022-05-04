@@ -1,19 +1,29 @@
-{{ BRANDINGLOGO }}
+![HPElogo](Pictures/element-logo.png)
+
+
+[{{ BRANDING }} Community Team](https://hpedev.io)
+
 
 # Welcome to the {{ BRANDINGWOD }} Hack Shack
-[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
+
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 </p>
 
-# {{ BRANDINGWOD }} Workshops-on-Demand
+# {{ BRANDINGWOD }} Challenge
 
-# Introduction to[Workshop title]
-In this workshop we’ll cover ....
+The challenge consists of:
+* A worskhop to complete
+* A simple quiz to answer
 
-# Author: [Name](mailto:email)
+To complete the workshop, you need to go through the different labs that make up the workshop. Labs are made of cells that needs to be executed. The quiz is related to the workshop you have selected. There are only a few questions to answer (up to 3 maximum).
+
+# Introduction to Python
+In this workshop we’ll go through the basics of the Python programming language. You'll learn about variables and data types, as well conditionals and loops, among many other things. 
+
+# Authors: [Samarth Deyagond](mailto:samarth.deyagond@sap.com) and [Didier Lalli](mailto:didier.lalli@hpe.com)
 
 ## Handouts
 You can freely copy these Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
@@ -22,7 +32,7 @@ You can freely copy these Jupyter Notebooks, including their output, in order to
 
 
 ## Lab flow
-{{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files that always end in copy / paste errors from the lab guide into TS sessions, we leverage an infrastructure that uses a JupyterHub server on which all the different lab guides are stored in a notebook format (*.ipynb).
+{{ BRANDINGWOD} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files that always end in copy / paste errors from the lab guide into the TS sessions, we leverage an infrastucture that uses a JupyterHub server on which all the different lab guides are stored in a notebook format (*.ipynb).
 
 In a nutshell, a notebook works as follows:
 
@@ -51,9 +61,9 @@ Enjoy the labs ! :-)
 
 ## Workflow
 
-### Lab 1: Lab 1 title
-Description: In this section, we’ll go through some of ...
-* [Lab 1](1-WKSHP-title.ipynb)
+### Lab 1: Introduction to Python
+
+* [Lab 1](1-WKSHP-Introduction-to-Python.ipynb)
 
 
 # Thank you!
