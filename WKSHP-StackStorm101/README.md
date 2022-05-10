@@ -1,15 +1,17 @@
-{{ BRANDINGLOGO }}  ![StackStormlogo](Pictures/stackstorm.jpg)
+![HPEDEVlogo](Pictures/hpe-dev-logo.png)  ![StackStormlogo](Pictures/stackstorm.jpg)
 
 
-# Welcome to the {{ BRANDINGWOD }} Hack Shack
-[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
+# Welcome to the HPE Developer Hack Shack
+[HPE Developer Community Team](https://hpedev.io)
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 
 
-# {{ BRANDINGWOD }} Workshops-on-Demand
+# HPE Developer Challenge
+
+
 
 # Introduction to StackStorm101
 This notebook will walk you through some of the basics of stackstorm. This notebook has been developed to accomodate mutiple users logging into the same stackstorm server. This is not by any means a super deep dive but hopefully will explain why stackstorm should be in your automation toolbag. 
@@ -23,7 +25,7 @@ You can freely copy the Jupyter Notebooks, including their output, in order to p
 
 
 ## Lab flow
-{{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
 ## WARNING! To learn stackstorm we have to start at the bottom. Bear with me to the end and we can explore stackstorm a different way.
 

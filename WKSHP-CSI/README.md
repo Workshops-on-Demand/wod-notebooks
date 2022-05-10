@@ -1,8 +1,8 @@
-{{ BRANDINGLOGO }}
+![HPEDEVlogo](Pictures/hpe-dev-logo.png)
 
-# Welcome to the {{ BRANDINGWOD }} Hack Shack
+# Welcome to the HPE Developer Hack Shack
 
-[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
+[HPE Developer Community Team](https://hpedev.io)
 
 # Creator: [Michael Mattsson](mailto:michael.mattsson@hpe.com)
 

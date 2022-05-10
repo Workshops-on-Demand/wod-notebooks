@@ -1,9 +1,11 @@
 ![HPEDEVLogo](Pictures/hpe-dev-logo.png)
 
 # Welcome to Hack Shack
-[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
+[HPE Developer Community Team](https://hpedev.io)
 
-# {{ BRANDINGWOD }} Workshops-on-Demand
+# HPE Developer Challenge
+
+
 
 # Getting started with Determined, the open-source deep learning training platform
 
@@ -24,7 +26,7 @@ In this workshop you will learn some fundamental features and terminology of Det
 </p>
 
 ## Handouts
-{{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
@@ -83,7 +85,7 @@ For this part of the lab you will explore how Determined's automatic model tunin
 
 * [Lab 3](3-WKSHP-DET-AI-101-Getting-started-HPO.ipynb)
 
-## Join the {{ BRANDING }} Community
+## Join the HPE Developer Community
 ![QRCode](Pictures/QRCode-HPEDEV.png)
 
 # Thank you!

@@ -1,14 +1,16 @@
-{{ BRANDINGLOGO }}
+![HPEDEVlogo](Pictures/hpe-dev-logo.png)
 
-# Welcome to the {{ BRANDINGWOD }} Hack Shack
-[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
+# Welcome to the HPE Developer Hack Shack
+[HPE Developer Community Team](https://hpedev.io)
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 </p>
 
-# {{ BRANDINGWOD }} Workshops-on-Demand
+# HPE Developer Challenge
+
+
 
 # Introduction to[Workshop title]
 In this workshop we’ll cover ....
@@ -22,7 +24,7 @@ You can freely copy these Jupyter Notebooks, including their output, in order to
 
 
 ## Lab flow
-{{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files that always end in copy / paste errors from the lab guide into TS sessions, we leverage an infrastructure that uses a JupyterHub server on which all the different lab guides are stored in a notebook format (*.ipynb).
+HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files that always end in copy / paste errors from the lab guide into TS sessions, we leverage an infrastructure that uses a JupyterHub server on which all the different lab guides are stored in a notebook format (*.ipynb).
 
 In a nutshell, a notebook works as follows:
 

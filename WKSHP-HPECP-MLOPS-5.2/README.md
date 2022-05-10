@@ -1,9 +1,11 @@
 ![HPEDEVLogo](Pictures/hpe-dev-logo.png)
 
 # Welcome to Hack Shack
-[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
+[HPE Developer Community Team](https://hpedev.io)
 
-# {{ BRANDINGWOD }} Workshops-on-Demand
+# HPE Developer Challenge
+
+
 
 # Deploying end-to-end machine learning workflows with HPE Ezmeral ML Ops
 
@@ -21,7 +23,7 @@ In this workshop, using an example related to predicting taxi ride travel times 
 </p>
 
 ## Handouts
-{{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
@@ -95,7 +97,7 @@ Finally, using cURL as an HTTP application client, you will consume your model t
 * [Lab 5](5-WKSHP-MLOps-K8s-Model-Serving.ipynb)
 
 
-## Join the {{ BRANDING }} Community
+## Join the HPE Developer Community
 ![QRCode](Pictures/QRCode-HPEDEV.png)
 
 # Thank you!

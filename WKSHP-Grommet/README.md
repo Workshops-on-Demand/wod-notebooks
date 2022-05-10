@@ -1,7 +1,7 @@
-{{ BRANDINGLOGO }}
+![HPEDEVlogo](Pictures/hpe-dev-logo.png)
 
-# Welcome to the {{ BRANDINGWOD }} Hack Shack
-[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
+# Welcome to the HPE Developer Hack Shack
+[HPE Developer Community Team](https://hpedev.io)
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
@@ -40,7 +40,7 @@ At the end of the workshop, you will be able to
 
 
 # Lab Flow
-{{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. We are now leveraging a jupyterhub server on which all the different labs guides will be stored in a Notebook format (*.ipynb). These Notebooks are accessible from the internet for the event.
+HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. We are now leveraging a jupyterhub server on which all the different labs guides will be stored in a Notebook format (*.ipynb). These Notebooks are accessible from the internet for the event.
 
 Besides, the notebooks can be downloaded on to your own laptop for further usage or edition. In order to use them, you will need to install the jupyter notebook application available [here](https://jupyter.org/install).
 Beginners guide available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)

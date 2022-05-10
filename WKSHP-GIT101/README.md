@@ -1,14 +1,16 @@
-{{ BRANDINGLOGO }}
+![HPEDEVlogo](Pictures/hpe-dev-logo.png)
 
-# Welcome to the {{ BRANDINGWOD }} Hack Shack
-[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
+# Welcome to the HPE Developer Hack Shack
+[HPE Developer Community Team](https://hpedev.io)
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 </p>
 
-# {{ BRANDINGWOD }} Workshops-on-Demand
+# HPE Developer Challenge
+
+
 
 # Introduction to GIT 101 Understand GIT well enough to join the open source community!
 In this workshop, you’ll learn how to master basic Git concepts that will allow you to become members of the open source community. This workshop covers real-life use cases.
@@ -27,7 +29,7 @@ You do not need to be a developer to participate and you will not need to write 
 
 # Lab Flow
 
-{{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files that always ends in copy / paste errors from the lab guide into the terminal sessions, this year, we decided to innovate and introduce a brand new infrastructure. We will leverage a JupyterHub server on which all the different labs guides will be stored in a notebook format (*.ipynb). 
+HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files that always ends in copy / paste errors from the lab guide into the terminal sessions, this year, we decided to innovate and introduce a brand new infrastructure. We will leverage a JupyterHub server on which all the different labs guides will be stored in a notebook format (*.ipynb). 
 
 However, the notebooks can be downloaded on to your own laptop for further use or edits. In order to use  them, you will need to install the Jupyter Notebook application available [here](https://jupyter.org/install).
 

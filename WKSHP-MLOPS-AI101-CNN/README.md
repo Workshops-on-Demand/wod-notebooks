@@ -1,14 +1,16 @@
-{{ BRANDINGLOGO }}
+![HPEDEVlogo](Pictures/hpe-dev-logo.png)
 
-# Welcome to the {{ BRANDINGWOD }} Hack Shack
-[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
+# Welcome to the HPE Developer Hack Shack
+[HPE Developer Community Team](https://hpedev.io)
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 </p>
 
-# {{ BRANDINGWOD }} Workshops-on-Demand
+# HPE Developer Challenge
+
+
 
 # Introduction to AI 101 - Convolutional neural network (CNN) for MNIST
 In this workshop, you will assume the role of a data scientist who has been tasked to develop a ML model for (doing/learning/teaching something…bla bla bla). Data scientists typically uses Jupyter Notebook server as a code sandbox for model development and tuning. You will use the HPE Ezmeral ML Ops software, a container-based solution for machine learning (ML) workflow management from HPE, to deploy your local Jupyter Notebook server and learn how to develop and tune a convolutional neural network model that yields to the best prediction result. 
@@ -22,7 +24,7 @@ You can freely copy the Jupyter Notebooks, including their output, in order to p
 
 
 ## Lab flow
-{{ BRANDINGWOD }} Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
 In a nutshell, a notebook works as follows:
 

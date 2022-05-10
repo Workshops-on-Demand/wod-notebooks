@@ -1,6 +1,6 @@
 ![Workshops-on-Demand Logo](Pictures/hpe-dev-logo.png)
 
-[{{ BRANDING }} Community Team]({{ BRANDINGURL }})
+[HPE Developer Community Team](https://hpedev.io)
 
 Version 0.121
 
