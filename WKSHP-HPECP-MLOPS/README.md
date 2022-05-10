@@ -3,7 +3,7 @@
 # Welcome to Hack Shack
 [HPE Developer Community Team](https://hpedev.io)
 
-# HPE Developer Challenge
+# HPE Developer Workshop
 
 
 

@@ -8,7 +8,7 @@
   
 </p>
 
-# HPE Developer Challenge
+# HPE Developer Workshop
 
  
 

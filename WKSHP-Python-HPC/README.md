@@ -7,7 +7,7 @@
   <img src="Pictures/hackshackdisco.png">
 </p>
 
-# HPE Developer Challenge
+# HPE Developer Workshop
 
 
 
