@@ -8,7 +8,7 @@
   
 </p>
 
-# HPE Developer Workshop
+# HPE Developer Challenge
 
 
 # Introduction to Delivering Hand on Experience with Jupyter Notebooks
