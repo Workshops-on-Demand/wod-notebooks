@@ -1,0 +1,8 @@
+export HPEGL_TENANT_ID=buu0lcj6alfdq0ajli4g
+export HPEGL_USER_ID=0oag5ovmzbYlIgm4S357
+export HPEGL_USER_SECRET=qlirqKKfqELAxOXyyE5SByD9uGeHzSLAmjAgfLAp
+export HPEGL_IAM_SERVICE_URL=https://iam.us1.greenlake-hpe.com/oauth2/buu0lcj6alfdq0ajli4g/ausanc3firBcvcYdT357
+export TF_CLI_ARGS_plan="-parallelism=1"
+export TF_CLI_ARGS_apply="-parallelism=1"
+#export TF_LOG=DEBUG
+export TF_LOG=
