@@ -40,7 +40,7 @@ data "hpegl_vmaas_resource_pool" "cl_resource_pool" {
  
 # And a group
 data "hpegl_vmaas_group" "default_group" {
-  name = "HPEDEV-HackShackTenant-Group"
+  name = "student{{ STDID }}"
 }
  
 # Locate a plan
@@ -59,8 +59,8 @@ data "hpegl_vmaas_template" "vanilla" {
   name = "vanilla-centos7-x86_64-09072020"
    }
 
-resource "hpegl_vmaas_instance" "student1737" {
-  name               = "student1737"
+resource "hpegl_vmaas_instance" "student{{ STDID }}" {
+  name               = "student{{ STDID }}"
   cloud_id           = data.hpegl_vmaas_cloud.cloud.id
      group_id           = data.hpegl_vmaas_group.default_group.id
      layout_id          = data.hpegl_vmaas_layout.vmware.id
