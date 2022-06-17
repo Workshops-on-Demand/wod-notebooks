@@ -101,8 +101,3 @@ In this second lab, you will deploy the application services and configure Envoy
     
 # Thank you!
 ![grommet.JPG](Pictures/grommet.jpg)
-
-
-```python
-
-```

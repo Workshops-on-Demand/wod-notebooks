@@ -1,4 +1,4 @@
-name: iris_adaptivesearch_student900
+name: iris_adaptivesearch_student{{ STDID }}
 hyperparameters:
   learning_rate:
     type: log
@@ -23,7 +23,6 @@ searcher:
   max_trials: 6
 entrypoint: model_def:IrisTrial
 bind_mounts:
-  - host_path: /opt/bluedata/mapr/mnt/k8s-df/exthcp/tenant-18/fsmount/repo/data
-    container_path: /opt/bluedata/mapr/mnt/k8s-df/exthcp/tenant-18/fsmount/repo/data
+  - host_path: /opt/bluedata/mapr/mnt/dfclusta.etc.fr.comm.hpecorp.net/exthcp/tenant-13/fsmount/repo/data
+    container_path: /opt/bluedata/mapr/mnt/dfclusta.etc.fr.comm.hpecorp.net/exthcp/tenant-13/fsmount/repo/data
     read_only: true
-

@@ -85,7 +85,7 @@ class IrisTrial(keras.TFKerasTrial):
     def build_training_data_loader(self) -> keras.InputData:
         # Ignore header line and read the training CSV observations into a pandas DataFrame.
         ##train = pd.read_csv(self.context.get_data_config()["train_url"], names=DS_COLUMNS, header=0)
-        train = pd.read_csv("/opt/bluedata/mapr/mnt/k8s-df/exthcp/tenant-18/fsmount/repo/data/iris_training.csv", names=DS_COLUMNS, header=0)
+        train = pd.read_csv("/opt/bluedata/mapr/mnt/dfclusta.etc.fr.comm.hpecorp.net/exthcp/tenant-13/fsmount/repo/data/iris_training.csv", names=DS_COLUMNS, header=0)
         train_features, train_labels = train, train.pop(LABEL_HEADER)
 
         # Since we're building a classifier, convert the labels in the raw
@@ -98,7 +98,7 @@ class IrisTrial(keras.TFKerasTrial):
     def build_validation_data_loader(self) -> keras.InputData:
         # Ignore header line and read the test CSV observations into a pandas DataFrame.
         ##test = pd.read_csv(self.context.get_data_config()["test_url"], names=DS_COLUMNS, header=0)
-        test = pd.read_csv("/opt/bluedata/mapr/mnt/k8s-df/exthcp/tenant-18/fsmount/repo/data/iris_test.csv", names=DS_COLUMNS, header=0)
+        test = pd.read_csv("/opt/bluedata/mapr/mnt/dfclusta.etc.fr.comm.hpecorp.net/exthcp/tenant-13/fsmount/repo/data/iris_test.csv", names=DS_COLUMNS, header=0)
         test_features, test_labels = test, test.pop(LABEL_HEADER)
 
         # Since we're building a classifier, convert the labels in the raw
