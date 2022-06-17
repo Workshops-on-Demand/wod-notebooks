@@ -12,10 +12,12 @@
 
 
 
-# Introduction to[Workshop title]
-In this workshop we’ll cover ....
+# Introduction to HPE GreenLake for Private Cloud - Terraform Provider (Challenge)
+The process of managing and provisioning computer data centers through machine-readable definition files, otherwise known as Infrastructure-as-Code (IaC), offers many significant benefits. It helps to increase operational agility, simplify management, reduce errors, and save cost. 
 
-# Author: [Name](mailto:email)
+In this workshop, we’ll cover how we can combine HPE GreenLake with TerraForm to achieve Infrastructure as Code. 
+
+# Author: [Didier Lalli](mailto:didier.lalli@hpe.com)
 
 ## Handouts
 You can freely copy these Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
@@ -53,15 +55,20 @@ Enjoy the labs ! :-)
 
 ## Workflow
 
-### Lab 1: Lab 1 title
-Description: In this section, we’ll go through some of ...
-* [Lab 1](1-WKSHP-title.ipynb)
+### Lab 1: Creating resources with Terraform 
+Description: In this lab, we will get familiar with HPE GreenLake security concepts and the Terraform environment. Then, we will use Terraform to create a first VM instance in our HPE GreenLake cloud platform
+* [Lab 1](1-WKSHP-Terraform101-CreatingResources.ipynb)
 
+### Lab 2: Desired state management with Terraform
+Description: In this lab, we will use Terraform to perform life-cycle management actions on our VM instance
+* [Lab 2](2-WKSHP-Terraform101-ManagingResources.ipynb)
+
+### Lab 3: Decommisioning resources
+Description: In this lab, we will use Terraform to decommision resources created during this workshop
+* [Lab 3](3-WKSHP-Terraform101-DecommisioningResources.ipynb)
+
+### Conclusion: 
+* [Conclusion](4-WKSHP-Conclusion.ipynb)
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```python
-
-```
