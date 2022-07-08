@@ -16,7 +16,7 @@
 In this workshop we’ll go through some of basics concepts aroud Machine Learning.
 
 
-# Authors: [Gerhard Wenzel](mailto:gerhard.wenzel@hpe.com) , [Chris Snow](mailto:chris.snow@hpe.com) , and  [Frederic Passeron](mailto:frederic.passeron@hpe.com) 
+# Authors: [Chris Snow](mailto:chsnow123@gmail.com) , and  [Frederic Passeron](mailto:frederic.passeron@hpe.com) 
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
