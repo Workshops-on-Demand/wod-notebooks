@@ -1,4 +1,4 @@
-![HPEDEVLogo](Pictures/hpe-dev-logo.png)
+![HPEDEVLogo](Pictures/hpe-dev-logo.png)                                 ![detaiLogo](Pictures/detai-logo.png)    
 
 # Welcome to Hack Shack
 [HPE Developer Community Team](https://hpedev.io)
@@ -7,15 +7,15 @@
 
 
 
-# Getting started with Determined, the open-source deep learning training platform
+# Getting started with Determined, the open-source deep learning training platform (FSI)
 
-*Version: open source Determined 0.17.9+*
+*Version: open source Determined 0.18.4+*
 
 Determined AI (or Determined) is an open source platform built to accelerate deep learning (DL) experimentation for data science teams. These teams can use Determined to build, train, and optimize their deep learning models. Determined provides the tools for accelerating experiments, such as distributing training and automatic model tuning, with hyperparameter search, also known as hyperparameter optimization (HPO). 
 
 In this workshop, you will learn about some fundamental features and terminology of Determined. You will take a specific deep learning model and walk through how to interact with the Determined system to train the DL model and visualize the result of the training process. You will experience how Determined makes it easy for ML engineers and data scientists to train deep learning models on one or more GPUs to accelerate training processes, and how it simplifies hyperparameter optimization (HPO) to improve model accuracy and find the best version of a model. 
 
->**Note:** _This workshop is not intended to teach you about AI/ML/DL or how to "port" your deep learning model to Determined. It is intended to give a use case for data science and ML engineers to get started with Determined and some of its fundamental concepts and features. The DL model used in this hands-on workshop is abbreviated from [the popular iris classification example](https://github.com/determined-ai/determined/tree/master/examples/computer_vision/iris_tf_keras)._
+>**Note:** _This workshop is not intended to teach you about AI/ML/DL or how to "port" your deep learning model to Determined. It is intended to give a use case for data science and ML engineers to get started with Determined and some of its fundamental concepts and features. The DL model used in this hands-on workshop is abbreviated from [an nvidia FSI sample : the credit_default_risk](https://github.com/NVIDIA/fsi-samples/tree/main/credit_default_risk)._
 
 
 
@@ -80,7 +80,7 @@ The Determined consists of:
     * The Master brings up PODs on the Kubernetes worker nodes to run tasks on demand; for example, the model training tasks and auxiliary tasks such as TensorBoard and JupyterLab Notebook.
     * As training tasks execute, the Master remains in communication with the training tasks PODs and saves training model metadata (for example the training & validation metrics received from the training tasks), as well as the state of the tasks in the PostgreSQL database for model experiment tracking and analysis.  
 
-# Lab Workflow
+# Lab Workflow  TBD
 
 ## Lab 1: Learning the base principles of Determined
 In this first lab, you will be introduced to Determined components and some of its important concepts and terminology. You will learn how to interact with **Determined** deployed on Kubernetes using the Determined CLI. You will launch your first training task within an experiment to train a deep learning model with Determined. You will also monitor and visualize the training task progress for your experiment and gather the metrics of the training for analyzing results using Determined WebUI and the integrated TensorBoard. Finally, you'll launch a JupyterLab server task from within Determined, load your trained model, and test it by making predictions.
