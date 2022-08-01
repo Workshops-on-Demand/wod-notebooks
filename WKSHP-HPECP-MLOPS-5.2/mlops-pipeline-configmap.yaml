@@ -8,5 +8,6 @@ data:
   name: mlops-model-student{{ STDID }}
   description: "mlops student{{ STDID }} model"
   model-version: "1"
-  path: /bd-fs-mnt/TenantShare/repo/models/NYCTaxi/student{{ STDID }}/XGB.pickle.dat
-  scoring-path: /bd-fs-mnt/TenantShare/repo/code/NYCTaxi/student{{ STDID }}/XGB_Scoring.py
+  modelType: kubedirector
+  path: /bd-fs-mnt/TenantShare/repo/models/student{{ STDID }}/XGB.pickle.dat
+  scoring-path: /bd-fs-mnt/TenantShare/repo/code/student{{ STDID }}/XGB_Scoring.py
