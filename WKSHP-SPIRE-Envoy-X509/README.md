@@ -41,7 +41,18 @@ You can freely copy the Jupyter Notebooks, including their output, in order to p
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
 
 
+## A quick look at Jupyter Notebook
+Jupyter Notebook is an open source solution for interactive documents that are commonly used to hold code for ML/DL models. 
+A Notebook consists of cells. A cell can be a markdown cell (contains comments, text, images) or a code cell. 
+
+To execute code within the Notebook, you run each cell in turn by clicking on the ***Play button*** in the menu bar of the Notebook.
+
+> **Note:**  When you see a [*] next to the action it means your execution step is busy working within the notebook. When you see a digit number, it means the execution of the step is completed.  
+
+![QickLookNotebook](Pictures/Quick-look-Notebook.png)
+
 Enjoy the labs ! :-)
+
 
 
 ## Definitions

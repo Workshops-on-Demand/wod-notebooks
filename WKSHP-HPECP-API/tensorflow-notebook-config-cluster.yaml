@@ -2,11 +2,11 @@
 apiVersion: "kubedirector.hpe.com/v1beta1"
 kind: "KubeDirectorCluster"
 metadata: 
-  name: "tensorflow-gpu-jupyter-example"
+  name: "tensorflow-cpu-jupyter-example"
   labels: 
     description: ""
 spec: 
-  app: "tensorflow-gpu-jupyter"
+  app: "tensorflow-cpu-jupyter"
   namingScheme: "CrNameRole"
   appCatalog: "local"
   connections: {}
