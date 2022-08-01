@@ -18,6 +18,7 @@ spec:
     - 
       id: "controller"
       members: 1
+      serviceAccountName: "ecp-tenant-member-sa"
       resources: 
         requests: 
           cpu: "1"

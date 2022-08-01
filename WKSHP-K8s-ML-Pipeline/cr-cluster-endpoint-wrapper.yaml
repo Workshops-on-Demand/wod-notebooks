@@ -11,10 +11,13 @@ spec:
   connections: 
     configmaps: 
       - model-student{{ STDID }}
+    secrets:
+      - hpecp-ext-auth-secret
   roles: 
     - 
       id: "LoadBalancer"
       members: 1
+      serviceAccountName: "ecp-tenant-member-sa"
       resources: 
         requests: 
           cpu: "1"
@@ -30,6 +33,7 @@ spec:
     - 
       id: "RESTServer"
       members: 1
+      serviceAccountName: "ecp-tenant-member-sa"
       resources: 
         requests: 
           cpu: "1"

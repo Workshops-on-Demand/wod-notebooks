@@ -27,7 +27,7 @@ def saveInProjectRepo(path):
 
 	# Loading the model back from the XGB pickle file
 final_gb = pickle.load(
-    open(saveInProjectRepo('models/NYCTaxi') + '/' + userID + '/' + "XGB.picklev2.dat", "rb"))
+    open(saveInProjectRepo('models') + '/' + userID + '/' + "XGB.picklev2.dat", "rb"))
 	
 # Loading encoding file
 # with open(saveInProjectRepo('data/encoding.json'), 'r') as file:
