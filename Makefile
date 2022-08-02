@@ -8,5 +8,5 @@ all: $(TARGETS2)
 
 %/README.md: %/0-ReadMeFirst.ipynb
 	@cat $^ | jq -e > /dev/null
-	@jinja2 -D MODEWS=WKSHP $^ ../jupyter-procmail/ansible-jupyter/group_vars/all.yml --format=yaml | jupyter nbconvert --stdin --to markdown --output $@ --log-level=0
+	@jinja2 -D MODEWS=WKSHP $^ ../wod-backend/ansible/group_vars/all.yml --format=yaml | jupyter nbconvert --stdin --to markdown --output $@ --log-level=0
 	@echo "$@"
