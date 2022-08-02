@@ -1,9 +1,0 @@
-{
-   "/redfish/v1/Systems/1":
-   {
-     "Boot": {
-             "BootSourceOverrideTarget": "Utilities",
-             "BootSourceOverrideEnabled": "Once"
-             }  
-   }
-}

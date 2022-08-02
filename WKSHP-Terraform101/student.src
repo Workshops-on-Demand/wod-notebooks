@@ -1,8 +1,0 @@
-export HPEGL_TENANT_ID={{ GREENLAKE_TENANT_ID }}
-export HPEGL_USER_ID={{ STUDENT_CLIENTID }}
-export HPEGL_USER_SECRET={{ STUDENT_CLIENTSECRET }}
-export HPEGL_IAM_SERVICE_URL={{ GREENLAKE_IAM_API_URL  }}/oauth2/{{ GREENLAKE_TENANT_ID  }}/{{ GREENLAKE_IAM_ID }}
-export TF_CLI_ARGS_plan="-parallelism=1"
-export TF_CLI_ARGS_apply="-parallelism=1"
-export TF_LOG=INFO
-
