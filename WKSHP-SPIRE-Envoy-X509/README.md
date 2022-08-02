@@ -1,12 +1,7 @@
 ![HPEDEVlogo](Pictures/hpe-dev-logo.png)
 
-# Welcome to the HPE Developer Hack Shack
+# Welcome to Hack Shack
 [HPE Developer Community Team](https://hpedev.io)
-
-<p align="center">
-  <img src="Pictures/hackshackdisco.png">
-  
-</p>
 
 # HPE Developer Workshop
 
@@ -35,11 +30,12 @@ _For this hands-on workshop, the SPIRE components (Server and Agents) have alrea
 # Authors: [Florian Buehr](mailto:florian.buehr@hpe.com); [Denis Choukroun](mailto:denis.choukroun@hpe.com)
 
 ## Handouts
+HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
 
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
-
 
 ## A quick look at Jupyter Notebook
 Jupyter Notebook is an open source solution for interactive documents that are commonly used to hold code for ML/DL models. 
@@ -52,7 +48,6 @@ To execute code within the Notebook, you run each cell in turn by clicking on th
 ![QickLookNotebook](Pictures/Quick-look-Notebook.png)
 
 Enjoy the labs ! :-)
-
 
 
 ## Definitions
@@ -112,3 +107,8 @@ In this second lab, you will deploy the application services and configure Envoy
     
 # Thank you!
 ![grommet.JPG](Pictures/grommet.jpg)
+
+
+```python
+
+```

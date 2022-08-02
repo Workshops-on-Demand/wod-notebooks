@@ -7,11 +7,11 @@
 
 
 
-# Introduction to the HPE Ezmeral Container Platform REST API 
+# Introduction to the HPE Ezmeral Runtime Enterprise REST API 
 
 *Version: HPE Ezmeral Runtime Enterprise 5.4 (or later)*
 
-In this workshop, you will learn how developers can interact with HPE Ezmeral Container Platform (HPE ECP) programmatically through its REST API to accelerate their application development and deployment on containers. The workshops does not cover how to perform IT administrative tasks through the REST API.
+In this workshop, you will learn how developers can interact with HPE Ezmeral Runtime Enterprise (formerly known as HPE Ezmeral Container Platform) programmatically through its REST API to accelerate their application development and deployment on containers. The workshops does not cover how to perform IT administrative tasks through the REST API.
 
 # Author: [Denis Choukroun](mailto:denis.choukroun@hpe.com)
 
@@ -78,7 +78,7 @@ Continuing with our lab series, this lab will walk you through how you, as a ten
 
 * [Lab 2](2-WKSHP-HPECP-DeployApp-K8S-Tenant-tf.ipynb)
 
-# Join the HPE Developer Community
+# Join the HPE DEV Community
 ![QRCode](Pictures/QRCode-HPEDEV.png)
 
 # Thank you!

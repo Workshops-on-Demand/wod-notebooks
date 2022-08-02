@@ -13,7 +13,7 @@
 
 
 # Introduction to Python
-In this workshop we’ll go through the basics of Python programming language. You'll learn about variables and data types as well conditionnals and loops amongmany other things. 
+In this workshop we’ll go through the basics of Python programming language. You'll learn about variables and data types as well conditionnals and loops among many other things. 
 
 # Authors:[Samarth Deyagond](mailto:samarth.deyagond@sap.com) and [Didier Lalli](mailto:didier.lalli@hpe.com)
 

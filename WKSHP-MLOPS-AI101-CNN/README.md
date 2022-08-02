@@ -26,6 +26,16 @@ You can freely copy the Jupyter Notebooks, including their output, in order to p
 ## Lab flow
 HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
+## A quick look at Jupyter Notebook
+Jupyter Notebook is an open source solution for interactive documents that are commonly used to hold code for ML/DL models. 
+A Notebook consists of cells. A cell can be a markdown cell (contains comments, text, images) or a code cell. 
+
+To execute code within the Notebook, you run each cell in turn by clicking on the ***Play button*** in the menu bar of the Notebook.
+
+> **Note:**  When you see a [*] next to the action it means your execution step is busy working within the notebook. When you see a digit number, it means the execution of the step is completed.  
+
+![QickLookNotebook](Pictures/Quick-look-Notebook.png)
+
 In a nutshell, a notebook works as follows:
 
 • A Notebook is a series de cells
