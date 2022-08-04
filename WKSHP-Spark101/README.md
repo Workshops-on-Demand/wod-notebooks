@@ -1,4 +1,4 @@
-![HPEDEVlogo](Pictures/hpe-dev-logo.png)    ![Sparklogo](Pictures/spark.png)
+![HPEDEVlogo](Pictures/hpe-dev-logo.png)      ![Sparklogo](Pictures/spark.png)
 
 # Welcome to the HPE Developer Hack Shack
 [HPE Developer Community Team](https://hpedev.io)
@@ -9,6 +9,7 @@
 </p>
 
 # HPE Developer Workshop
+
 
 
 
@@ -69,10 +70,7 @@ Enjoy the labs ! :-)
 ## Workflow
 
 ### Lab 1: Spark Basics.
-Description: In this section, we’ll go through some of ...
-here is the token necessary to connect to the next lab hosted on a separate jupyterhub.
-
-token =  
+Description: In this section, we’ll go through some of tyhe fundamentals of Apache Sparks like RDDs and many other things. 
 
 * [Lab 1](1-WKSHP-Spark_Basics.ipynb)
 
@@ -82,5 +80,11 @@ token =
 
 
 ```python
+
+```
+
+
+
+```bash
 
 ```
