@@ -12,7 +12,7 @@
 
 
 
-# Introduction to HPE GreenLake for Private Cloud - Terraform Provider (Challenge)
+# Introduction to HPE GreenLake for Private Cloud - Terraform Provider
 The process of managing and provisioning computer data centers through machine-readable definition files, otherwise known as Infrastructure-as-Code (IaC), offers many significant benefits. It helps to increase operational agility, simplify management, reduce errors, and save cost. 
 
 In this workshop, we’ll cover how we can combine HPE GreenLake with TerraForm to achieve Infrastructure as Code. 
