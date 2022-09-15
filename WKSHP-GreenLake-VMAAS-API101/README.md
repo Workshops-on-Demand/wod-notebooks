@@ -1,4 +1,4 @@
-![HPEDEVlogo](Pictures/hpe-dev-logo.png)       ![GreenLake](Pictures/greenlake-hero.jpg)
+![HPEDEVlogo](Pictures/hpe-dev-logo.png)
 
 # Welcome to the HPE Developer Hack Shack
 [HPE Developer Community Team](https://hpedev.io)
@@ -13,22 +13,16 @@
 
 
 # HPE GreenLake for private cloud API: Extract the power of the Virtual Machines as a Service (VMaaS) API
-HPE GreenLake Central is an advanced software-as-a-service platform that provides you with a consistent cloud experience for all your applications and data—on-premises or off-premises. It provides you with insights and controls to manage your hybrid IT estate, complementing your use of public clouds and data centers. HPE GreenLake Central gives you the ability to choose where and how to place your workloads and data, and—through the services you purchase—enables you to monitor security, compliance, capacity, resource utilization, and costs.
 
-In HPE GreenLake Central, you can do the following:
-
-- View and manage the services available to you in your HPE GreenLake environment.
-
-Services you use through HPE GreenLake Central appear as cards on the HPE GreenLake Central Dashboard.
-
-- Request and try services that have been offered to you to evaluate through HPE GreenLake Central.
-
-- With help from your HPE representative, manage your users and their access to resources in your environment, including access to other tools that are part of the services you purchase or use on a trial basis.
+ ![GreenLake](Pictures/vmaas-pce1.PNG)
 
 
-# What is the HPE GreenLake for private cloud service?
+# What is the HPE GreenLake for Private Cloud Enterprise?
 
-HPE GreenLake for private cloud combines the agility and simplicity of the cloud with the governance and control of an on-premises environment allowing customers to meet business and application requirements for privacy, data location, and latency. This true cloud service delivers an intuitive user experience. It features a self-service dashboard and automated provisioning of VMs, is ready to scale up or scale down on demand, is delivered on a pay-per-use basis, and is operated for the customer. This is a workload-optimized solution, built to meet parameters for flexibility, resiliency, scale, and VM performance. As an on-premises based service, it allows the customer to leverage their existing investments in IT infrastructure toolsets such as VM templates/images, backup solutions, network infrastructure, and more with room to scale. 
+The public cloud experience in a private cloud.
+The public cloud experience has set expectations for user experience and simplicity, and established benchmarks for time to value—outstripping the performance of legacy IT processes and technologies. But some 70% of apps and data remain outside the cloud 1—constrained by data gravity, security and compliance concerns, latency, performance challenges, and app entanglement. Businesses need a cloud experience that can support their heterogeneous workloads wherever they are, whether in your data center, or at your colocations or edges, including those running in VMs, on bare metal, and in containers. And they need to provide DevOps with self-serve access to these resources.
+
+A private cloud must be as simple to operate as the public cloud. The HPE GreenLake platform provides an automated, flexible private cloud you can use to run, support, and develop any of your apps—in the data center or at a colocation facility or edges. Deploy VMs, bare metal, and containers in any combination across the infrastructure, while users can self-serve their resources through an intuitive user interface, APIs, CLIs, or IaC – just like the public cloud. Moving to your private cloud is simple, as you use familiar hypervisor and container technologies to leverage all your data. And it is delivered as a service, with predictable costs and no upfront payment: you pay for what you use above a reserved amount, based on your consumption—while consumption visibility and analytics help you optimize your spend.
 
 In this workshop we’ll go through some basic usage of the Virtual Machines as a Service API that IT OPS / DEV OPS would use to interact programmatically with their resources. You will see through the basics of the authentication mechanisms. Then you'll get a chance to list a few of these resources available in your tenant. Deploying an instance is a simple but and efficient; you can then perform example one needs to go through too along with all the different actions related to the instance (stop, start, restart, backup...). You will also run some tasks and finally get your hands on a simple blueprint deployment. This workshop does not cover all of the features of the HPE GreenLake VMaaS offering. It simply offers you the possibility to test just a few of them.
 
@@ -43,29 +37,26 @@ You can freely copy the Jupyter Notebooks, including their output, in order to p
 ## Lab flow
 HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
-In a nutshell, a notebook works as follows:
+## A quick look at Jupyter Notebook
+Jupyter Notebook is an open source solution for interactive documents that are commonly used to hold code for ML/DL models. 
+A Notebook consists of cells. A cell can be a markdown cell (contains comments, text, images) or a code cell. 
 
-• A Notebook is a series of cells
+To execute code within the Notebook, you run each cell in turn by clicking on the ***Play button*** in the menu bar of the Notebook.
 
-• A Notebook uses a kernel (visible in the upper right corner of the Notebook)
+> **Note:**  When you see a [*] next to the action it means your execution step is busy working within the notebook. When you see a digit number, it means the execution of the step is completed.  
 
-• Cell can be Markdown or Code (in the selected kernel)
-
-• To Run a cell use:
-
-    o The Play Button at the top
-    o Ctrl-Enter (run and stay on same cell)
-    o Shift-Enter (run and move to next cell)
-    
-• Running a markdown cell is just rendering it
-
-• Running a Code cell runs the code and display the output just below the cell
-
-• When a cell is running it displays a [*] to its left, then when finished, it displays a counter of the number of execution of that cell
-
-• You cannot run a cell when another is already running but you can interrupt a running cell with the stop button
+![QickLookNotebook](Pictures/Quick-look-Notebook.png)
 
 Enjoy the labs ! :-)
+
+## Learn more
+
+Visit HPE GreenLake Developer Portal [here](https://developer.greenlake.hpe.com/docs/greenlake/) for how to get started HPE GreenLake APIs.
+
+You can also check out the different blog posts on our HPE Developer Community Portal [here](https://developer.hpe.com/platform/hpe-greenlake/home)
+
+Be sure to also look at the [HPE GreenLake Test Drive](https://testdrive.greenlake.hpe.com/) for other possible learning and testing experience. 
+
 
 
 ## Workflow
