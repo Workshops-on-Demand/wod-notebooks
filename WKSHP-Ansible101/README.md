@@ -12,7 +12,7 @@
 
  
 
-# Ansible101: A simple Introduction Ansible Concepts
+# Ansible101: A simple Introduction to Ansible Concepts
 
 Gone are the days when an administrator could, realistically, count the number of machines they were responsible for, and the days of very large scale deployments are here. This also means gone are the days when an admin could reasonably log into all of those machines to do the configuration by hand. Today it's best to rely on an automation framework to do this on a larger, more replicable, scale. Ansible is one such automation framework and this is a intended to walk folks through the very basics of Ansible, getting it set up, up and running, passing data, fetching information and generally getting comfortable with the basics of what configuration management is.
 
@@ -31,8 +31,20 @@ It supports devices and things you wouldn’t expect:
 * VMware
 * Storage devices (HPE, Netapp, Pure Storage, etc)
 
-If you want to see more automation related workshops, take a look at the following:
-* [Stackstorm 101 - Introduction to the Stackstorm automation features](https://hackshack.hpedev.io/workshop/21)
+We won't be covering the installation part of Ansible in this workshop.
+If you are willing to perform the ansible packages installation, you can either use regular distribution package mechanism or pip. Both will provide you with the necesarry packages to run you own tests.
+
+# Ansible Architecture
+
+Ansible is a radically simple IT automation engine that automates cloud provisioning, configuration management, application deployment, intra-service orchestration, and many other IT needs.
+Being designed for multi-tier deployments since day one, Ansible models your IT infrastructure by describing how all of your systems inter-relate, rather than just managing one system at a time.
+It uses no agents and no additional custom security infrastructure, so it’s easy to deploy - and most importantly, it uses a very simple language ([YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started), in the form of Ansible Playbooks) that allow you to describe your automation jobs in a way that approaches plain English.
+
+![AnsibleArchi](Pictures/Ansiblearchi1.png) 
+
+
+If you want to see more ansible related workshops, take a look at the following:
+* [Using the iLO Redfish API with Ansible and OneView](https://hackshack.hpedev.io/workshop/23)
 
 
 # Authors:[Frederic Passeron](mailto:frederic.passeron@hpe.com)  and  [Bruno Cornec](mailto:bruno.cornec@hpe.com)
@@ -73,24 +85,20 @@ Enjoy the labs ! :-)
 
 ## Workflow
 
-### Lab 1: Architecture
-Description: In this section, we’ll go through some of a quick overview of the different components of Ansible.
-* [Lab 1](1-WKSHP-Ansible101-Architecture.ipynb)
-
-### Lab 2: Inventory, Playbooks, and Tasks
+### Lab 1: Inventory, Playbooks, and Tasks
 Description: In this section, we will see how inventory, Playbooks and tasks actually fold together to make ansible such a great solution
-* [Lab 2](2-WKSHP-Ansible101-Playbooks.ipynb)
+* [Lab 1](1-WKSHP-Ansible101-Playbooks.ipynb)
 
-### Lab 3: Templates and variables
+### Lab 2: Templates and variables
 Description: In this section, we’ll go through some additional Ansible features like Templates and variables
-* [Lab 3](3-WKSHP-Ansible101-Templates.ipynb)
+* [Lab 2](2-WKSHP-Ansible101-Templates.ipynb)
 
-### Lab 4: Roles
+### Lab 3: Roles
 Description: In this section, we’ll see some advanced features of Ansible like roles.
-* [Lab 4](3-WKSHP-Ansible101-Roles.ipynb)
+* [Lab 3](3-WKSHP-Ansible101-Roles.ipynb)
 
 ### Conclusion: 
-* [Conclusion](5-WKSHP-Conclusion.ipynb)
+* [Conclusion](4-WKSHP-Conclusion.ipynb)
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
