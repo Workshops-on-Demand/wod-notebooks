@@ -19,4 +19,21 @@ The naming convention requires a digit followed by WKSHP then lab part name It a
 * 2-WKSHP-Conclusion.ipynb => Conclusion of the workshop summarizing the different steps achieved.
 
 
-Here is a list of the current public Workshops
+Here is a list of the current public Workshops:
+|   Name      | Description | 
+| :---        |  :---   | 
+|      |       | 
+| WKSHP-API101  | Basic Concepts on an API        | 
+| WKSHP-Concourse1011  | Basic Concepts on CICD        | 
+| WKSHP-Docker101  | Basic Concepts on Docker Containers        | 
+| WKSHP-GIT101  | Basic Concepts on GIT        | 
+| WKSHP-Grommet  | Basic Concepts on Grommet        | 
+| WKSHP-Jupyter-Notebooks101  | Basic Concepts on Jupyter Notebooks        | 
+| WKSHP-ML101 | Basic Concepts on an Machine Learning       | 
+| WKSHP-Python101  | Basic Concepts on Python Programming Language        | 
+| WKSHP-RUST101  | Basic Concepts on RUST Programming Language        | 
+| WKSHP-SPIFFE-SPIRE-101  | Basic Concepts on SPIFFE-SPIRE        | 
+| WKSHP-Spark01  | Basic Concepts on Apache Spark         | 
+| WKSHP-StackStorm101 | Basic Concepts on StackStorm automation framework       | 
+| WKSHP-Ansible101  | Basic Concepts on Ansible        | 
+
