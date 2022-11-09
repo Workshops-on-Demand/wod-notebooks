@@ -9,8 +9,12 @@ The directory must be named with the prefix WKSHP- followed by some workshop nam
 
 
 A workshop directory contains the following:
+
 A series of Jupyter Notebooks: 
-* 0-ReadMeFirst.ipynb => THis notebook contains generic infos on the workshop. It introduces the subjects, the concepts as well as the flow of the workshop. A workshop can be made of several parts. Naming convention requires a digit followed by WKSHP then lab part name It also includes details on notebooks technology and how to use them.
+
+The naming convention requires a digit followed by WKSHP then lab part name It also includes details on notebooks technology and how to use them.
+
+* 0-ReadMeFirst.ipynb => This notebook contains generic infos on the workshop. It introduces the subjects, the concepts as well as the flow of the workshop. A workshop can be made of several parts. 
 * 1-WKSHP-REST_API_Basics.ipynb => Lab 1 of the Workshops. There coulb multiple labs, then part number would increment.
 * 2-WKSHP-Conclusion.ipynb => Conclusion of the workshop summarizing the different steps achieved.
 
