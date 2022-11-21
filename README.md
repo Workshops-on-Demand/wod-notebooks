@@ -46,9 +46,9 @@ Here is a list of the current public Workshops:
 A workshop may require some separate scripts:
 
 These scripts would to be needed to:
-* Build up a generic appliance required by the workshop
-* Setup the appliance to the needs of the workshop
-* Configure the appliance at the deployment phase of the workshop
-* Reset the appliance if needed by the workshop
+* Build up a generic appliance required by the workshop,
+* Setup the appliance to the needs of the workshop,
+* Configure the appliance at the deployment phase of the workshop,
+* Reset the appliance if needed by the workshop.
 
 The requiered scripts are located in the wod-backend repo under the scripts folder.
