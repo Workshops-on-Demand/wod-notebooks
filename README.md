@@ -7,9 +7,9 @@ A workshop is built up in its own directory:
 
 API101 Workshop example: WKSHP-API101/
 
-The directory must be named with the prefix WKSHP- followed by some workshop name
+The directory must be named with the prefix WKSHP- followed by some workshop name.
 
-A workshop directory contains the following:
+A workshop directory contains the following.
 
 A series of Jupyter Notebooks: 
 
@@ -43,9 +43,7 @@ Here is a list of the current public Workshops:
 | WKSHP-StackStorm101 | Basic Concepts on StackStorm automation framework       | 
 | WKSHP-Ansible101  | Basic Concepts on Ansible        | 
 
-A workshop may require some separate scripts:
-
-These scripts would to be needed to:
+A workshop may require some separate scripts. These scripts would to be needed to:
 * Build up a generic appliance required by the workshop,
 * Setup the appliance to the needs of the workshop,
 * Configure the appliance at the deployment phase of the workshop,
