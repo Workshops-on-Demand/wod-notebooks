@@ -25,7 +25,7 @@ The workshop directory may contain additional folders required by the workshop.
 
 Finally, it should contain an auto generated readme.md file based on the 0-ReadMeFirst.ipynb notebook.
 
-Here is a list of the current public Workshops:
+Here is a list of the current public available Workshops:
 |   Name      | Description | 
 | :---        |  :---   | 
 |      |       | 
