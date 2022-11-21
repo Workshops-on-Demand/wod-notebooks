@@ -19,7 +19,7 @@ The naming convention requires a digit followed by WKSHP then lab part name. It 
 * 1-WKSHP-REST_API_Basics.ipynb => Lab 1 of the Workshop. There could be multiple labs, then part number would increment.
 * 2-WKSHP-Conclusion.ipynb => Conclusion of the workshop summarizing the different steps achieved.
 
-the workshop directory also contain a Pictures folder in which relevant pictures needed by the notebooks are located.
+The workshop directory also contain a Pictures folder in which relevant pictures needed by the notebooks are located.
 
 The workshop directory may contain additional folders required by the workshop.
 
