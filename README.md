@@ -26,22 +26,22 @@ The workshop directory may contain additional folders required by the workshop.
 Finally, it should contain an auto generated readme.md file based on the 0-ReadMeFirst.ipynb notebook.
 
 Here is a list of the current public available Workshops:
-|   Name      | Description | 
-| :---        |  :---   | 
-|      |       | 
-| WKSHP-API101  | Basic Concepts on an API        | 
-| WKSHP-Concourse1011  | Basic Concepts on CICD        | 
-| WKSHP-Docker101  | Basic Concepts on Docker Containers        | 
-| WKSHP-GIT101  | Basic Concepts on GIT        | 
-| WKSHP-Grommet  | Basic Concepts on Grommet        | 
-| WKSHP-Jupyter-Notebooks101  | Basic Concepts on Jupyter Notebooks        | 
-| WKSHP-ML101 | Basic Concepts on an Machine Learning       | 
-| WKSHP-Python101  | Basic Concepts on Python Programming Language        | 
-| WKSHP-RUST101  | Basic Concepts on RUST Programming Language        | 
-| WKSHP-SPIFFE-SPIRE-101  | Basic Concepts on SPIFFE-SPIRE        | 
-| WKSHP-Spark01  | Basic Concepts on Apache Spark         | 
-| WKSHP-StackStorm101 | Basic Concepts on StackStorm automation framework       | 
-| WKSHP-Ansible101  | Basic Concepts on Ansible        | 
+|   Name      | Description |  Backend needed |
+| :---        |  :---   | :---   | 
+|      |       |      | 
+| WKSHP-API101  | Basic Concepts on an API        | No |
+| WKSHP-Concourse1011  | Basic Concepts on CICD        |  Yes |
+| WKSHP-Docker101  | Basic Concepts on Docker Containers        |  Yes |
+| WKSHP-GIT101  | Basic Concepts on GIT        | No |
+| WKSHP-Grommet  | Basic Concepts on Grommet        |  No |
+| WKSHP-Jupyter-Notebooks101  | Basic Concepts on Jupyter Notebooks        | No |
+| WKSHP-ML101 | Basic Concepts on an Machine Learning       | No |
+| WKSHP-Python101  | Basic Concepts on Python Programming Language        | No |
+| WKSHP-RUST101  | Basic Concepts on RUST Programming Language        | No |
+| WKSHP-SPIFFE-SPIRE-101  | Basic Concepts on SPIFFE-SPIRE        | No |
+| WKSHP-Spark01  | Basic Concepts on Apache Spark         | Yes |
+| WKSHP-StackStorm101 | Basic Concepts on StackStorm automation framework       | Yes |
+| WKSHP-Ansible101  | Basic Concepts on Ansible        | Yes |
 
 A workshop may require some separate scripts. These scripts would to be needed to:
 * Build up a generic appliance required by the workshop,
