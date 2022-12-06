@@ -1,5 +1,5 @@
 # wod-notebooks
-This project is the public notebook repo part of our Workshop-on-Demand setup.
+This project is the public notebook repo part of our Workshop-on-Demand setup. You can test them live at https://hackshack.hpedev.io/workshops
 
 ## The repo contains a serie of public workshops.
 A public workshop is a workshop that is based on open source technology. it does not require proprietary technology. As an example, API101 only requires a publicly available API to work. On the other side, a workshop requiring HPE OneView API endpoint can not be considered as public as it needs an HPE Propriatery technology to run.
