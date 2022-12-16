@@ -42,6 +42,8 @@ Here is a list of the current public available Workshops:
 | WKSHP-Spark01  | Basic Concepts on Apache Spark         | Yes |
 | WKSHP-StackStorm101 | Basic Concepts on StackStorm automation framework       | Yes |
 | WKSHP-Ansible101  | Basic Concepts on Ansible        | Yes |
+| WKSHP-DataVisu101  | Basic Concepts on Data Visualization        | Yes |
+
 
 A workshop may require some separate scripts. These scripts would to be needed to:
 * Build up a generic appliance required by the workshop,
