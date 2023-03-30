@@ -51,4 +51,4 @@ A workshop may require some separate scripts. These scripts would to be needed t
 * Configure the appliance at the deployment phase of the workshop,
 * Reset the appliance if needed by the workshop.
 
-The requiered scripts are located in the wod-backend repo under the scripts folder.
+The required scripts are located in the wod-backend repo under the scripts folder.
