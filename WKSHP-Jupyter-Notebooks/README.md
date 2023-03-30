@@ -12,10 +12,10 @@
 
 
 
-# Introduction to Delivering Hand on Experience with Jupyter Notebooks
+# Introduction to Delivering Hands-on Experience with Jupyter Notebooks
 In this workshop we’ll go through the different steps to allow you to develop your own Jupyter Notebooks based Workshops.
 The HPE Developer Community Team have been working for more than a year on developing workshops for physical events, then for virtual events and finally for [Workshops-on-Demand](https://hackshack.hpedev.io/workshops).
-This tutorial is a guide for those who would be willing to leverage our experience to develop some new content . it will cover the basics of a jupyter notebook technologies. It should also learn you how to install the necessary tooling to develop on your own laptop.
+This tutorial is a guide for those who would be willing to leverage our experience to develop some new content . it will cover the basics of a jupyter notebook technologies. It should also teach you how to install the necessary tooling to develop on your own laptop.
 
 
 
@@ -32,7 +32,7 @@ HPE Developer Workshops-on-Demand are delivered through a central point that all
 
 In a nutshell, a notebook works as follows:
 
-• A Notebook is a series de cells
+• A Notebook is a series of cells
 
 • Notebook uses a kernel (visible in the upper right corner of the Notebook)
 
