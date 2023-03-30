@@ -11,7 +11,7 @@ The directory must be named with the prefix WKSHP- followed by some workshop nam
 
 A workshop directory contains the following.
 
-A series of Jupyter Notebooks: 
+A serie of Jupyter Notebooks: 
 
 The naming convention requires a digit followed by WKSHP then lab part name. It also includes details on notebooks technology and how to use them.
 
@@ -45,10 +45,10 @@ Here is a list of the current public available Workshops:
 | WKSHP-DataVisu101  | Basic Concepts on Data Visualization        | Yes |
 
 
-A workshop may require some separate scripts. These scripts would to be needed to:
+A workshop may require some separate scripts. These scripts would be needed to:
 * Build up a generic appliance required by the workshop,
 * Setup the appliance to the needs of the workshop,
 * Configure the appliance at the deployment phase of the workshop,
 * Reset the appliance if needed by the workshop.
 
-The requiered scripts are located in the wod-backend repo under the scripts folder.
+The required scripts are located in the wod-backend repo under the scripts folder.
