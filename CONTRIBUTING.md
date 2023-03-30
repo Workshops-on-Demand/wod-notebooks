@@ -9,7 +9,7 @@ There are multiple cases possible depending on the type of workshop you wish to 
 * Case1: Your workshop is self sufficient and does not require any Infra to run but the jupytherhub itself
     - In this case, simply follow the steps described below.
 * Case2: Your workshop requires a VM to run aside of the jupyterhub.
-    - In this case, additionnal scripts to support the workshop's vm setup, configuration, and customization. This means that on top of the current work of writing the workshop's notebooks, some additonal tasks will be needed and scripts to be written and added to the wod-backend repository. The current steps described below are also valid for the vm's management scripts in the wod-backend repo.
+    - In this case, additional scripts to support the workshop's vm setup, configuration, and customization. This means that on top of the current work of writing the workshop's notebooks, some additional tasks will be needed and scripts to be written and added to the wod-backend repository. The current steps described below are also valid for the vm's management scripts in the wod-backend repo.
 
 * Github Repository Cloning:
 
@@ -18,7 +18,7 @@ There are multiple cases possible depending on the type of workshop you wish to 
 From the following [Notebooks Repo](https://github.com/Workshops-on-Demand/wod-notebooks):
     -   Fork the repo to your personal repo
     -   Clone the repo with git clone and cd into it
-    -	Create a branch for your workshop with git branch -b "branch Name". Name the branch after the the Workshop folder name (WKSHP-Example101)
+    -	Create a branch for your workshop with git checkout -b "branch Name". Name the branch after the Workshop folder name (WKSHP-Example101)
     -   Add a folder for your stuff (WKSHP-Example101).
     -	Add a README.md that follows the same model as the one provided in other folders (WKSHP-API101 for example). Explain what the notebook is about, its dependencies if any.
     -	Add a LICENSE.md file by copying the one at the root of this repo (CC-By-SA 4.0)

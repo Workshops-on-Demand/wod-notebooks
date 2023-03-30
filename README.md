@@ -45,7 +45,7 @@ Here is a list of the current public available Workshops:
 | WKSHP-DataVisu101  | Basic Concepts on Data Visualization        | Yes |
 
 
-A workshop may require some separate scripts. These scripts would to be needed to:
+A workshop may require some separate scripts. These scripts would be needed to:
 * Build up a generic appliance required by the workshop,
 * Setup the appliance to the needs of the workshop,
 * Configure the appliance at the deployment phase of the workshop,
