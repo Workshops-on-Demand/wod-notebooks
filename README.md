@@ -11,7 +11,7 @@ The directory must be named with the prefix WKSHP- followed by some workshop nam
 
 A workshop directory contains the following.
 
-A serie of Jupyter Notebooks: 
+A series of Jupyter Notebooks: 
 
 The naming convention requires a digit followed by WKSHP then lab part name. It also includes details on notebooks technology and how to use them.
 
