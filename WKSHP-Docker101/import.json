@@ -1,0 +1,43 @@
+{
+  "Notebook": "WKSHP-Docker101",
+  "//first_comment": "This are the metadata for the WKSHP-Docker101.",
+  "name": "Docker 101 - Introduction to the Docker Concepts",
+  "description": " A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.The goal of this lab is to use Docker to become familiar with Linux based containers and handle some of the common use cases around it. By the end of this lab you will have created a Web application comprised of a number of micro-services.",
+  "//second_comment": "Should this workshop be active or hidden ?",
+  "active": "1",
+  "//third_comment": "How many simultaneous users can be supported ?",
+  "capacity": "25",
+  "//fourth_comment": "TBD",
+  "priority": 1,
+  "//fifth_comment": "Does that workshop have a reset script to launch ?",
+  "reset": "1",
+  "//sixth_comment": "Does that workshop need LDAP user support ?",
+  "ldap": "0",
+  "//seventh_comment": "Does that workshop need compiled scripts run before delivery",
+  "compile": "",
+  "//eighth_comment": "Does that workshop has variables managed in a pass file ?",
+  "varpass": "0",
+  "//nineth_comment": "What is the range of users id to reserve for this workshop ?",
+  "range": {
+    "min": "1551",
+    "max": "1580"
+  },
+  "//tenth_comment": "Do not change.",
+  "sessionType": "Workshops-on-Demand",
+  "//eleventh_comment": "Image of the Workshop",
+  "workshopImg": "https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/Docker101WoD.png",
+  "//twelveth_comment": "Badge of the Workshop",
+  "badgeImg": "https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/Opensource-Docker_101_Introduction_to_Docker_Concepts.jpg",
+  "//thiteenth_comment": "Location where the workshop will be run",
+  "location": "production_site",
+  "//fourteenth_comment": "Link to the replay of workshop",
+  "replayLink": "workshop/33",
+  "//fifteenth_comment": "Is that workshop is a beta one ?",
+  "beta": "",
+  "//sixteenth_comment": "What re the categories of that workshop ?",
+  "category": {
+	    "name": "open source"
+  },
+  "//seventeenth_comment": "How long is the duration of that workshop ?",
+  "duration": 4
+}

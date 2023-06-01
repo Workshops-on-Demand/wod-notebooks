@@ -1,20 +1,20 @@
 ![HPEDEVlogo](Pictures/hpe-dev-logo.png)      ![Sparklogo](Pictures/spark.png)
 
-# Welcome to the HPE Developer Hack Shack
-[HPE Developer Community Team](https://hpedev.io)
+# Welcome to the WoD Developer Hack Shack
+[WoD Developer Community Team](https://wod.io)
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 </p>
 
-# HPE Developer Workshop
+# WoD Developer Workshop
 
 
 
 
 # Introduction to Spark101
-In this workshop we’ll go through some of basics concepts aroud Apache Spark.
+In this workshop we’ll go through some of basics concepts around Apache Spark.
 Apache Spark is a unified analytics engine for large-scale data processing. It provides high-level APIs in Java, Scala, Python and R, and an optimized engine that supports general execution graphs. It also supports a rich set of higher-level tools including Spark SQL for SQL and structured data processing, MLlib for machine learning, GraphX for graph processing, and Structured Streaming for incremental computation and stream processing.
 
 # Authors: , [Gerhard Wenzel](mailto:gerhard.wenzel@hpe.com), [Chris Snow](mailto:chris.snow@hpe.com), and [Frederic Passeron](mailto:frederic.passeron@hpe.com) 
