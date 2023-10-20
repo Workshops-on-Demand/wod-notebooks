@@ -1,0 +1,25 @@
+%YAML 1.1
+# Meta data for the Ansible101 Workshop to populate seeder
+---
+name: 'Ansible101: A simple Introduction to Ansible Concepts'
+description: 'Ansible is described as "simple IT automation." It is an agentless tool, meaning you do not have to install anything on the systems you are controlling. With Ansible, you can install software, configure system settings and features, and do all the things system administrators do. You know, the operations side of the team. So why should you, a developer, care? You should.'
+active: true
+capacity: 20
+priority: 1
+range: [52-91]
+reset: true
+ldap: false
+location: 'mougins'
+replayId: 31
+varpass: false
+compile: false
+workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/WOD_OpenSource_Introduction_to_Ansible_Concepts.png'
+badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/OpenSource_Introduction_to_Ansible_Concepts.jpg'
+beta: false
+category: 'Open Source'
+duration: 4
+alternatLocation: 'grenoble'
+presenter: 'Frederic Passeron'
+role: 'Cloud Solution Architect'
+avatar: '/img/SpeakerImages/FP-HPEWOD.jpg'
+videoLink: 'https://youtu.be/Rv9V5BWoRKE'
