@@ -1,0 +1,25 @@
+%YAML 1.1
+# Meta data for the Jupyter Notebooks 101 Workshop to populate seeder
+---
+name: 'Jupyter Notebooks 101 - A simple how to on Jupyter Notebooks'
+description: 'The HPE DEV team has been leveraging Jupyter Notebooks to deliver Workshops-on-Demand for some time now. Learn how you can take advantage of this technology, too! From what is a notebook, down to how to install on windows, Linux, or Docker, we’ll share with you some of the important discoveries we’ve made through our JupyterHubs implementations.'
+active: true
+capacity: 20
+priority: 1
+range: [1950-1975]
+reset: false
+ldap: false
+location: 'mougins'
+replayId: 25
+varpass: false
+compile: false
+workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/WOD_Opensource-Jupyter_Notebooks_101_A_simple_how_to_on_Jupyter_Notebooks.jpg'
+badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/Opensource-Jupyter_Notebooks_101_A_simple_how_to_on_Jupyter_Notebooks.jpg'
+beta: false
+category: 'Open Source'
+duration: 4
+alternatLocation: 'grenoble'
+presenter: 'Frederic Passeron'
+role: 'Cloud Solution Architect'
+avatar: '/img/SpeakerImages/FP-HPEWOD.jpg'
+videoLink: 'https://youtu.be/lAlNNUkuPc8'

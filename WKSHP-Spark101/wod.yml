@@ -1,0 +1,25 @@
+%YAML 1.1
+# Meta data for the Spark 101 Workshop to populate seeder
+---
+name: 'Spark 101 - Introduction to Apache Spark Concepts'
+description: 'Explore the fundamentals of Apache Spark, a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters. In this workshop you will learn the types of workloads and use cases that Spark is good for, understand the basics of how Spark works under the hood. Finally, you will get hands-on experience using Spark APIs.'
+active: true
+capacity: 20
+priority: 1
+range: [1646-1700]
+reset: true
+ldap: false
+location: 'mougins'
+replayId: 51
+varpass: false
+compile: false
+workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/frederic-passeron-hpe-com/Introduction%20to%20Apache%20Spark%20Concepts.jpg'
+badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/OpenSource-Spark_101_Introduction_to_Apache_Spark_Concepts.jpg'
+beta: false
+category: 'Open Source'
+duration: 4
+alternatLocation: 'grenoble'
+presenter: 'Gerhard Wenzel'
+role: 'Solution Architect'
+avatar: '/img/hackshack/SpeakerImages/HPE_Gerhard_Wenzel_klein.jpg'
+videoLink: 'https://youtu.be/QSZTlnqbdKs'

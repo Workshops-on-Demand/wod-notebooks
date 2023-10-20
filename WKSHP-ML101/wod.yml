@@ -1,0 +1,25 @@
+%YAML 1.1
+# Meta data for the ML 101 Workshop to populate seeder
+---
+name: 'Machine Learning 101 - Introduction to ML concepts'
+description: 'Machine learning is a machine’s ability to learn from data. It has been around for decades, but machine learning is now being applied in nearly every industry and job function. Discover the main concepts in this 101 workshop.'
+active: true
+capacity: 20
+priority: 1
+range: [1351-1381]
+reset: true
+ldap: false
+location: 'mougins'
+replayId: 31
+varpass: false
+compile: false
+workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/frederic-passeron-hpe-com/Machine%20Learning%20101%20-%20Introduction%20to%20ML%20concepts.jpg'
+badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/OpenSource-Machine_Learning_101_Introduction_to_ML_Concepts.jpg'
+beta: false
+category: 'Open Source'
+duration: 4
+alternatLocation: 'grenoble'
+presenter: 'Chris Snow'
+role: 'Solution Architect'
+avatar: '/img/hackshack/SpeakerImages/chris-snow.jpg'
+videoLink: 'https://youtu.be/7Erx8cYBOZQ'

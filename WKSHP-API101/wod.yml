@@ -1,0 +1,25 @@
+%YAML 1.1
+# Meta data for the API101 Workshop to populate seeder
+---
+name: 'API 101 - API basics and the value they provide'
+description: 'You may know that application programming interfaces (APIs) allow applications to talk to other apps, but have you ever used them? Today, APIs are available for most products and solutions. You can take advantage of them when writing automation scripts, integrating code, or defining infrastructure-as-code, as long as you understand the mechanisms used to consume an API. In this hands-on workshop, we’ll review all the jargon and technology used by REST APIs.'
+active: true
+capacity: 20
+priority: 1
+range: [401-449]
+reset: false
+ldap: false
+location: 'mougins'
+replayId: 9
+varpass: false
+compile: false
+workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/WOD_Opensource-API_101_REST_API_basics_and_the_value_they_provide.jpg'
+badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/Opensource-API_101_REST_API_basics_and_the_value_they_provide.jpg'
+beta: false
+category: 'Open Source'
+duration: 2
+alternatLocation: 'grenoble'
+presenter: 'Didier Lalli'
+role: 'Distinguished Technologist'
+avatar: '/img/hackshack/SpeakerImages/Didier.png'
+videoLink: 'https://youtu.be/T57L-6LfUgw'
