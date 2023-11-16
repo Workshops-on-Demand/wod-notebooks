@@ -1,42 +1,42 @@
-![HPEDEVlogo](Pictures/hpe-dev-logo.png)    ![Dockerlogo](Pictures/docker.png)  
- 
+![HPEDEVlogo](Pictures/hpe-dev-logo.png)    ![podmanlogo](Pictures/podman-logo.png)  
+
 # Welcome to the HPE DEV Hack Shack
-[HPE Developer Community Team](https://hpedev.io)
+[WoD Developer Community Team](https://wod.io)
 
 <p align="center">
-  <img src="Pictures/hackshackdisco.png">
-  
+<img src="Pictures/hackshackdisco.png">
+
 </p>
 
-# HPE Developer Workshop
+# WoD Developer Workshop
 
 
 
-# Introduction to Docker 101
-In this workshop, we’ll go through the fundamentals of containers and Docker, from basic concepts up to running a full containerized web-based application. 
+# Introduction to Podman 101
+In this workshop, we’ll go through the fundamentals of containers and Podman, from basic concepts up to running a full containerized web-based application. 
 
-# Authors: [Bruno Cornec](mailto:bruno.cornec@hpe.com) & [Rene Ribaud](mailto:rene@flossita.org) & [Frederic Passeron](mailto:frederic.passeron@hpe.com)
+# Authors: [Markus Schreier](mailto:mschreie@redhat.com) & [Frederic Passeron](mailto:frederic.passeron@hpe.com) & [Pablo Preciado](mailto:ppreciad@redhat.com) 
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
 - You install the Jupyter Notebook application from [here](https://jupyter.org/install). 
 - A Beginners Guide is also available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
 
-## Objectives of the Docker Lab
-At the end of the lab, students should be able to install Docker, use the CLI to create a new image, create a container, launch an application in it, store data, and configure the network.
+## Objectives of the Podman Lab
+At the end of the lab, students should be able to use Podman for running a container, pulling and creating container images, as well as launching an application in it. Also you will be able to understand core security concepts that will help your enterprise to stay safe.
 
 This lab is intended to support a trial and error method so that, during the session, students should fully understand what is behind the tool. Blindly following instructions is not an effective way to learn, IMHO. You've been warned ;-)
 
 Expected duration : 120 minutes
 
 ## Reference documents
-When dealing with the installation and configuration of Docker, the first step  is to check the reference website http://docker.io/:
+This workshop is intended to be an introduction into Podman, for a detailed explanation on the funtinality please use Podman documentation: https://docs.podman.io
 
 At the start of each section, there is an estimate of how long it will take to complete.
 
 
 ## Lab flow
-The HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files, which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+The WoD Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files, which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
 In a nutshell, a notebook works as follows:
 
@@ -64,29 +64,28 @@ Enjoy the labs ! :-)
 
 ## Workflow
 
-### Lab 1: Introduction to container technology
-Description: In this section, we’ll go through some of the basic concepts around Docker (Docker Engine, Docker Compose, Docker Machine, and Docker Swarm)
+### Lab 1: Introduction to Podman
+Description: In this section, we’ll go through some of the basic concepts around Podman and the podman ecosystem.
 * [Lab 1](1-WKSHP-Intro-to-Containers-techno.ipynb)
 
-### Lab 2: Using Docker
-Description: In this section, you will create your first containers
-* [Lab 2](2-WKSHP-Using-Docker.ipynb)
+### Lab 2: Starting and stoping a container
+Description: In this section, you will execute containerized applications and interact with containers.
+* [Lab 2](2-WKSHP-Podman-hello-world.ipynb)
 
-### Lab 3: Using Dockerfile
-Description: In this section, we’ll go through some of the necessary steps to configure nextcloud in a container
-* [Lab 3](3-WKSHP-Using-Dockerfile.ipynb)
+### Lab 3: Managing Container Images
+Description: In this section, you will manage, pull and inspect container images.
+* [Lab 3](3-WKSHP-Managing-container-images.ipynb)
 
-### Lab 4: Using Docker Compose
-Description: In this section, we’ll go through some of the necessary steps to configure a multi-tiered app leveraging Docker Compose functionalities
-* [Lab 4](4-WKSHP-Using-Docker-Compose.ipynb)
+### Lab 4: Podman security
+Description: In this section, we’ll explain some of the core concepts of container security and how use Podman to minimize exposure to attackers.
+* [Lab 4](4-WKSHP-Podman-security.ipynb)
+
+### Lab 5: Managing multiple containers
+Description: In this section, you will manage multiple continers at the same time  some of the core concepts of container security and how use Podman to minimize exposure to attackers.
+* [Lab 5](5-WKSHP-Managing-multiple-containers.ipynb)
 
 ### Conclusion
-* [Conclusion](5-WKSHP-COnclusion.ipynb)
+* [Conclusion](6-WKSHP-Conclusion.ipynb)
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
-
-
-```python
-
-```
