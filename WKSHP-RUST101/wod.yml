@@ -2,6 +2,7 @@
 # Meta data for the RUST 101 Workshop to populate seeder
 ---
 name: 'RUST 101 - Introduction to the Rust programming language'
+notebook: 'WKSHP-RUST101'
 description: 'Today, hundreds of companies around the world are using Rust to create fast, low-resource, cross-platform solutions. Software you know and love, like Firefox, Dropbox, and Cloudflare, all use Rust. From startups to large corporations, from embedded devices to scalable web services, Rust is a great fit. In this session we will introduce you to Rust programming, a language empowering everyone to build reliable and efficient software.'
 active: true
 capacity: 20
@@ -18,7 +19,7 @@ badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-gi
 beta: false
 category: 'Open Source'
 duration: 2
-alternatLocation: 'grenoble'
+alternateLocation: 'grenoble'
 presenter: 'Jonathan Parris & Thomas Malachi'
 role: 'Fullstack Developer'
 avatar: '/img/hackshack/SpeakerImages/hpe-dev-logo.svg'

@@ -1,14 +1,14 @@
 ![HPEDEVlogo](Pictures/hpe-dev-logo.png)         ![Ansible](Pictures/Ansiblelogo.png)
 
-# Welcome to the HPE Developer Hack Shack
-[HPE Developer Community Team](https://hpedev.io)
+# Welcome to the WoD Developer Hack Shack
+[WoD Developer Community Team](https://wod.io)
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 </p>
 
-# HPE Developer Workshop
+# WoD Developer Workshop
 
  
 
@@ -56,7 +56,7 @@ You can freely copy the Jupyter Notebooks, including their output, in order to p
 
 
 ## Lab flow
-HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+WoD Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
 In a nutshell, a notebook works as follows:
 
@@ -101,7 +101,11 @@ Description: In this section, we’ll see some advanced features of Ansible like
 * [Conclusion](4-WKSHP-Conclusion.ipynb)
 
 # Thank you!
-![grommet.JPG](Pictures/grommet.JPG)
+
+<p align="center">
+
+![grommet.JPG](Pictures/grommet.JPG) 
+</p>
 
 
 ```bash
