@@ -2,7 +2,6 @@
 # Meta data for the Python 101 Workshop to populate seeder
 ---
 name: 'Python 101 - A simple introduction to Python programming language'
-notebook: 'WKSHP-Python101'
 description: 'Are you interested in learning more about Python, the high-level, general-purpose programming language? This basic 101-level course will get you started. Begin with a simple Hello World example and move to loops, dict and tuples concepts. Learn to use Python language constructs and an object-oriented approach to write clear, logical code for small and large-scale projects.'
 active: true
 capacity: 20

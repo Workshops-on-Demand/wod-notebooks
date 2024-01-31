@@ -2,7 +2,6 @@
 # Meta data for the Stackstorm 01 Workshop to populate seeder
 ---
 name: 'StackStorm 101 - Introduction to the StackStorm Framework'
-notebook: 'WKSHP-StackStorm101'
 description: 'StackStorm is a platform for integration and automation across services and tools that takes actions in response to events. It ties together your existing infrastructure and applications so you can more easily automate that environment. Join this workshop to discover what makes StackStorm so appealing.'
 active: true
 capacity: 20
