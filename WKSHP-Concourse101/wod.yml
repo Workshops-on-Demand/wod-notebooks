@@ -2,7 +2,6 @@
 # Meta data for the Concourse101 Workshop to populate seeder
 ---
 name: 'Concourse101: A simple Introduction to Concourse Concepts'
-notebook: 'WKSHP-Concourse101'
 description: "Concourse is a 100% open source CI/CD system with approximately 100 integrations -- Resource types -- to the outside world. Concourse's principles reduce the risk of switching to and from Concourse, by encouraging practices that decouple your project from your CI's little details, and keeping all configuration in declarative files that can be checked into version control."
 active: false
 capacity: 20
