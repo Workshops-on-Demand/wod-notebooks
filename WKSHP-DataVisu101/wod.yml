@@ -2,7 +2,6 @@
 # Meta data for the Data Visualization 101 Workshop to populate seeder
 ---
 name: 'Data Visualization 101 - Introduction to Data Visualization concepts'
-notebook: 'WKSHP-DataVisu101'
 description: 'Data Visualization: It is the process of translating large data sets into charts, maps, graphs, and other visuals. The main purpose of data visualization is to visualize data by representing it in pictorial form.It helps data scientists to understand the data and how to solve the problem and represent it for providing recommendations. Data visualization is important as it discovers the trends in data. It gives a clear idea of what information means by presenting it in the form of visuals like graphs, charts, maps, etc. This makes data more comprehensible for the human mind and as a result, makes it easier to identify patterns in large datasets.'
 active: true
 capacity: 20

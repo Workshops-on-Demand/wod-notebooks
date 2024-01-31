@@ -2,7 +2,6 @@
 # Meta data for the ML 101 Workshop to populate seeder
 ---
 name: 'Machine Learning 101 - Introduction to ML concepts'
-notebook: 'WKSHP-ML101'
 description: 'Machine learning is a machine’s ability to learn from data. It has been around for decades, but machine learning is now being applied in nearly every industry and job function. Discover the main concepts in this 101 workshop.'
 active: true
 capacity: 20

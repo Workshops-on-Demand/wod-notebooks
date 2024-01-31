@@ -2,7 +2,6 @@
 # Meta data for the Jupyter Notebooks 101 Workshop to populate seeder
 ---
 name: 'Jupyter Notebooks 101 - A simple how to on Jupyter Notebooks'
-notebook: 'WKSHP-Jupyter-Notebooks101'
 description: 'The HPE DEV team has been leveraging Jupyter Notebooks to deliver Workshops-on-Demand for some time now. Learn how you can take advantage of this technology, too! From what is a notebook, down to how to install on windows, Linux, or Docker, we’ll share with you some of the important discoveries we’ve made through our JupyterHubs implementations.'
 active: true
 capacity: 20

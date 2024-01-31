@@ -2,7 +2,6 @@
 # Meta data for the GO101 Workshop to populate seeder
 ---
 name: 'GO 101 - A simple introduction to Go Programming Language'
-notebook: 'WKSHP-GO101'
 description: 'Go, also called Golang or Go language, is an open source programming language that Google developed. Software developers use Go in an array of operating systems and frameworks to develop web applications, cloud and networking services, and other types of software. This workshop will drive you through the basics of this programming language.'
 active: false
 capacity: 20

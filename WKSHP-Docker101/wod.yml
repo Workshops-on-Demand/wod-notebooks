@@ -2,7 +2,6 @@
 # Meta data for the Docker101 Workshop to populate seeder
 ---
 name: 'Docker 101 - An introduction to containerization with Docker'
-notebook: 'WKSHP-Docker101'
 description: 'A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.The goal of this lab is to use Docker to become familiar with Linux based containers and handle some of the common use cases around it. By the end of this lab you will have created a Web application comprised of a number of micro-services.'
 active: true
 capacity: 20
