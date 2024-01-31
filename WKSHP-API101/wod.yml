@@ -2,7 +2,6 @@
 # Meta data for the API101 Workshop to populate seeder
 ---
 name: 'API 101 - API basics and the value they provide'
-notebook: 'WKSHP-API101'
 description: 'You may know that application programming interfaces (APIs) allow applications to talk to other apps, but have you ever used them? Today, APIs are available for most products and solutions. You can take advantage of them when writing automation scripts, integrating code, or defining infrastructure-as-code, as long as you understand the mechanisms used to consume an API. In this hands-on workshop, we’ll review all the jargon and technology used by REST APIs.'
 active: true
 capacity: 20

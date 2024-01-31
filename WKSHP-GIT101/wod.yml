@@ -2,7 +2,6 @@
 # Meta data for the GIT101 Workshop to populate seeder
 ---
 name: 'GIT 101 – Get involved in the open source community'
-notebook: 'WKSHP-GIT101'
 description: 'Git, the most widely-used version control system, and its associated web-based repositories, Github and Gitlab, are critical elements of today’s DevOps practices. As an open source developer, being able to navigate your way through the Git command set is a must. In this hands-on workshop, you’ll review some of the most common use cases, create your own Github account, and begin using it to collaborate with others. You’ll learn to access material from other members, contribute, and even create your own projects.'
 active: true
 capacity: 24
