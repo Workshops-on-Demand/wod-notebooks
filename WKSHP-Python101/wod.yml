@@ -18,7 +18,7 @@ badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-gi
 beta: false
 category: 'Open Source'
 duration: 2
-alternateLocation: 'grenoble'
+alternateLocation: ['grenoble']
 presenter: 'Didier Lalli'
 role: 'Distinguished Technologist'
 avatar: '/img/hackshack/SpeakerImages/Didier.png'
