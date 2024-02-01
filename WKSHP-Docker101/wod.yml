@@ -16,7 +16,7 @@ compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/Docker101WoD.png'
 badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/Opensource-Docker_101_Introduction_to_Docker_Concepts.jpg'
 beta: false
-category: 'Open Source'
+category: ['Open Source']
 duration: 4
 alternateLocation: ['grenoble']
 presenter: 'Bruno Cornec'
