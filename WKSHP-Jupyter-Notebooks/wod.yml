@@ -15,7 +15,7 @@ compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/frederic-passeron-hpe-com/Data%20Visualization%20101%20-%20Introduction%20to%20Data%20Visualization%20concepts.jpg'
 badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/frederic-passeron-hpe-com/Data%20Visualization%20101%20-%20Introduction%20to%20Data%20Visualization%20concepts.png'
 beta: false
-category: 'Open Source'
+category: ['Open Source']
 duration: 4
 alternateLocation: ['grenoble']
 presenter: 'Frederic Passeron'
