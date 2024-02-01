@@ -6,7 +6,7 @@ description: 'Data Visualization: It is the process of translating large data se
 active: true
 capacity: 20
 priority: 1
-range: [1326-1349]
+range: [1326,1349]
 reset: true
 ldap: false
 location: 'mougins'

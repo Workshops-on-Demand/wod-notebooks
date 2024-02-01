@@ -6,7 +6,7 @@ description: 'Go, also called Golang or Go language, is an open source programmi
 active: false
 capacity: 20
 priority: 1
-range: [151-170]
+range: [151,170]
 reset: false
 ldap: false
 location: 'mougins'

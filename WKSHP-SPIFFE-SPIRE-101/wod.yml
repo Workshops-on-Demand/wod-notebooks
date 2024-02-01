@@ -6,7 +6,7 @@ description: 'Inspired by production infrastructure at Facebook, Google, Netflix
 active: true
 capacity: 20
 priority: 1
-range: [1421-1430]
+range: [1421,1430]
 reset: false
 ldap: false
 location: 'mougins'

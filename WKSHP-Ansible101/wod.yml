@@ -6,7 +6,7 @@ description: 'Ansible is described as "simple IT automation." It is an agentless
 active: true
 capacity: 20
 priority: 1
-range: [52-91]
+range: [52,91]
 reset: true
 ldap: false
 location: 'mougins'
