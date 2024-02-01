@@ -6,7 +6,7 @@ description: 'StackStorm is a platform for integration and automation across ser
 active: true
 capacity: 20
 priority: 1
-range: [1626-1645]
+range: [1626,1645]
 reset: true
 ldap: false
 location: 'mougins'

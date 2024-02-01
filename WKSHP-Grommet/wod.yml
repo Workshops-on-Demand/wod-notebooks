@@ -6,7 +6,7 @@ description: 'Ever wanted to develop your own app in an easy way? Come and join 
 active: true
 capacity: 20
 priority: 1
-range: [546-565]
+range: [546,565]
 reset: false
 ldap: false
 location: 'mougins'

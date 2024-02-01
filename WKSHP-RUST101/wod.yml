@@ -6,7 +6,7 @@ description: 'Today, hundreds of companies around the world are using Rust to cr
 active: true
 capacity: 20
 priority: 1
-range: [1146-1166]
+range: [1146,1166]
 reset: false
 ldap: false
 location: 'mougins'

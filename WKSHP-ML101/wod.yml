@@ -6,7 +6,7 @@ description: 'Machine learning is a machine’s ability to learn from data. It h
 active: true
 capacity: 20
 priority: 1
-range: [1351-1381]
+range: [1351,1381]
 reset: true
 ldap: false
 location: 'mougins'

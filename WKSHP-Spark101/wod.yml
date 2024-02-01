@@ -6,7 +6,7 @@ description: 'Explore the fundamentals of Apache Spark, a multi-language engine 
 active: true
 capacity: 20
 priority: 1
-range: [1646-1700]
+range: [1646,1700]
 reset: true
 ldap: false
 location: 'mougins'

@@ -6,7 +6,7 @@ description: 'A Docker container image is a lightweight, standalone, executable 
 active: true
 capacity: 20
 priority: 2
-range: [1551-1580]
+range: [1551,1580]
 reset: true
 ldap: false
 location: 'mougins'

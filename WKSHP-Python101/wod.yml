@@ -6,7 +6,7 @@ description: 'Are you interested in learning more about Python, the high-level, 
 active: true
 capacity: 20
 priority: 1
-range: [696-716]
+range: [696,716]
 reset: false
 ldap: false
 location: 'mougins'

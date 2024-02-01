@@ -6,7 +6,7 @@ description: 'Git, the most widely-used version control system, and its associat
 active: true
 capacity: 24
 priority: 1
-range: [1076-1100]
+range: [1076,1100]
 reset: false
 ldap: false
 location: 'mougins'
