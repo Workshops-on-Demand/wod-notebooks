@@ -6,7 +6,7 @@ description: "Concourse is a 100% open source CI/CD system with approximately 10
 active: false
 capacity: 20
 priority: 1
-range: [376-395]
+range: [376,395]
 reset: true
 ldap: false
 location: 'mougins'
