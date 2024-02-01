@@ -6,7 +6,7 @@ description: 'You may know that application programming interfaces (APIs) allow 
 active: true
 capacity: 20
 priority: 1
-range: [401-449]
+range: [401,449]
 reset: false
 ldap: false
 location: 'mougins'
