@@ -16,7 +16,7 @@ compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/WOD_OpenSource_Introduction_to_Ansible_Concepts.png'
 badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/OpenSource_Introduction_to_Ansible_Concepts.jpg'
 beta: false
-category: 'Open Source'
+category: ['Open Source']
 duration: 4
 alternateLocation: ['grenoble']
 presenter: 'Frederic Passeron'

@@ -16,7 +16,7 @@ compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/WOD_Opensource-RUST_101_Introduction_to_the_Rust_programming_language.jpg'
 badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/Opensource-RUST_101_Introduction_to_the_Rust_programming_language.jpg'
 beta: false
-category: 'Open Source'
+category: ['Open Source']
 duration: 2
 alternateLocation: ['grenoble']
 presenter: 'Jonathan Parris & Thomas Malachi'

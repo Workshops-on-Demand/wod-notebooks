@@ -16,7 +16,7 @@ compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/frederic-passeron-hpe-com/WOD-Concourse101-A-simple-introduction-to-Concourse-concepts.jpg'
 badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/Concourse101_Introduction_to_Concourse_concepts.jpg'
 beta: false
-category: 'Open Source'
+category: ['Open Source']
 duration: 4
 alternateLocation: ['grenoble']
 presenter: 'Frederic Passeron'
