@@ -16,7 +16,7 @@ compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/WOD_Opensource-Jupyter_Notebooks_101_A_simple_how_to_on_Jupyter_Notebooks.jpg'
 badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/Opensource-Jupyter_Notebooks_101_A_simple_how_to_on_Jupyter_Notebooks.jpg'
 beta: false
-category: 'Open Source'
+category: ['Open Source']
 duration: 4
 alternateLocation: ['grenoble']
 presenter: 'Frederic Passeron'
