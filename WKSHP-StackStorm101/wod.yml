@@ -18,7 +18,7 @@ badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-gi
 beta: false
 category: 'Open Source'
 duration: 4
-alternateLocation: 'grenoble'
+alternateLocation: ['grenoble']
 presenter: 'Rick A Kauffman'
 role: 'Enterprise Architect'
 avatar: '/img/hackshack/SpeakerImages/rickkauffmann.jpg'
