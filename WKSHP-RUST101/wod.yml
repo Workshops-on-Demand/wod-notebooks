@@ -18,7 +18,7 @@ badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-gi
 beta: false
 category: 'Open Source'
 duration: 2
-alternateLocation: 'grenoble'
+alternateLocation: ['grenoble']
 presenter: 'Jonathan Parris & Thomas Malachi'
 role: 'Fullstack Developer'
 avatar: '/img/hackshack/SpeakerImages/hpe-dev-logo.svg'

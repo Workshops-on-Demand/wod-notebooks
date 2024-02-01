@@ -18,7 +18,7 @@ badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/freder
 beta: false
 category: 'Open Source'
 duration: 4
-alternateLocation: 'grenoble'
+alternateLocation: ['grenoble']
 presenter: 'Frederic Passeron'
 role: 'Cloud Solution Architect'
 avatar: '/img/SpeakerImages/FP-HPEWOD.jpg'

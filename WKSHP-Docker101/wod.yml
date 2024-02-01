@@ -18,7 +18,7 @@ badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod
 beta: false
 category: 'Open Source'
 duration: 4
-alternateLocation: 'grenoble'
+alternateLocation: ['grenoble']
 presenter: 'Bruno Cornec'
 role: 'OpenSource & Linux Technology Architect'
 avatar: '/img/SpeakerImages/Bruno.png'

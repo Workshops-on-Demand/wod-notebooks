@@ -18,7 +18,7 @@ badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod
 beta: false
 category: 'Open Source'
 duration: 4
-alternateLocation: 'grenoble'
+alternateLocation: ['grenoble']
 presenter: 'Gerhard Wenzel'
 role: 'Solution Architect'
 avatar: '/img/hackshack/SpeakerImages/HPE_Gerhard_Wenzel_klein.jpg'
