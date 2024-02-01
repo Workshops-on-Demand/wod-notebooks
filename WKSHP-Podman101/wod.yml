@@ -6,7 +6,7 @@ description: "Podman is a daemonless, open source, Linux native tool designed to
 active: false
 capacity: 25
 priority: 1
-range: [491-525]
+range: [491,525]
 reset: true
 ldap: false
 location: 'mougins'
