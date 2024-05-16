@@ -10,6 +10,7 @@ range: [1551,1580]
 reset: true
 ldap: false
 location: 'mougins'
+monoappliance: true
 replayId: 30
 varpass: false
 compile: false
