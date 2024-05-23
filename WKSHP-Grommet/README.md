@@ -14,7 +14,7 @@
 
 # Author: [Sulaymon Tajudeen](mailto:sulaymon.tajudeen@hpe.com)
 
-<small>This course was originally created by [Pramod Reddy](mailto:pramod-reddy.sareddy@hpe.com)</small>
+<small>This is an update to the original course created by [Pramod Reddy](mailto:pramod-reddy.sareddy@hpe.com)</small>
 
 **Grommet** is an open-source React component library that provides responsive and accessible mobile-first UI components for building a consistent enterprise level applications and weekend side projects :-)
 
@@ -23,7 +23,7 @@ Get up to speed with Grommet UI library using the following links.
 1. [Grommet](https://v2.grommet.io) website for more information about Grommet components.
 2. [Grommet Designer](https://designer.grommet.io/) is a visual tool for UI/UX designers and developers to create webpages using Grommet components.
 
-This workshop focuses on how developers/designers can use Grommet component library and Grommet Designer to quickly design/develop their web applications, generate Grommet code from the design, push the source code to GitHub and deploy it on Netlify.
+This workshop focuses on how designers/developers can use Grommet component library and Grommet Designer to quickly design/develop their web applications, generate Grommet code from the design, push the source code to GitHub and deploy it on Netlify.
 
 You will get started by building a simple bio page using Grommet Designer. No worries, if this is your first exposure to Grommet and Grommet Designer, we will take you through, step by step, and, by the end of the this short introductory course, you'll be deploying your own bio page web application in Netlify that can be viewed from the internet anytime from anywhere around the globe.
 
@@ -31,12 +31,12 @@ You will get started by building a simple bio page using Grommet Designer. No wo
 
 All you need is a laptop or workstation with a chrome/edge/firefox/safari browser and internet connection.
 
-We will use Grommet designer to design the application and install nodejs, yarn, and git on your workstation to run the application locally. We will then push the code to GitHub repo and deploy it on Netlify to access it from the internet.
+We will use Grommet designer to design the application and install nodejs, yarn, and git on your device to run the application locally. We will then push the code to GitHub repo and deploy it on Netlify to access it from the internet.
 
 Visit below links to find more information about Grommet and Grommet Designer.
 
 - Visit [Grommet Components](https://v2.grommet.io/components) website to lean more about Grommet components.
-- Visit the [Grommet Storybook](https://storybook.grommet.io/) website for examples of Grommet components.
+- Visit the [Grommet Storybook](https://storybook.grommet.io/) website for usage examples of Grommet components.
 - Visit the [Grommet Code Sandbox](https://codesandbox.io/u/grommetux/sandboxes) website for Grommet sandboxes.
 - Visit [HPE Design System](https://design-system.hpe.design) website for designers and developers to explore guidance and recommendations when building UI with Grommet especially for HPE products.
 
