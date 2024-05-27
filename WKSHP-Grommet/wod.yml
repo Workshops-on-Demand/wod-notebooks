@@ -3,7 +3,7 @@
 ---
 name: 'Streamline app development with open source Grommet'
 notebook: 'WKSHP-Grommet'
-description: 'Ever wanted to develop your own app in an easy way? Come and join this 101-level session on Grommet, an open source project led by HPE. Grommet is a React-based framework that provides accessibility, modularity, responsiveness, and theming in a tidy package. In this workshop, you’ll be introduced to the basics of Grommet and deploy your first app on Netifly!'
+description: 'Ever wanted to develop your own app in an easy way? Come and join this 101-level session on Grommet, an open source project led by HPE. Grommet is an open source React-based framework that provides accessibility, modularity, responsiveness, and theming in a tidy package. In this workshop, you will be introduced to the basics of Grommet using Grommet Designer and deploy your first app on Netlify!'
 active: true
 capacity: 20
 priority: 1
@@ -20,7 +20,7 @@ beta: false
 category: 'Open Source'
 duration: 2
 alternateLocation: 'grenoble'
-presenter: 'Pramod Sareddy'
-role: '	Fullstack Developer'
-avatar: '/img/hackshack/SpeakerImages/pramod.png'
-videoLink: 'https://youtu.be/spVROIPJM3E '
+presenter: 'Sulaymon  Tajudeen'
+role: 'UI/UX Front-End Engineer'
+avatar: '/img/hackshack/SpeakerImages/sulaymon.png'
+videoLink: 'https://youtu.be/'
