@@ -1,53 +1,68 @@
 ![HPEDEVlogo](Pictures/hpe-dev-logo.png)
 
 # Welcome to the HPE Developer Hack Shack
+
 [HPE Developer Community Team](https://hpedev.io)
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
-  
 </p>
 
 # Workshops on Demand
 
 # Introduction to Grommet and Grommet Designer hands-on workshop
 
-# Author: [Pramod Reddy](mailto:pramod-reddy.sareddy@hpe.com)
+# Author: [Sulaymon Tajudeen](mailto:sulaymon.tajudeen@hpe.com)
 
+<small>This is an update to the original course created by [Pramod Reddy](mailto:pramod-reddy.sareddy@hpe.com)</small>
 
-**Grommet** is a React component library that provides responsive and accessible mobile-first code components you can easily use for your projects.
+**Grommet** is an open-source React component library that provides responsive and accessible mobile-first UI components for building a consistent enterprise level applications and weekend side projects :-)
 
-Visit the [Grommet v2](https://v2.grommet.io) website for more information.
+Get up to speed with Grommet UI library using the following links.
 
-**Grommet Designer** is a tool to design screens using grommet components.
-Live at: [designer.grommet.io](https://designer.grommet.io/)
+1. [Grommet](https://v2.grommet.io) website for more information about Grommet components.
+2. [Grommet Designer](https://designer.grommet.io/) is a visual tool for UI/UX designers and developers to create webpages using Grommet components.
 
-This workshop focuses on how developers/designers can use Grommet and Grommet Designer, to quickly design/develop their web applications, generate the code from the design, push the source code to GitHub and deploy it on netlify.
+This workshop focuses on how designers/developers can use Grommet component library and Grommet Designer to quickly design/develop their web applications, generate Grommet code from the design, push the source code to GitHub and deploy it on Netlify.
 
-You will get started with some fundamental knowledge about how to design a web application, for example, your Bio with the Grommet Designer. We walk you through, step by step, and, by the end of the session, you'll be deploying your own Bio application in netlify and access from the internet anytime. 
+You will get started by building a simple bio page using Grommet Designer. No worries, if this is your first exposure to Grommet and Grommet Designer, we will take you through, step by step, and, by the end of the this short introductory course, you'll be deploying your own bio page web application in Netlify that can be viewed from the internet anytime from anywhere around the globe.
 
-## Lab Goal
+## Documentation and Tools
 
-At the end of the workshop, you will be able to 
-  * Explain what is Grommet?
-  * Explain why it is used?
-  * Create/design your own web application using [Grommet Designer](https://designer.grommet.io/)
-  * Generate the Source code from the design
-  * Push the source code to GitHub
-  * Deploy it to netlify and access from the internet
-  
-![netlifysite.png](Pictures/netlifysite.png)
+All you need is a laptop or workstation with a chrome/edge/firefox/safari browser and internet connection.
 
+We will use Grommet designer to design the application and install nodejs, yarn, and git on your device to run the application locally. We will then push the code to GitHub repo and deploy it on Netlify to access it from the internet.
 
-# Lab Flow
-HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. We are now leveraging a jupyterhub server on which all the different labs guides will be stored in a Notebook format (*.ipynb). These Notebooks are accessible from the internet for the event.
+Visit below links to find more information about Grommet and Grommet Designer.
 
-Besides, the notebooks can be downloaded on to your own laptop for further usage or edition. In order to use them, you will need to install the jupyter notebook application available [here](https://jupyter.org/install).
-Beginners guide available [here](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
+- Visit [Grommet Components](https://v2.grommet.io/components) website to lean more about Grommet components.
+- Visit the [Grommet Storybook](https://storybook.grommet.io/) website for usage examples of Grommet components.
+- Visit the [Grommet Code Sandbox](https://codesandbox.io/u/grommetux/sandboxes) website for Grommet sandboxes.
+- Visit [HPE Design System](https://design-system.hpe.design) website for designers and developers to explore guidance and recommendations when building UI with Grommet especially for HPE products.
+
+## Lab Goals
+
+At the end of the workshop, you will be able to
+
+- Explain what is Grommet?
+- Explain why it is used?
+- Create/design your own web application using [Grommet Designer](https://designer.grommet.io/)
+- Generate the source code (Grommet components) from the design
+- Push the source code to GitHub
+- Deploy the source code from GitHub to Netlify and access your new site from the internet
+
+![Final site](Pictures/netlify-deployed-site.png)
+
+## Lab Flow
+
+HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. We are now leveraging a jupyterhub server on which all the different labs guides will be stored in a Notebook format (\*.ipynb). These Notebooks are accessible from the internet for the event.
+
+Besides, the notebooks can be downloaded on to your own laptop for further usage or edition. In order to use them, you will need to install the jupyter notebook application using [jupyter notebook download link](https://jupyter.org/install).
+Beginner's guide available on [jupyter notebook website](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
 
 In a nutshell, a notebook works as follows:
 
-• A Notebook is a series de cells
+• A Notebook is a series of cells
 
 • Notebook uses a kernel (visible in the upper right corner of the Notebook)
 
@@ -58,7 +73,7 @@ In a nutshell, a notebook works as follows:
     o The Play Button at the top
     o Ctrl-Enter (run and stay on same cell)
     o Shift-Enter (run and move to next cell)
-    
+
 • Running a markdown cell is just rendering it
 
 • Running a Code cell runs the code and display the output just below the cell
@@ -69,49 +84,32 @@ In a nutshell, a notebook works as follows:
 
 Happy labs! :-)
 
-# Documentation and Tools
+## The hands-on lab exercises have been designed to be completed in the order below:
 
-All you need is a laptop or workstation with a chrome/firefox/safari browser.
+### Lab 1: Introduction
 
-We use Grommet designer to design the application and install nodejs, yarn, git on your workstation to run the application locally, push the code to your GitHub repo and deploy it on Netlify to access it from the internet.
+In this introduction, we will learn about what is Grommet and Grommet designer? How it will be helpful in designing and developing a web application.
 
-Visit below links to find information about Grommet and Grommet Designer.
+- Lab link - [Lab 1](1-WKSHP-Introduction.ipynb)
 
-- Visit the [Grommet v2](https://v2.grommet.io) website for more information on Grommet.
-- Visit the [Grommet Designer](https://designer.grommet.io/) website to start creating designs with grommet components.
-- Visit the [Grommet Components](https://v2.grommet.io/components) website for Grommet components.
-- Visit the [Grommet Storybook](https://storybook.grommet.io/) website for examples of Grommet components.
-- Visit the [Grommet Code Sandbox](https://codesandbox.io/u/grommetux/sandboxes) website for Grommet sandboxes.
+### Lab 2: Build/design your application in Grommet Designer
 
-The hands-on lab exercises have been designed to run in the order below:
+In this lab, we will use Grommet Designer to design the bio page site and apply different themes like HPE, Grommet, etc and appearance modes like Dark and Light.
 
+- Lab link - [Lab 2](2-WKSHP-DesignApp.ipynb)
 
-# Lab 1: Introduction
+### Lab 3: Prepare Environment
 
-In this intro, we'll learn about what is Grommet and Grommet designer? How it will be helpful in designing and developing your own web applications.
+In this lab, we will prepare the local environment by installing nodejs, yarn, and git to run the web application locally and push the code to GitHub repository.
 
-* [Lab 1](1-WKSHP-Introduction.ipynb)
+- Lab link - [Lab 3](3-WKSHP-PrepareEnvironment.ipynb)
 
-# Lab 2: App design in Grommet Designer
+### Lab 4: Deploy your App to Netlify
 
-In this lab, we'll use Grommet Designer to design the Bio application and apply different themes like HPE, Grommet, etc and modes like Dark and Light.
+In this lab, we will connect GitHub repo to Netlify to deploy the application we built with Grommet Designer and access it from the internet.
 
-* [Lab 2](2-WKSHP-DesignApp.ipynb)
+- Lab link - [Lab 4](4-WKSHP-DeploytoNetlify.ipynb)
 
-# Lab 3: Prepare Environment
-
-In this lab, we'll prepare the local environment by installing nodejs and yarn to run the web application locally and push the code to the GitHub repository.
-
-* [Lab 3](3-WKSHP-PrepareEnvironment.ipynb)
-
-# Lab 4: Deploy your App to Netlify
-
-In this lab, we'll connect your GitHub repo to netlify to deploy the application and access it from the internet.
-
-* [Lab 4](4-WKSHP-DeploytoNetlify.ipynb)
-
-# Thank You!
+## Thank You!
 
 ![grommet.JPG](Pictures/grommet.jpg)
-
-
