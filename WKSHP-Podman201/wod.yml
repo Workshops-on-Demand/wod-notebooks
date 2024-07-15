@@ -1,0 +1,26 @@
+%YAML 1.1
+# Meta data for the Podman201 Workshop to populate seeder
+---
+name: 'Podman201 - Advanced fonctionnalities of Podman'
+notebook: 'WKSHP-Podman201'
+description: 'TBD'
+active: true
+capacity: 20
+priority: 1
+range: [526-550]
+reset: false
+ldap: false
+location: 'grenoble'
+replayId: tbd
+varpass: false
+compile: false
+workshopImg: 'tbd'
+badgeImg: 'tbd'
+beta: false
+category: 'Open Source'
+duration: 2
+alternateLocation: 'grenoble'
+presenter: 'Markus'
+role: 'tbd'
+avatar: 'tbd'
+videoLink: 'tbd'
