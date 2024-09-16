@@ -43,6 +43,7 @@ Here is a list of the current public available Workshops:
 | WKSHP-StackStorm101 | Basic Concepts on StackStorm automation framework       | Yes |
 | WKSHP-Ansible101  | Basic Concepts on Ansible        | Yes |
 | WKSHP-DataVisu101  | Basic Concepts on Data Visualization        | Yes |
+| WKSHP-LLM101  | Basic Concepts on Large Language Model      | Yes |
 
 
 A workshop may require some separate scripts. These scripts would be needed to:
