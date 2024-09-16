@@ -3,3 +3,6 @@
 */.ipynb_checkpoints/
 WKSHP-RedfishAnsible/ansible_kernel.log
 */.DS_Store
+.venv
+.env
+.vscode/*
