@@ -7,3 +7,4 @@ api_key
 .venv
 .env
 .vscode/*
+*/ChromaDb/*
