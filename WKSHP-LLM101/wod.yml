@@ -1,0 +1,26 @@
+%YAML 1.1
+# Meta data for the LLM101 Workshop to populate seeder
+---
+name: 'LLM 101 - LLM basics and the value they provide'
+notebook: 'WKSHP-LLM101'
+description: "You may know that Large Language Models (LLMs) enable applications to understand and generate human language, but have you ever used them? Today, LLMs are integrated into numerous products and solutions. You can leverage them for building chatbots, automating content creation, or analyzing text data, as long as you understand how to interact with these models effectively. In this hands-on workshop, we’ll demystify the jargon and technology behind LLMs, using practical examples with HPE's open-source library, LL-Mesh."
+active: true
+capacity: 20
+priority: 1
+range: [401-449]
+reset: false
+ldap: false
+location: 'mougins'
+replayId: 9
+varpass: false
+compile: false
+workshopImg: '???' #'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/WOD_Opensource-LLM_101_basics_and_the_value_they_provide.jpg'
+badgeImg: '???'  #'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/Opensource-LLM_101_basics_and_the_value_they_provide.jpg'
+beta: false
+category: 'Open Source'
+duration: 2
+alternateLocation: 'Milan'
+presenter: 'Antonio Fin'
+role: 'Product Manager'
+avatar: '???' #'/img/hackshack/SpeakerImages/Antonio.png'
+videoLink: '???'
