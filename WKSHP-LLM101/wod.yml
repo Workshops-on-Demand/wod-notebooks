@@ -14,13 +14,13 @@ location: 'mougins'
 replayId: 9
 varpass: false
 compile: false
-workshopImg: '???' #'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/WOD_Opensource-LLM_101_basics_and_the_value_they_provide.jpg'
-badgeImg: '???'  #'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/Opensource-LLM_101_basics_and_the_value_they_provide.jpg'
+workshopImg: '???'
+badgeImg: '???'
 beta: false
 category: 'Open Source'
 duration: 2
-alternateLocation: 'Milan'
+alternateLocation: ['grenoble']
 presenter: 'Antonio Fin'
 role: 'Product Manager'
-avatar: '???' #'/img/hackshack/SpeakerImages/Antonio.png'
+avatar: '???'
 replayLink: '???'
