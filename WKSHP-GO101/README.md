@@ -1,25 +1,27 @@
-![HPEDEVlogo](Pictures/hpe-dev-logo.png)
+![WoDlogo](img/logo.png)  ![Gologo](Pictures/Go.png)
 
-# Welcome to the HPE Developer Hack Shack
-[HPE Developer Community Team](https://hpedev.io)
+# Welcome to the WoD Developer Hack Shack
+[WoD Developer Community Team](https://wod.io)
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 </p>
 
-# HPE Developer Workshop
+# WoD Developer Workshop
 
 
 
-# Introduction to[Workshop title]
-In this workshop we’ll cover ....
+# Introduction to Go101
+In this workshop we’ll cover the basics of Go language. The Go programming language is an open source project to make programmers more productive.
 
-# Author: [Name](mailto:email)
+Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make it easy to write programs that get the most out of multicore and networked machines, while its novel type system enables flexible and modular program construction. Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It's a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.
+
+# Author: [Nida Sahar Rafee](nida@gonife.com) and [Frederic Passeron](frederic.passeron@hpe.com)
 
 
 ## Lab flow
-HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files that always end in copy / paste errors from the lab guide into TS sessions, we leverage an infrastructure that uses a JupyterHub server on which all the different lab guides are stored in a notebook format (*.ipynb).
+WoD Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files that always end in copy / paste errors from the lab guide into TS sessions, we leverage an infrastructure that uses a JupyterHub server on which all the different lab guides are stored in a notebook format (*.ipynb).
 
 ## A quick look at Jupyter Notebook
 Jupyter Notebook is an open source solution for interactive documents that are commonly used to hold code for ML/DL models. But it can also be used in many other ways.
@@ -65,10 +67,29 @@ You can freely copy these Jupyter Notebooks, including their output, in order to
 
 ## Workflow
 
-### Lab 1: Lab 1 title
-Description: In this section, we’ll go through some of ...
-* [Lab 1](1-WKSHP-title.ipynb)
+### Lab 1: Lab 1 Collections
+Description: In this section, we’ll go through collections definitions. Collections in Go are used to grouping value of the same type together. Values within a collection can iterated over, or retrieved individually.
+* [Lab 1](1-WKSHP-GO101-Collections.ipynb)
 
+### Lab 2: Lab 2 Concurrency
+Description: In this section, we’ll go through comcurrency definitions. Concurrency refers to a programming language's ability to deal with lots of things at once.
+* [Lab 2](2-WKSHP-GO101-Concurrency.ipynb)
+
+### Lab 3: Lab 3 Defer-Panic-Recover
+Description: In this section, we’ll go through defer, panic and recover statements to handle errors.
+* [Lab 3](3-WKSHP-GO101-Defer-Panic-Recover.ipynb)
+
+### Lab 4: Lab 4 Dependency Managenent
+Description: In this section, we’ll go through the necessary tasks to manage dependencies you take on in your code.
+* [Lab 4](4-WKSHP-GO101-Dependency-Management.ipynb)
+
+### Lab 5: Lab 5 Testing
+Description: In this section, we’ll go through Testing, a crucial part of software development that ensures your code works as expected.
+* [Lab 5](5-WKSHP-GO101-Testing.ipynb)
+
+### Lab 6: Lab 6 Interfaces
+Description: In this section, we’ll go through  interfaces that are a way to specify behavior. An interface is defined as a set of method signatures.
+* [Lab 6](6-WKSHP-GO101-Interfaces.ipynb)
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.PNG)
