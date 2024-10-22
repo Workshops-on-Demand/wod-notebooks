@@ -1,8 +1,7 @@
-![HPEDEVlogo](Pictures/hpe-dev-logo.png)
+![WoDlogo](img/logo.png)
 
-# Welcome to the HPE Developer Hack Shack
-
-[HPE Developer Community Team](https://hpedev.io)
+# Welcome to the WoD Developer Hack Shack
+[WoD Developer Community Team](https://wod.io)
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
@@ -12,26 +11,25 @@
 
 # Introduction to Grommet and Grommet Designer hands-on workshop
 
-# Author: [Sulaymon Tajudeen](mailto:sulaymon.tajudeen@hpe.com)
-
-<small>This is an update to the original course created by [Pramod Reddy](mailto:pramod-reddy.sareddy@hpe.com)</small>
+<h1 style="margin-bottom:0.3rem">Author: <a href="mailto:sulaymon.tajudeen@hpe.com">Sulaymon Tajudeen</a></h1>
+<small>This is an update to the original course created by <a href="mailto:pramod-reddy.sareddy@hpe.com">Pramod Reddy</a></small>
 
 **Grommet** is an open-source React component library that provides responsive and accessible mobile-first UI components for building a consistent enterprise level applications and weekend side projects :-)
 
 Get up to speed with Grommet UI library using the following links.
 
-1. [Grommet](https://v2.grommet.io) website for more information about Grommet components.
+1. [Grommet](https://v2.grommet.io) website for more information about Grommet UI library.
 2. [Grommet Designer](https://designer.grommet.io/) is a visual tool for UI/UX designers and developers to create webpages using Grommet components.
 
 This workshop focuses on how designers/developers can use Grommet component library and Grommet Designer to quickly design/develop their web applications, generate Grommet code from the design, push the source code to GitHub and deploy it on Netlify.
 
-You will get started by building a simple bio page using Grommet Designer. No worries, if this is your first exposure to Grommet and Grommet Designer, we will take you through, step by step, and, by the end of the this short introductory course, you'll be deploying your own bio page web application in Netlify that can be viewed from the internet anytime from anywhere around the globe.
+You will get started by building a simple bio page using Grommet Designer. No worries, if this is your first exposure to Grommet and Grommet Designer, we will take you through, step by step, and, by the end of the this short introductory course, you will be deploying your own bio page web application on Netlify where it can be viewed from the internet anytime from anywhere around the globe.
 
 ## Documentation and Tools
 
 All you need is a laptop or workstation with a chrome/edge/firefox/safari browser and internet connection.
 
-We will use Grommet designer to design the application and install nodejs, yarn, and git on your device to run the application locally. We will then push the code to GitHub repo and deploy it on Netlify to access it from the internet.
+We will use Grommet designer to design the application and install nodejs, yarn, and git on your device to run the application locally. We will then push the code to GitHub repository and deploy it on Netlify to access it from the internet.
 
 Visit below links to find more information about Grommet and Grommet Designer.
 
@@ -54,8 +52,7 @@ At the end of the workshop, you will be able to
 ![Final site](Pictures/netlify-deployed-site.png)
 
 ## Lab Flow
-
-HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. We are now leveraging a jupyterhub server on which all the different labs guides will be stored in a Notebook format (\*.ipynb). These Notebooks are accessible from the internet for the event.
+WoD Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. We are now leveraging a jupyterhub server on which all the different labs guides will be stored in a Notebook format (*.ipynb). These Notebooks are accessible from the internet for the event.
 
 Besides, the notebooks can be downloaded on to your own laptop for further usage or edition. In order to use them, you will need to install the jupyter notebook application using [jupyter notebook download link](https://jupyter.org/install).
 Beginner's guide available on [jupyter notebook website](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
@@ -113,3 +110,7 @@ In this lab, we will connect GitHub repo to Netlify to deploy the application we
 ## Thank You!
 
 ![grommet.JPG](Pictures/grommet.jpg)
+
+
+
+
