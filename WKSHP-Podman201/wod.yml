@@ -17,9 +17,9 @@ compile: false
 workshopImg: 'tbd'
 badgeImg: 'tbd'
 beta: false
-category: 'Open Source'
+category: ['Open Source']
 duration: 2
-alternateLocation: 'grenoble'
+alternateLocation: ['grenoble']
 presenter: 'Markus'
 role: 'tbd'
 avatar: 'tbd'
