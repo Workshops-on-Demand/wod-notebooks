@@ -11,7 +11,7 @@ range: [526-550]
 reset: false
 ldap: false
 location: 'grenoble'
-replayId: 'tbd'
+replayId: 61
 varpass: false
 compile: false
 workshopImg: 'tbd'
