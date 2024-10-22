@@ -17,7 +17,7 @@ compile: false
 workshopImg: '???'
 badgeImg: '???'
 beta: false
-category: 'Open Source'
+category: ['Open Source']
 duration: 2
 alternateLocation: ['grenoble']
 presenter: 'Antonio Fin'
