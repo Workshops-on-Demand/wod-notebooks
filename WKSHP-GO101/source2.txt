@@ -1,0 +1,3 @@
+This is a sample text file.
+Note: By introducing defer statements we can ensure that the files are always closed.
+This file is used in Lab 3.
