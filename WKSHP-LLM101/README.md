@@ -12,7 +12,7 @@
 
 ## Introduction to Understanding LLM basics and the value they provide
 
-In this workshop, we'll explore the fundamentals of Large Language Models (LLMs)—their definition, structure, and practical usage—using real examples demonstrated with HPE's open-source library, LL-Mesh.
+In this workshop, we'll explore the fundamentals of Large Language Models (LLMs)—their definition, structure, and practical usage—using real examples demonstrated with HPE's open-source library, LLM Agentic Tool Mesh.
 
 ## Author: [Antonio Fin](mailto:antonio.fin@hpe.com)
 
@@ -55,19 +55,19 @@ Enjoy the labs ! :-)
 
 ### Lab 1: LLM Basics
 
-Description: In this section, we'll explore the fundamentals of Large Language Models (LLMs)—their definition, structure, and practical usage—using real examples demonstrated with HPE's open-source library, LL-Mesh.
+Description: In this section, we'll explore the fundamentals of Large Language Models (LLMs)—their definition, structure, and practical usage—using real examples demonstrated with HPE's open-source library, LLM Agentic Tool Mesh.
 
 - [Lab 1](1-WKSHP-LLM_Basics.ipynb)
 
-### Lab 2: LL-Mesh Overview
+### Lab 2: LLM Agentic Tool Mesh Overview
 
-**Description:** In this lab, we'll explore the challenges of adopting Generative AI technologies and discuss how the LL-Mesh platform provides effective solutions to overcome them.
+**Description:** In this lab, we'll explore the challenges of adopting Generative AI technologies and discuss how the LLM Agentic Tool Mesh platform provides effective solutions to overcome them.
 
 - [Lab 2](2-WKSHP-LLMesh_Overview.ipynb)
 
-### Lab 3: Building a Chatbot with LL-Mesh
+### Lab 3: Building a Chatbot with LLM Agentic Tool Mesh
 
-**Description:** In this lab, we'll provide examples of creating a chat application by concatenating prompts, models, and memories using LL-Mesh.
+**Description:** In this lab, we'll provide examples of creating a chat application by concatenating prompts, models, and memories using LLM Agentic Tool Mesh.
 
 - [Lab 3](3-WKSHP-LLM_Chat.ipynb)
 
@@ -79,13 +79,13 @@ Description: In this section, we'll explore the fundamentals of Large Language M
 
 ### Lab 5: Multi-Agent Systems
 
-**Description:** Explore the concept of multi-agent systems and how they can be implemented using LL-Mesh.
+**Description:** Explore the concept of multi-agent systems and how they can be implemented using LLM Agentic Tool Mesh.
 
 - [Lab 5](5-WKSHP-LLM_Agents.ipynb)
 
-### Lab 5: LL-Mesh Web Apps Showcase
+### Lab 5: LLM Agentic Tool Mesh Web Apps Showcase
 
-**Description:** This lab showcases some example web applications that are available in the LL-Mesh repository.
+**Description:** This lab showcases some example web applications that are available in the LLM Agentic Tool Mesh repository.
 
 - [Lab 6](6-WKSHP-LLM_WebApps.ipynb)
 
