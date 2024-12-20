@@ -9,7 +9,6 @@ priority: 2
 range: [1551,1580]
 reset: true
 ldap: false
-location: 'notebooks.hpedev.io'
 monoappliance: true
 replayId: 30
 varpass: false
@@ -19,7 +18,6 @@ badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod
 beta: false
 category: ['Open Source']
 duration: 4
-alternateLocation: ['notebooks2.hpedev.io']
 presenter: 'Bruno Cornec'
 role: 'OpenSource & Linux Technology Architect'
 avatar: '/img/SpeakerImages/Bruno.png'

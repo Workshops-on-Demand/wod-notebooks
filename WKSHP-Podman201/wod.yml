@@ -10,7 +10,6 @@ priority: 1
 range: [526-550]
 reset: false
 ldap: false
-location: 'notebooks2.hpedev.io'
 replayId: 61
 varpass: false
 compile: false
@@ -19,7 +18,6 @@ badgeImg: 'tbd'
 beta: false
 category: ['Open Source']
 duration: 2
-alternateLocation: ['notebooks2.hpedev.io']
 presenter: 'Markus'
 role: 'tbd'
 avatar: 'tbd'

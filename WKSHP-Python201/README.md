@@ -1,21 +1,21 @@
-![HPEDEVlogo](Pictures/hpe-dev-logo.png)
+![WoDlogo](img/logo.png)
 
-# Welcome to the HPE Developer Hack Shack
-[HPE Developer Community Team](https://hpedev.io)
+# Welcome to the WoD Developer Hack Shack
+[WoD Developer Community Team](https://wod.io)
 
 <p align="center">
   <img src="Pictures/hackshackdisco.png">
   
 </p>
 
-# HPE Developer Workshop
+# WoD Developer Workshop
 
 
 
 # Introduction to Python
-In this workshop we’ll go through the basics of Python programming language. You'll learn about variables and data types as well conditionnals and loops among many other things. 
+In this workshop we’ll go through some advanced concepts of Python programming language. You'll learn about functions, object oriented programming as well conditionnals, loops, and iterators among many other things. 
 
-# Authors:[Samarth Deyagond](mailto:samarth.deyagond@sap.com) and [Didier Lalli](mailto:didier.lalli@hpe.com)
+# Authors:[Pradeep Kumar Thota](mailto:pradeepkumar.thota@hpe.com) 
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
@@ -24,7 +24,7 @@ You can freely copy the Jupyter Notebooks, including their output, in order to p
 
 
 ## Lab flow
-HPE Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
+WoD Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files which always end in copy / paste errors from the lab guide into the TS sessions, this year we decided to innovate and introduce a brand-new infrastructure. We will leverage a JupyterHub server on which all the different lab guides will be stored in a notebook format (*.ipynb).
 
 In a nutshell, a notebook works as follows:
 
@@ -53,10 +53,23 @@ Enjoy the labs ! :-)
 
 ## Workflow
 
-### Lab 1: Introduction to Python
+### Lab 1: Understanding conditionals, loops, and iterators.
 
-* [Lab 1](1-WKSHP-Introduction-to-Python.ipynb)
+* [Lab 1](1-WKSHP-Understanding-conditionals-loops-iterators.ipynb)
+
+### Lab 2: Introduction to functionnal and object oriented programming.
+
+* [Lab 2](2-WKSHP-introduction-of-object-oriented-programming.ipynb)
+
+### Lab 3: Introduction of object oriented programming.
+
+* [Lab 3](3-WKSHP-Introduction-of-object-oriented-programming.ipynb)
 
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
+
+
+```python
+
+```

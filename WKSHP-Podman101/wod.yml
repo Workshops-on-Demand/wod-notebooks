@@ -9,7 +9,6 @@ priority: 1
 range: [491,525]
 reset: true
 ldap: false
-location: 'notebooks.hpedev.io'
 replayId: 61
 varpass: false
 compile: false
@@ -18,7 +17,6 @@ badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/freder
 beta: false
 category: ['Open Source']
 duration: 4
-alternateLocation: ['notebooks2.hpedev.io']
 presenter: 'Pablo Preciado'
 role: 'Cloud Solution Architect'
 avatar: '/img/SpeakerImages/Pablo-Preciado-photo.jpg'

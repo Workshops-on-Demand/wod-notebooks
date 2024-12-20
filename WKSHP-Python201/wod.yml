@@ -10,7 +10,6 @@ priority: 1
 range: [751-775]
 reset: false
 ldap: false
-location: 'notebooks.hpedev.io'
 replayId: 15
 varpass: false
 compile: false
@@ -19,7 +18,6 @@ badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/freder
 beta: false
 category: ['Open Source']
 duration: 2
-alternateLocation: ['notebooks2.hpedev.io']
 presenter: 'Pradeep Kumar Thota'
 role: 'Developer'
 avatar: '/img/hackshack/SpeakerImages/thota.png'

@@ -9,7 +9,6 @@ priority: 1
 range: [1646,1700]
 reset: true
 ldap: false
-location: 'notebooks.hpedev.io'
 replayId: 51
 varpass: false
 compile: false
@@ -18,7 +17,6 @@ badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod
 beta: false
 category: ['Open Source']
 duration: 4
-alternateLocation: ['notebooks2.hpedev.io']
 presenter: 'Gerhard Wenzel'
 role: 'Solution Architect'
 avatar: '/img/hackshack/SpeakerImages/HPE_Gerhard_Wenzel_klein.jpg'

@@ -12,8 +12,8 @@
 
 
 
-# Introduction to Go101
-In this workshop we’ll cover the basics of Go language. The Go programming language is an open source project to make programmers more productive.
+# Introduction to Go 101
+In this workshop we’ll cover the basics of Go language. The Go programming language is an open source project designed to make programmers more productive.
 
 Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make it easy to write programs that get the most out of multicore and networked machines, while its novel type system enables flexible and modular program construction. Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It's a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.
 
@@ -21,7 +21,7 @@ Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make
 
 
 ## Lab flow
-WoD Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files that always end in copy / paste errors from the lab guide into TS sessions, we leverage an infrastructure that uses a JupyterHub server on which all the different lab guides are stored in a notebook format (*.ipynb).
+WoD Developer Workshops-on-Demand are delivered through a central point that allows a portable, dynamic version of the lab guides. Rather than using standard PDF files that always end in copy / paste errors from the lab guide into Terminal Server sessions, we leverage an infrastructure that uses a JupyterHub server on which all the different lab guides are stored in a notebook format (*.ipynb).
 
 ## A quick look at Jupyter Notebook
 Jupyter Notebook is an open source solution for interactive documents that are commonly used to hold code for ML/DL models. But it can also be used in many other ways.
@@ -68,11 +68,11 @@ You can freely copy these Jupyter Notebooks, including their output, in order to
 ## Workflow
 
 ### Lab 1: Lab 1 Collections
-Description: In this section, we’ll go through collections definitions. Collections in Go are used to grouping value of the same type together. Values within a collection can iterated over, or retrieved individually.
+Description: In this section, we’ll go through collections definitions. Collections in Go are used to group values of the same type together. Values within a collection can iterated over, or retrieved individually.
 * [Lab 1](1-WKSHP-GO101-Collections.ipynb)
 
 ### Lab 2: Lab 2 Concurrency
-Description: In this section, we’ll go through comcurrency definitions. Concurrency refers to a programming language's ability to deal with lots of things at once.
+Description: In this section, we’ll go through concurrency definitions. Concurrency refers to a programming language's ability to deal with a lot of things at once.
 * [Lab 2](2-WKSHP-GO101-Concurrency.ipynb)
 
 ### Lab 3: Lab 3 Defer-Panic-Recover
@@ -88,7 +88,7 @@ Description: In this section, we’ll go through Testing, a crucial part of soft
 * [Lab 5](5-WKSHP-GO101-Testing.ipynb)
 
 ### Lab 6: Lab 6 Interfaces
-Description: In this section, we’ll go through  interfaces that are a way to specify behavior. An interface is defined as a set of method signatures.
+Description: In this section, we’ll go through interfaces, which are used to specify behaviors. An interface is defined as a set of method signatures.
 * [Lab 6](6-WKSHP-GO101-Interfaces.ipynb)
 
 # Thank you!

@@ -10,7 +10,6 @@ priority: 1
 range: [401-449]
 reset: false
 ldap: false
-location: 'notebooks.hpedev.io'
 replayId: 9
 varpass: false
 compile: false
@@ -19,7 +18,6 @@ badgeImg: '???'
 beta: false
 category: ['Open Source']
 duration: 2
-alternateLocation: ['notebooks2.hpedev.io']
 presenter: 'Antonio Fin'
 role: 'Product Manager'
 avatar: '???'

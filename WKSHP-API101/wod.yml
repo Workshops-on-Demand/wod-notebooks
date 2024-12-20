@@ -9,7 +9,6 @@ priority: 1
 range: [401,449]
 reset: false
 ldap: false
-location: 'notebooks.hpedev.io'
 replayId: 9
 varpass: false
 compile: false
@@ -18,7 +17,6 @@ badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-gi
 beta: false
 category: ['Open Source']
 duration: 2
-alternateLocation: ['notebooks2.hpedev.io']
 presenter: 'Didier Lalli'
 role: 'Distinguished Technologist'
 avatar: '/img/hackshack/SpeakerImages/Didier.png'
