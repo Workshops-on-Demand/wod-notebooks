@@ -2,8 +2,8 @@
 # Meta data for the Python 101 Workshop to populate seeder
 ---
 name: 'Python 201 - Dive into advanced concepts of Python programming language'
-notebook: 'WKSHP-Python101'
-description: 'Are you interested in learning more about Python, the high-level, general-purpose programming language? This basic 101-level course will get you started. Begin with a simple Hello World example and move to loops, dict and tuples concepts. Learn to use Python language constructs and an object-oriented approach to write clear, logical code for small and large-scale projects.'
+notebook: 'WKSHP-Python201'
+description: 'Are you interested in learning about advanced Python programming language? This 201-level course will help you out understanding some advanced concepts of Python programming language. You will learn about functions, object-oriented programming as well conditionals, loops, and iterators, among many other things.'
 active: true
 capacity: 20
 priority: 1
