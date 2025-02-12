@@ -1,6 +1,6 @@
 ![HPEDEVlogo](Pictures/hpe-dev-logo.png)    ![Dockerlogo](Pictures/docker.png)  
  
-# Welcome to the HPE DEV Hack Shack
+# Welcome to the {{ BRANDINGWOD }}
 [HPE Developer Community Team](https://hpedev.io)
 
 <p align="center">

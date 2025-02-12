@@ -1,6 +1,6 @@
 ![WoDlogo](img/logo.png)    
 
-# Welcome to the WoD Developer Hack Shack
+# Welcome to the {{ BRANDINGWOD }}
 [WoD Developer Community Team](https://wod.io)
 
 <p align="center">

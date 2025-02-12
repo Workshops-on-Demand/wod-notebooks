@@ -1,6 +1,6 @@
 ![HPEDEVlogo](Pictures/hpe-dev-logo.png)    ![podmanlogo](Pictures/podman-logo.png)  
 
-# Welcome to the HPE DEV Hack Shack
+# Welcome to the {{ BRANDINGWOD }}
 [WoD Developer Community Team](https://wod.io)
 
 <p align="center">

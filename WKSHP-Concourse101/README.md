@@ -1,6 +1,6 @@
 ![HPEDEVlogo](Pictures/hpe-dev-logo.png)      ![Concourselogo](Pictures/logo-concourse.svg)   
 
-# Welcome to the HPE Developer Hack Shack
+# Welcome to the {{ BRANDINGWOD }}
 Powered by [HPE Developer Community Team](https://hpedev.io)
 
 <p align="center">

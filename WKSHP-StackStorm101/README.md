@@ -1,7 +1,7 @@
 ![HPEDEVlogo](Pictures/hpe-dev-logo.png)  ![StackStormlogo](Pictures/stackstorm.jpg)
 
 
-# Welcome to the HPE Developer Hack Shack
+# Welcome to the {{ BRANDINGWOD }}
 [HPE Developer Community Team](https://hpedev.io)
 
 <p align="center">
