@@ -46,32 +46,36 @@ Enjoy the labs! 😊
 ## Workflow
 
 ### Lab 1: LLM Basics
-**Description:** In this section, we'll delve into the fundamentals of Large Language Models (LLMs)—their definition, structure, and practical applications—using real examples demonstrated with HPE's open-source library, LL-Mesh.
+**Description:** In this section, we'll explore the fundamentals of Large Language Models (LLMs)—their definition, structure, and practical usage—using real examples demonstrated with HPE's open-source library, LLM Agentic Tool Mesh.
 
 - [Lab 1](1-WKSHP-LLM_Basics.ipynb)
 
-### Lab 2: LL-Mesh Overview
-**Description:** This lab provides an introduction to the LL-Mesh platform, highlighting the key challenges it addresses and explaining how it helps to overcome them.
+### Lab 2: LLM Agentic Tool Mesh Overview
+**Description:** In this lab, we'll explore the challenges of adopting Generative AI technologies and discuss how the LLM Agentic Tool Mesh platform provides effective solutions to overcome them.
 
 - [Lab 2](2-WKSHP-LLMesh_Overview.ipynb)
 
-### Lab 3: Chat with LLM
-**Description:** In this lab, we'll provide examples of creating a chat application by concatenating prompts, models, and memories using LL-Mesh.
+### Lab 3: Building a Chatbot with LLM Agentic Tool Mesh
+**Description:** In this lab, we'll provide examples of creating a chat application by concatenating prompts, models, and memories using LLM Agentic Tool Mesh.
 
 - [Lab 3](3-WKSHP-LLM_Chat.ipynb)
 
-### Lab 4: Multi-Agent Systems
-**Description:** Explore the concept of multi-agent systems and how they can be implemented using LL-Mesh.
+### Lab 4: Retrieval-Augmented Generation (RAG)
 
-- [Lab 4](4-WKSHP-LLM_MultiAgent.ipynb)
-
-### Lab 5: Retrieval-Augmented Generation (RAG)
 **Description:** This lab offers examples of a RAG application, starting from extracting data from a document, transforming it, and loading it into a vector store for retrieval.
 
-- [Lab 5](5-WKSHP-LLM_RAG.ipynb)
+- [Lab 4](4-WKSHP-LLM_RAG.ipynb)
 
-### Lab 6: LL-Mesh Web Apps Showcase
-**Description:** This lab showcases some example web applications that are available in the LL-Mesh repository.
+### Lab 5: Multi-Agent Systems
+
+**Description:** Explore the concept of multi-agent systems and how they can be implemented using LLM Agentic Tool Mesh.
+
+
+- [Lab 5](5-WKSHP-LLM_MultiAgent.ipynb)
+
+### Lab 6: LLM Agentic Tool Mesh Web Apps Showcase
+
+**Description:** This lab showcases some example web applications that are available in the LLM Agentic Tool Mesh repository.
 
 - [Lab 6](6-WKSHP-LLM_WebApps.ipynb)
 
