@@ -2,25 +2,22 @@
 # Meta data for the Podman101 Workshop to populate seeder
 ---
 name: 'Podman101: A simple Introduction to Podman Concepts'
-notebook: 'WKSHP-Podman101'
 description: "Podman is a daemonless, open source, Linux native tool designed to make it easy to find, run, build, share and deploy applications using Open Containers Initiative (OCI) Containers and Container Images. Podman provides a command line interface (CLI) familiar to anyone who has used the Docker Container Engine. Most users can simply alias Docker to Podman (alias docker=podman) without any problems. Similar to other common Container Engines (Docker, CRI-O, containerd), Podman relies on an OCI compliant Container Runtime (runc, crun, runv, etc) to interface with the operating system and create the running containers. This makes the running containers created by Podman nearly indistinguishable from those created by any other common container engine."
 active: false
 capacity: 25
 priority: 1
-range: [491-525]
+range: [491,525]
 reset: true
 ldap: false
-location: 'mougins'
 replayId: 61
 varpass: false
 compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/frederic-passeron-hpe-com/WOD-Podman101-introduction-to-Podman-concepts.jpg'
 badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/frederic-passeron-hpe-com/Podman101-Intrduction-to-Podman-concepts.png'
 beta: false
-category: 'Open Source'
+category: ['Open Source']
 duration: 4
-alternateLocation: 'grenoble'
 presenter: 'Pablo Preciado'
 role: 'Cloud Solution Architect'
 avatar: '/img/SpeakerImages/Pablo-Preciado-photo.jpg'
-videoLink: 'https://hpe-developer-portal.s3.amazonaws.com/Workshops-on-Demand-Coming-Soon-Replay.mp4'
+replayLink: 'https://hpe-developer-portal.s3.amazonaws.com/Workshops-on-Demand-Coming-Soon-Replay.mp4'

@@ -10,17 +10,15 @@ priority: 1
 range: [526-550]
 reset: false
 ldap: false
-location: 'grenoble'
-replayId: tbd
+replayId: 61
 varpass: false
 compile: false
 workshopImg: 'tbd'
 badgeImg: 'tbd'
 beta: false
-category: 'Open Source'
+category: ['Open Source']
 duration: 2
-alternateLocation: 'grenoble'
 presenter: 'Markus'
 role: 'tbd'
 avatar: 'tbd'
-videoLink: 'tbd'
+replayLink: 'tbd'

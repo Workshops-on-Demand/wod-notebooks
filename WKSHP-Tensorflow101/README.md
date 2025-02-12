@@ -1,4 +1,4 @@
-![WoDlogo](img/logo.png)
+![WoDlogo](img/logo.png)    
 
 # Welcome to the WoD Developer Hack Shack
 [WoD Developer Community Team](https://wod.io)
@@ -12,10 +12,15 @@
 
 
 
-# Introduction to Python
-In this workshop we’ll go through some advanced concepts of Python programming language. You'll learn about functions, object oriented programming as well conditionnals, loops, and iterators among many other things. 
+# Introduction to TensorFlow Library 101
+TensorFlow is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries, and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML-powered applications.
 
-# Authors:[Pradeep Kumar Thota](mailto:pradeepkumar.thota@hpe.com) 
+TensorFlow was originally developed by researchers and engineers working within the Machine Intelligence team at Google Brain to conduct research in machine learning and neural networks. However, the framework is versatile enough to be used in other areas as well.
+
+TensorFlow provides stable Python and C++ APIs, as well as a non-guaranteed backward compatible API for other languages.
+
+
+# Authors:  [Frederic Passeron](mailto:frederic.passeron@hpe.com) 
 
 ## Handouts
 You can freely copy the Jupyter Notebooks, including their output, in order to practice back at your office at your own pace, leveraging a local installation of Jupyter Notebook on your laptop.
@@ -48,28 +53,33 @@ In a nutshell, a notebook works as follows:
 
 • You cannot run a cell when another is already running but you can interrupt a running cell with the stop button
 
-Enjoy the labs ! :-)
+### Pre-requisites
 
+You should have basic Python knowledge and be familiar with using Jupyter Notebooks.  If not, the following free hands-on workshops are recommended:
+
+ - [Python 101](https://hackshack.hpedev.io/workshop/15)
+ - [Jupyter Notebooks 101](https://hackshack.hpedev.io/workshop/25)
+ 
+ If you are completely new to machine learning, the following free course is recommended to understand the concepts:
+ 
+ - [Artificial Intelligence & Machine Learning Concepts](https://learn.ezmeral.software.hpe.com/page/artificial-intelligence-machine-learning)
+
+
+
+Enjoy the labs ! :-)
 
 ## Workflow
 
-### Lab 1: Understanding conditionals, loops, and iterators.
+### Lab 1: TensorFlow Basics.
+Description: In this section, we’ll go through some of basics of TensorFlow. You won't turn into a data scientist just yet but you should understand better some of the main principles after this workshop.
 
-* [Lab 1](1-WKSHP-Understanding-conditionals-loops-iterators.ipynb)
-
-### Lab 2: Introduction to functionnal and object oriented programming.
-
-* [Lab 2](2-WKSHP-introduction-of-object-oriented-programming.ipynb)
-
-### Lab 3: Introduction of object oriented programming.
-
-* [Lab 3](3-WKSHP-Introduction-of-object-oriented-programming.ipynb)
+[Before we start...](1-WKSHP-TensorFlow-Basics.ipynb)
 
 
 # Thank you!
 ![grommet.JPG](Pictures/grommet.JPG)
 
 
-```python
+```bash
 
 ```

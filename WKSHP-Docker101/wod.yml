@@ -2,25 +2,23 @@
 # Meta data for the Docker101 Workshop to populate seeder
 ---
 name: 'Docker 101 - An introduction to containerization with Docker'
-notebook: 'WKSHP-Docker101'
 description: 'A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.The goal of this lab is to use Docker to become familiar with Linux based containers and handle some of the common use cases around it. By the end of this lab you will have created a Web application comprised of a number of micro-services.'
 active: true
 capacity: 20
 priority: 2
-range: [1551-1580]
+range: [1551,1580]
 reset: true
 ldap: false
-location: 'mougins'
+monoappliance: true
 replayId: 30
 varpass: false
 compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/Docker101WoD.png'
 badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/Opensource-Docker_101_Introduction_to_Docker_Concepts.jpg'
 beta: false
-category: 'Open Source'
+category: ['Open Source']
 duration: 4
-alternateLocation: 'grenoble'
 presenter: 'Bruno Cornec'
 role: 'OpenSource & Linux Technology Architect'
 avatar: '/img/SpeakerImages/Bruno.png'
-videoLink: 'https://vimeo.com/445302013'
+replayLink: 'https://vimeo.com/445302013'
