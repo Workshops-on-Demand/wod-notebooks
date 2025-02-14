@@ -7,7 +7,7 @@ description: 'Are you interested in learning about advanced Python programming l
 active: true
 capacity: 20
 priority: 1
-range: [751,775]
+range: [58,63]
 reset: false
 ldap: false
 replayId: 15

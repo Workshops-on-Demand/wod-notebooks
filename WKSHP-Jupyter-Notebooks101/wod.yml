@@ -6,7 +6,7 @@ description: 'The HPE DEV team has been leveraging Jupyter Notebooks to deliver 
 active: true
 capacity: 20
 priority: 1
-range: [1950,1975]
+range: [7,12]
 reset: false
 ldap: false
 replayId: 25
