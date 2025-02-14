@@ -7,7 +7,7 @@ description: "You may know that Large Language Models (LLMs) enable applications
 active: true
 capacity: 20
 priority: 1
-range: [401-449]
+range: [401,449]
 reset: false
 ldap: false
 replayId: 9

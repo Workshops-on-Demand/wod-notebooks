@@ -7,7 +7,7 @@ description: 'TBD'
 active: true
 capacity: 20
 priority: 1
-range: [526-550]
+range: [526,550]
 reset: false
 ldap: false
 replayId: 61
