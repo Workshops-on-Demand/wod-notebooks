@@ -222,8 +222,8 @@
 
     - name: Deploy instanciated scripts
       template:
-        src: "{{ SCRIPTDIR }}/{{ item }}.j2"
-        dest: "{{ SCRIPTDIR }}/{{ item }}"
+        src: "{{ WODSCRIPTDIR }}/{{ item }}.j2"
+        dest: "{{ WODSCRIPTDIR }}/{{ item }}"
         mode: 0700
       with_items:
         - procmail-action.sh
@@ -245,7 +245,7 @@
       become: yes
       become_user: root
       copy:
-        src: "{{ SCRIPTDIR }}/upd.{{ ansible_pkg_mgr }}"
+        src: "{{ WODSCRIPTDIR }}/upd.{{ ansible_pkg_mgr }}"
         dest: /usr/local/bin/upd
         owner: root
         group: root
@@ -267,7 +267,7 @@
       become: yes
       become_user: root
       template:
-        src: "{{ SCRIPTDIR }}/deliver.j2"
+        src: "{{ WODSCRIPTDIR }}/deliver.j2"
         dest: /usr/local/bin/deliver
         owner: root
         group: root
@@ -289,7 +289,7 @@
       become: yes
       become_user: root
       template:
-        src: "{{ SCRIPTDIR }}/check-template.j2"
+        src: "{{ WODSCRIPTDIR }}/check-template.j2"
         dest: /usr/local/bin/check-template
         owner: root
         group: root
@@ -308,12 +308,12 @@
         state: present
 
     - name: Deliver create/reset scripts as ansible template for variable expansion
-      template: src={{ item }} dest={{ SCRIPTDIR }}/{{ item | basename | regex_replace('\.j2$') }} mode=0755
-      with_fileglob: [ '{{ SCRIPTDIR }}/reset-*.sh*.j2', '{{ SCRIPTDIR }}/create-*.sh*.j2' ]
+      template: src={{ item }} dest={{ WODSCRIPTDIR }}/{{ item | basename | regex_replace('\.j2$') }} mode=0755
+      with_fileglob: [ '{{ WODSCRIPTDIR }}/reset-*.sh*.j2', '{{ WODSCRIPTDIR }}/create-*.sh*.j2' ]
 
     - name: Deliver variables files as ansible template for variable expansion
-      template: src={{ item }} dest={{ JUPPROC }}/ansible-jupyter/{{ PBKDIR }}/{{ item | basename | regex_replace('\.j2$') }} mode=0644
-      with_fileglob: [ '{{ JUPPROC }}/ansible-jupyter/{{ PBKDIR }}/*.yml.j2' ]
+      template: src={{ item }} dest={{ JUPPROC }}/ansible-jupyter/{{ WODGROUP }}/{{ item | basename | regex_replace('\.j2$') }} mode=0644
+      with_fileglob: [ '{{ JUPPROC }}/ansible-jupyter/{{ WODGROUP }}/*.yml.j2' ]
 
     - name: Ensure that directory /student exists
       become: yes

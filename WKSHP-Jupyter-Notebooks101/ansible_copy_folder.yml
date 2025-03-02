@@ -3,7 +3,7 @@
 - hosts: all
   gather_facts: true
   vars:
-    VARDIR: "{{ JUPPROC }}/ansible-jupyter/{{ PBKDIR }}"
+    VARDIR: "{{ JUPPROC }}/ansible-jupyter/{{ WODGROUP }}"
 
   tasks: 
     - fail:
@@ -15,8 +15,8 @@
       when: WORKSHOP is not defined
 
     - fail:
-        msg: PBKDIR variable is empty ! Fat fingers ?!?
-      when: PBKDIR is not defined
+        msg: WODGROUP variable is empty ! Fat fingers ?!?
+      when: WODGROUP is not defined
 
     - name: check variables file exists
       stat:
