@@ -359,7 +359,7 @@
 
     - name: Make kernel_python available under /usr/local/bin
       copy:
-        src: "{{ SCRIPTDIR }}/kernel_python"
+        src: "{{ WODSCRIPTDIR }}/kernel_python"
         dest: /usr/local/bin/kernel_python
         owner: jupyter
         group: jupyter
@@ -478,7 +478,7 @@
       when: pwsh_path.rc != 0
 
     - name: Ensure powershell scripts are installed
-      command: "{{ SCRIPTDIR }}/install_PwshModules.sh"
+      command: "{{ WODSCRIPTDIR }}/install_PwshModules.sh"
 
     - name: Ensure that directory "{{ JPHUB }}/etc/jupyterhub" exists
       file:
@@ -574,7 +574,7 @@
 
     - name: Fix Jupyter token in conf file
       lineinfile:
-        path: "{{ JUPPROC }}/ansible-jupyter/group_vars/{{ PBKDIR }}"
+        path: "{{ JUPPROC }}/ansible-jupyter/group_vars/{{ WODGROUP }}"
         regexp: "^JPHUBTOKEN"
         line: "JPHUBTOKEN: {{ jup_token.stdout_lines[0] }}"
         state: present
