@@ -2,7 +2,6 @@
 # Meta data for the Podman201 Workshop to populate seeder
 ---
 name: 'Podman201 - Advanced fonctionnalities of Podman'
-notebook: 'WKSHP-Podman201'
 description: 'TBD'
 active: true
 capacity: 20
