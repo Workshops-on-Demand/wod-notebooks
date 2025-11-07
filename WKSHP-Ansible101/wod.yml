@@ -13,7 +13,7 @@ replayId: 31
 varpass: false
 compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/WOD_OpenSource_Introduction_to_Ansible_Concepts.png'
-badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/OpenSource_Introduction_to_Ansible_Concepts.jpg'
+badgeImg: WOD-Badge-Ansible101
 beta: false
 category: ['Open Source']
 duration: 4

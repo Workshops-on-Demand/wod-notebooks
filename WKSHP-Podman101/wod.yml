@@ -13,7 +13,7 @@ replayId: 61
 varpass: false
 compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/frederic-passeron-hpe-com/WOD-Podman101-introduction-to-Podman-concepts.jpg'
-badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/frederic-passeron-hpe-com/Podman101-Intrduction-to-Podman-concepts.png'
+badgeImg: WOD-Badge-Podman101
 beta: false
 category: ['Open Source']
 duration: 4

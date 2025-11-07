@@ -15,7 +15,7 @@ replayId: 30
 varpass: false
 compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/Docker101WoD.png'
-badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/Opensource-Docker_101_Introduction_to_Docker_Concepts.jpg'
+badgeImg: WOD-Badge-Docker101
 beta: false
 category: ['Open Source']
 duration: 4

@@ -13,7 +13,7 @@ replayId: 14
 varpass: false
 compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/WOD_Opensource-Streamline_app_development_with_open_source_Grommet.jpg'
-badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/Opensource-Streamline_app_development_with_open_source_Grommet.jpg'
+badgeImg: WOD-Badge-Grommet
 beta: false
 category: ['Open Source']
 duration: 2

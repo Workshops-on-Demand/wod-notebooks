@@ -13,7 +13,7 @@ replayId: 51
 varpass: false
 compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/frederic-passeron-hpe-com/Introduction%20to%20Apache%20Spark%20Concepts.jpg'
-badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/OpenSource-Spark_101_Introduction_to_Apache_Spark_Concepts.jpg'
+badgeImg: WOD-Badge-Spark101
 beta: false
 category: ['Open Source']
 duration: 4

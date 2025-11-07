@@ -13,7 +13,7 @@ replayId: 18
 varpass: false
 compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/WOD_Opensource-SPIFFE_SPIRE_101_An_introduction_to_SPIFFE_server_and_SPIRE_agent_security_concepts.jpg'
-badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/Opensource-SPIFFE_SPIRE_101_An_introduction_to_SPIFFE_server_and_SPIRE_agent_security_concepts.jpg'
+badgeImg: WOD-Badge-SPIFFE-SPIRE-101
 beta: false
 category: ['Open Source']
 duration: 4

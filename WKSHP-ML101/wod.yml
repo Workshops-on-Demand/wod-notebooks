@@ -13,7 +13,7 @@ replayId: 31
 varpass: false
 compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/frederic-passeron-hpe-com/Machine%20Learning%20101%20-%20Introduction%20to%20ML%20concepts.jpg'
-badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/pramod-reddy-sareddy-hpe-com/OpenSource-Machine_Learning_101_Introduction_to_ML_Concepts.jpg'
+badgeImg: WOD-Badge-ML101
 beta: false
 category: ['Open Source']
 duration: 4

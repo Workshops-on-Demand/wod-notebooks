@@ -13,7 +13,7 @@ replayId: 15
 varpass: false
 compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/frederic-passeron-hpe-com/Python201-Advanced-Concept-programming.jpg'
-badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/frederic-passeron-hpe-com/Python201.jpg'
+badgeImg: WOD-Badge-Python201
 beta: false
 category: ['Open Source']
 duration: 2

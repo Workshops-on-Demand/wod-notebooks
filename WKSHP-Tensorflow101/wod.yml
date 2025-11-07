@@ -13,7 +13,7 @@ replayId: 0
 varpass: false
 compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/WOD_Opensource-Stackstorm_101_Introduction_to_the_Stackstorm_automation_features.jpg'
-badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/Opensource-Stackstorm_101_Introduction_to_the_Stackstorm_automation_features.jpg'
+badgeImg: WOD-Badge-Tensorflow101
 beta: false
 category: ['Open Source']
 duration: 4

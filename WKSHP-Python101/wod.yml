@@ -13,7 +13,7 @@ replayId: 15
 varpass: false
 compile: false
 workshopImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/WOD_Opensource-Python_101_Introduction_to_Python_programming_language.jpg'
-badgeImg: 'https://us-central1-grommet-designer.cloudfunctions.net/images/jay-giang-hpe-com/Opensource-Python_101_Introduction_to_Python_programming_language.jpg'
+badgeImg: WOD-Badge-Python101
 beta: false
 category: ['Open Source']
 duration: 2
