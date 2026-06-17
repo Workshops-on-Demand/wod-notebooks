@@ -3,7 +3,7 @@
 ---
 name: 'Kubernetes 101 - Introduction to Kubernetes Concepts'
 description: 'This tutorial walks you through the basics of the Kubernetes cluster orchestration system. Each module contains information on major Kubernetes features and concepts, and includes an interactive online tutorial. The interactive tutorials let you deploy a containerized application on a cluster, scale its deployment, update the application and debug it.'
-active: true
+active: false
 capacity: 0
 priority: 2
 range: [10,15]
