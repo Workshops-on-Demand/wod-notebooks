@@ -44,6 +44,8 @@ Here is a list of the current public available Workshops:
 | WKSHP-Ansible101  | Basic Concepts on Ansible        | Yes |
 | WKSHP-DataVisu101  | Basic Concepts on Data Visualization        | Yes |
 | WKSHP-LLM101  | Basic Concepts on Large Language Model      | Yes |
+| WKSHP-K8S101  | Basic Concepts on Kubernetes     | Yes |
+
 
 
 A workshop may require some separate scripts. These scripts would be needed to:
