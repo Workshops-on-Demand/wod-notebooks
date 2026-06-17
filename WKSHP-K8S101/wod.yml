@@ -8,7 +8,7 @@ capacity: 0
 priority: 2
 range: [10,15]
 reset: true
-ldap: true
+ldap: false
 replayId: 24
 varpass: false
 compile: false
