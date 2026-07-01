@@ -3,7 +3,7 @@
 ---
 name: 'Machine Learning 101 - Introduction to ML concepts'
 description: 'Machine learning is a machine’s ability to learn from data. It has been around for decades, but machine learning is now being applied in nearly every industry and job function. Discover the main concepts in this 101 workshop.'
-active: true
+active: false
 capacity: 20
 priority: 1
 range: [1351,1381]
