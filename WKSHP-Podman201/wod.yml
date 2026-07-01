@@ -3,7 +3,7 @@
 ---
 name: 'Podman201 - Advanced fonctionnalities of Podman'
 description: 'TBD'
-active: true
+active: false
 capacity: 20
 priority: 1
 range: [526,550]
